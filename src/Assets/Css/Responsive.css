@@ -1,0 +1,451 @@
+/* (1366x768) WXGA Display */
+
+@media screen and (min-width: 1366px) and (max-width: 1700px) {
+  .br-app:before {
+    left: 8%;
+  }
+  .br-app:after {
+    right: 8%;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+  .br-app:before {
+    left: 2%;
+  }
+  .br-app:after {
+    right: 2%;
+  }
+  .hero .copy {
+    bottom: -50px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+  .hero-slider-wrapper:before {
+    display: none;
+  }
+  .hero-slider-wrapper:after {
+    display: none;
+  }
+  .br-app:before {
+    left: 6%;
+  }
+  .br-app:after {
+    right: 6%;
+  }
+  .hero .copy {
+    bottom: -80px;
+  }
+}
+/* Normal desktop :992px. */
+
+@media (min-width: 992px) and (max-width: 1197px) {
+  .about-content {
+    padding-left: 0px;
+    text-align: center;
+  }
+  .about-content h2:before {
+    left: -40px;
+  }
+  .about-content h2 {
+    margin-top: 0;
+  }
+  .gallery-section {
+    padding-bottom: 70px;
+    padding-top: 70px;
+  }
+  .hero-style-1 {
+    height: 100vh;
+    min-height: 800px;
+  }
+
+  .hero .copy {
+    bottom: -40px;
+  }
+  .hero-style-1 .slide {
+    height: 100vh;
+    min-height: 800px;
+  }
+  .br-app:before {
+    left: 1%;
+  }
+  .br-app:after {
+    right: 1%;
+  }
+  .about-area:before {
+    display: none;
+  }
+  .hero-slider-wrapper:before {
+    display: none;
+  }
+  .hero-slider-wrapper:after {
+    display: none;
+  }
+  .service-area {
+    padding-bottom: 120px;
+  }
+}
+
+/* Normal desktop :991px. */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .header-style-1 .navbar-header button {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .header-style-1 .navigation-holder.active {
+    right: 0 !important;
+  }
+  .site-header .navbar-nav > li {
+    position: relative;
+  }
+  .hero .slide-caption {
+    padding-top: 0;
+  }
+  .about-content {
+    padding: 40px 0px 0;
+    padding-left: 0px;
+    text-align: center;
+  }
+  .about-content h2:before {
+    left: -40px;
+  }
+  .service-area {
+    padding-bottom: 70px;
+    padding-top: 60px;
+  }
+  .gallery-section {
+    padding-bottom: 70px;
+    padding-top: 70px;
+  }
+  .contact-area {
+    margin-top: 30px;
+  }
+  .contact-area form div,
+  .contact-area-s2 form div {
+    padding-bottom: 0;
+  }
+  .contact-area form .form-submit {
+    margin-top: 20px;
+  }
+  .contact-page-item h3 {
+    margin-bottom: 5px;
+    margin-top: 0;
+  }
+  .contact-page-item .adress {
+    margin-bottom: 7px;
+  }
+  .contact-page-item .phone {
+    margin-bottom: 7px;
+  }
+  .contact-page-area {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .hero-style-1 {
+    height: 600px;
+    min-height: 600px;
+  }
+  .hero-style-1 .slide {
+    height: 600px;
+    min-height: 600px;
+  }
+  .br-app:before {
+    left: 1%;
+  }
+  .br-app:after {
+    right: 1%;
+  }
+  .about-area:before {
+    display: none;
+  }
+  .header-style-1 {
+    border-bottom: 1px solid rgba(102, 102, 102, 0.3);
+  }
+  .hero .copy {
+    display: none;
+  }
+  .blog-section {
+    padding-bottom: 70px;
+    padding-top: 90px;
+  }
+  .hero-slider-wrapper:after {
+    display: none;
+  }
+  .hero-slider-wrapper::before {
+    display: none;
+  }
+  .payra-masonary .grid.active,
+  .payra-masonary .grid.open {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+/* small mobile :576px. */
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .hero .slide-caption {
+    padding-top: 0;
+  }
+  .hero-style-1 .slide-title h2 {
+    font-size: 50px;
+    font-size: 3.33333rem;
+  }
+  .about-content {
+    padding: 40px 0px 0;
+    padding-left: 0px;
+    text-align: center;
+  }
+  .about-content h2:before {
+    left: -40px;
+  }
+  .pricing-section .pricing-grids {
+    max-width: 450px;
+    margin: auto;
+  }
+  .header-style-1 .navbar-header button {
+    top: 11px;
+  }
+  .service-area {
+    padding-bottom: 70px;
+    padding-top: 60px;
+  }
+  .service-section .services-wrapper {
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .gallery-section {
+    padding-bottom: 73px;
+    padding-top: 80px;
+  }
+
+  .site-header #navbar > ul > li {
+    padding: 0 10px;
+  }
+  .site-header #navbar > ul > li:first-child {
+    padding-top: 10px;
+  }
+  .blog-item {
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  .contact-page-area {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .contact-page-area .contact-map {
+    margin-top: 15px;
+  }
+  .hero-style-1 {
+    height: 600px;
+    min-height: 600px;
+  }
+  .hero-style-1 .slide {
+    height: 600px;
+    min-height: 600px;
+  }
+  .br-app:before {
+    left: 1%;
+  }
+  .br-app:after {
+    right: 1%;
+  }
+  .about-area:before {
+    display: none;
+  }
+  .header-style-1 {
+    border-bottom: 1px solid rgba(102, 102, 102, 0.3);
+  }
+  .hero .copy {
+    display: none;
+  }
+  .blog-section {
+    padding-bottom: 70px;
+    padding-top: 90px;
+  }
+  .hero-slider-wrapper:after {
+    display: none;
+  }
+  .hero-slider-wrapper::before {
+    display: none;
+  }
+  .slider-image {
+    display: none;
+  }
+  .hero-slider {
+    background: #202020;
+  }
+  .header-style-1 .navbar-header button {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .header-style-1 .navigation-holder.active {
+    right: 0 !important;
+  }
+  .site-header .navbar-nav > li {
+    position: relative;
+  }
+  .payra-masonary .grid.active,
+  .payra-masonary .grid.open {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+/* extra small mobile 320px. */
+
+@media (max-width: 575px) {
+  .hero .slide-caption {
+    padding-top: 0;
+  }
+  .header-style-1 .navbar-header button {
+    top: 11px;
+  }
+  .about-content {
+    padding: 40px 0px 0;
+    padding-left: 0px;
+    text-align: center;
+  }
+  .about-content h2:before {
+    left: 37%;
+  }
+  .about-content h2:before {
+    left: -40px;
+  }
+  .my-testimonial .inner-content {
+    padding: 40px 8px 30px 0px;
+  }
+  .pricing-section .pricing-body {
+    padding: 4px 20px 30px;
+  }
+  .about-area {
+    overflow: hidden;
+    padding-top: 110px;
+    padding-bottom: 70px;
+  }
+  .about-img:before {
+    left: -8px;
+    top: 27px;
+    width: 300px;
+    height: 300px;
+  }
+  .about-img:after {
+    left: -2px;
+    top: 21px;
+    width: 300px;
+    height: 300px;
+  }
+  .site-header #navbar > ul > li {
+    padding: 0 10px;
+  }
+  .site-header #navbar > ul > li:first-child {
+    padding-top: 10px;
+  }
+  .service-section .services-wrapper {
+    padding: 40px 10px 30px;
+  }
+  .service-area {
+    padding-bottom: 40px;
+    padding-top: 60px;
+  }
+  .site-header .navigation .navbar-brand {
+    padding: 3px 15px 0;
+  }
+  .header-style-1 .navbar-header button {
+    top: 8px;
+  }
+  .section-title h2 {
+    font-size: 37px;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+  .gallery-section {
+    padding-bottom: 50px;
+    padding-top: 65px;
+  }
+
+  .blog-content ul li {
+    display: inline-block;
+    padding: 0 5px;
+  }
+  .contact-page-area {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .contact-page-area .contact-map {
+    margin-top: 15px;
+  }
+  .hero-style-1 {
+    height: 450px;
+    min-height: 450px;
+    background: #202020;
+  }
+  .slider-image {
+    display: none;
+  }
+  .hero-slider {
+    background: #202020;
+  }
+  .hero-style-1 .slide {
+    height: 450px;
+    min-height: 450px;
+  }
+  .br-app:before {
+    left: 2%;
+  }
+  .br-app:after {
+    right: 2%;
+  }
+  .about-area:before {
+    display: none;
+  }
+  .header-style-1 {
+    border-bottom: 1px solid rgba(102, 102, 102, 0.3);
+    background: #333;
+    padding: 5px 0px;
+  }
+  .hero .copy {
+    display: none;
+  }
+  .blog-section {
+    padding-bottom: 40px;
+    padding-top: 60px;
+  }
+  .hero-style-1 .slide-title h2 {
+    font-size: 35px;
+  }
+  .testimonial-img {
+    width: 20%;
+  }
+  .testimonial-area {
+    padding: 60px 0 100px;
+    border-top: 1px solid;
+  }
+  .hero-slider-wrapper:after {
+    display: none;
+  }
+  .hero-slider-wrapper::before {
+    display: none;
+  }
+  .header-style-1 .navbar-header button {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .header-style-1 .navigation-holder.active {
+    right: 0 !important;
+  }
+  .site-header .navbar-nav > li {
+    position: relative;
+  }
+  .payra-masonary .grid.active,
+  .payra-masonary .grid.open {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+/* Large Mobile :480px. */
+@media only screen and (min-width: 325px) and (max-width: 590px) {
+}
