@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 
 import {Link} from 'react-router-dom';
 import {Typewriter} from 'react-simple-typewriter';
-import Slides from '../Assets/Images/slide-2.jpg';
+// import Slides from '../Assets/Images/slide-2.jpg';
+import Slides from '../Assets/Images/home/amoled.jpg';
 
 class Banner extends Component {
   render() {
