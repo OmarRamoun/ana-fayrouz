@@ -26,12 +26,12 @@ class Header extends Component {
                 onClick={() => this.setState({isOpen: true})}
               >
                 <span className='sr-only'>Toggle navigation</span>
-                <span className='icon-bar'></span>
+                <span className='icon-bar' style={{height: '4px'}}></span>
                 <span className='icon-bar'></span>
                 <span className='icon-bar'></span>
               </button>
               <Link className='navbar-brand' to='/'>
-                <img src={Logo} alt='' />
+                <img style={{width: '47px', filter: 'invert(1)'}} src={Logo} alt='' />
               </Link>
             </div>
             <div
@@ -83,9 +83,9 @@ class Header extends Component {
             </div>
             <div className='menu-open-btn-holder'>
               <button className='menu-open-btn' onClick={() => this.setState({isOpen: true})}>
-                <span></span>
-                <span></span>
-                <span></span>
+                <span style={{height: '4px'}}></span>
+                <span style={{height: '4px'}}></span>
+                <span style={{height: '4px'}}></span>
               </button>
             </div>
           </div>

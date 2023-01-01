@@ -1,10 +1,4 @@
 /*============================================================
-[Master Stylesheet]
-Template Name:     Payra
-Version:        1.0.0
-Author:         Themepresss
-URL:            https://themeforest.net/user/themepresss
-=========================================================*/
 /*=======================================================
 TABLE OF CONTENTS:
 
@@ -841,7 +835,7 @@ button:focus {
 }
 
 .header-style-1 .menu-open-btn-holder {
-  background-color: #191919;
+  background-color: #1919197c;
   width: 45px;
   height: 45px;
   position: absolute;
@@ -1125,21 +1119,22 @@ button:focus {
 
 .hero .social-links:before {
   content: '';
-  width: 1px;
+  width: 3px;
   height: 50px;
   background: rgba(125, 125, 125, 0.4);
   position: absolute;
-  left: 8px;
+  left: 13px;
   top: -70px;
 }
 
 .hero .social-links:after {
   font-family: 'Oswald', sans-serif;
+  font-size: 18px;
   color: #888;
   content: 'SOCIAL';
   position: absolute;
-  left: -28px;
-  top: -135px;
+  left: -26px;
+    top: -140px;
   letter-spacing: 5px;
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
@@ -1180,7 +1175,7 @@ button:focus {
   animation: fadeInLeft 1.5s both;
 }
 
-.hero .slide-caption > div.slide-title * {
+.hero .slide-caption > div * {
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
 }
@@ -1248,8 +1243,8 @@ button:focus {
 ====================================================*/
 
 .hero-style-1 {
-  height: 100vh;
-  min-height: 850px;
+  height: 50vh;
+    min-height: 100vh;
   position: relative;
 }
 .white_svg {
@@ -1267,7 +1262,7 @@ button:focus {
   min-height: 850px;
 }
 
-.hero-style-1 .slide-subtitle h4 {
+.hero-style-1 .slide-subtitle h1 {
   font-size: 18px;
   font-size: 1.2rem;
   font-weight: 400;
@@ -1279,27 +1274,29 @@ button:focus {
 }
 
 @media (max-width: 991px) {
-  .hero-style-1 .slide-subtitle h4 {
+  .hero-style-1 .slide-subtitle h1 {
     font-size: 16px;
     font-size: 1.06667rem;
   }
 }
 
 @media (max-width: 767px) {
-  .hero-style-1 .slide-subtitle h4 {
-    font-size: 14px;
+  .hero-style-1 .slide-subtitle h1 {
+    font-size: 20px;
     font-size: 0.93333rem;
     letter-spacing: 4px;
   }
 }
 
 .hero-style-1 .slide-title h2 {
-  font-size: 70px;
-  font-size: 4.66667rem;
+  font-family: 'Exo 2', sans-serif;
+  -webkit-text-stroke-color : #fff;
+  -webkit-text-stroke-width : 0.6mm;
+  font-size: 2.5rem;
   font-weight: bold;
   line-height: 1.2em;
   text-transform: uppercase;
-  color: #fff;
+  color: transparent;
   margin-bottom: 30px;
   margin-top: 20px;
 }
@@ -1307,16 +1304,16 @@ button:focus {
 .hero-style-1 .slide-subtitle {
   margin-bottom: 0;
 }
-.hero-style-1 .slide-subtitle h4 {
+.hero-style-1 .slide-subtitle h1 {
   position: relative;
   margin-bottom: 0;
   display: inline-block;
 }
 
-.hero-style-1 .slide-subtitle h4:before {
+.hero-style-1 .slide-subtitle h1:before {
   content: '';
   position: absolute;
-  right: -60px;
+  right: -70px;
   top: 9px;
   width: 65px;
   height: 1px;
@@ -1350,23 +1347,23 @@ button:focus {
 
 @-webkit-keyframes kenburn {
   from {
-    -webkit-transform: scale3d(1, 0.5, 0.5);
-    transform: scale3d(1, 0.5, 0.5);
+    -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
   }
   to {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1);
-    transform: scale3d(1.1, 1.1, 1.1);
+    -webkit-transform: scale3d(1.2, 1.2, 1.2);
+      transform: scale3d(1.2, 1.2, 1.2);
   }
 }
 
 @keyframes kenburn {
   from {
-    -webkit-transform: scale3d(1, 0.5, 0.5);
-    transform: scale3d(1, 0.5, 0.5);
+    -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
   }
   to {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1);
-    transform: scale3d(1.1, 1.1, 1.1);
+    -webkit-transform: scale3d(1.2, 1, 1.2);
+      transform: scale3d(1.2, 1, 1.2);
   }
 }
 .sticky-header {

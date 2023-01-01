@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^4.9.9", // 3034
+    "@material-ui/core": "^4.9.9",
     "bootstrap": "^4.3.1",
     "node-sass": "^4.13.1",
     "react": "^16.12.0",

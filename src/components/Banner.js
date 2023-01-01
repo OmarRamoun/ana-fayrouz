@@ -9,7 +9,7 @@ class Banner extends Component {
   render() {
     return (
       <section id='home' className='hero hero-slider-wrapper hero-style-1'>
-        <div className='hero-slider'>
+        <div className='hero-slider' style={{height: '100vh'}}>
           <div className='slide'>
             <div className='slider-image'>
               <img src={Slides} alt='' />
@@ -18,7 +18,7 @@ class Banner extends Component {
               <div className='row'>
                 <div className='col col-md-8 col-sm-12 slide-caption'>
                   <div className='slide-subtitle'>
-                    <h4>I Am Isra Arvin</h4>
+                    <h1>I Am Isra Arvin</h1>
                   </div>
                   <div className='slide-title'>
                     <h2>
@@ -46,30 +46,31 @@ class Banner extends Component {
             </div>
           </div>
         </div>
-<div class="sketchfab-embed-wrapper"> <iframe title="Aquatic Alien" frameborder="0" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/dd2b745fb47940d693a02063d152720e/embed?autospin=1&autostart=1&preload=1&ui_theme=dark&dnt=1"> </iframe> </div>
+
         <div className='copy'>
           <p>Creative Designer And Developer</p>
         </div>
-        <div className='social-links'>
-          <ul>
+        <div className='social-links position-fixed fixed-bottom'>
+          <ul style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
             <li>
               <Link to='#'>
-                <i className='fa fa-facebook'></i>
+                <i style={{fontSize: '28px'}} className='fa fa-linkedin'></i>
               </Link>
             </li>
             <li>
               <Link to='#'>
-                <i className='fa fa-twitter'></i>
+                {/* <i className='fa fa-twitter'></i> */}
+                <img src="https://img.icons8.com/ios-filled/25/ffffff/upwork.png"/>
               </Link>
             </li>
             <li>
               <Link to='#'>
-                <i className='fa fa-linkedin'></i>
+                <i style={{fontSize: '28px'}} className='fa fa-github'></i>
               </Link>
             </li>
             <li>
               <Link to='#'>
-                <i className='fa fa-pinterest'></i>
+                <i style={{fontSize: '25px'}} className='fa fa-envelope'></i>
               </Link>
             </li>
           </ul>
