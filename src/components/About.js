@@ -12,7 +12,7 @@ class About extends Component {
             <div className='row'>
               <div className='col-lg-6'>
                 <div className='about-img'>
-                  <img src={aboutImg} alt='' />
+                  <img style={{marginTop: '52px'}} src={aboutImg} alt='' />
                 </div>
               </div>
               <div className='col-lg-6'>
