@@ -16,7 +16,7 @@ class Banner extends Component {
             </div>
             <div className='container'>
               <div className='row'>
-                <div className='col col-md-8 col-sm-12 slide-caption'>
+                <div style={{marginTop: '20px'}} className='col col-md-8 col-sm-12 slide-caption'>
                   <div className='slide-subtitle'>
                     <h1>I Am Isra Arvin</h1>
                   </div>
@@ -70,7 +70,7 @@ class Banner extends Component {
             </li>
             <li>
               <Link to='#'>
-                <i style={{fontSize: '25px'}} className='fa fa-envelope'></i>
+                <i style={{fontSize: '23px'}} className='fa fa-envelope'></i>
               </Link>
             </li>
           </ul>
