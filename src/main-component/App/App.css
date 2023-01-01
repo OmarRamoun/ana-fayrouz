@@ -176,7 +176,7 @@ button:focus {
   color: #ddd;
   margin-bottom: 10px;
 }
-
+/*  #002b2a */
 .template-btn {
   font-family: 'Oswald', sans-serif;
   height: 50px;
@@ -199,6 +199,30 @@ button:focus {
 .template-btn:hover {
   background: #ddd;
   color: #333;
+}
+
+.template-secondary {
+  font-family: 'Oswald', sans-serif;
+  height: 50px;
+  line-height: 47px;
+  font-size: 16px;
+  font-size: 1.06667rem;
+  color: #002b2a;
+  border: 1px solid #002b2a;
+  padding: 0 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  border-radius: 50px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.template-secondary:hover {
+  background: #002b2a;
+  color: rgb(0, 0, 0);
 }
 /*** back to top **/
 .back-to-top {
@@ -1361,8 +1385,8 @@ button:focus {
       transform: scale3d(1, 1, 1);
   }
   to {
-    -webkit-transform: scale3d(1.2, 1, 1.2);
-      transform: scale3d(1.2, 1, 1.2);
+    -webkit-transform: scale3d(1.2, 1.2, 1.2);
+      transform: scale3d(1.2, 1.2, 1.2);
   }
 }
 .sticky-header {

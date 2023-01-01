@@ -30,10 +30,10 @@ const HomePage = () => {
       <Service />
       <Portfolio />
       <Testimonial />
-      <PricingPlan />
-      <Blog />
+      {/* <PricingPlan /> */}
+      {/* <Blog /> */}
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
       <Scrollbar />
     </Fragment>
   );

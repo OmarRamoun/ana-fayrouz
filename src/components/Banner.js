@@ -37,7 +37,7 @@ class Banner extends Component {
                     <a href='#contact' className='template-btn go-contact-area mr-3' style={{display: 'flex', alignItems: 'center', justifyContent: 'center', height: '50px', paddingInline: '30px'}}>
                       Contact Me
                     </a>
-                    <a href='#contact' className='btn btn-outline-success btn-lg round go-contact-area' style={{display: 'flex', alignItems: 'center', justifyContent: 'center', 'borderRadius': '40px', height: '50px', fontFamily: "'Oswald', sans-serif", textTransform: 'uppercase', paddingInline: '30px'}}>
+                    <a href='#contact' className='btn template-secondary btn-lg round go-contact-area' style={{display: 'flex', alignItems: 'center', justifyContent: 'center', 'borderRadius': '40px', height: '50px', fontFamily: "'Oswald', sans-serif", textTransform: 'uppercase', paddingInline: '30px'}}>
                       Download CV
                     </a>
                   </div>

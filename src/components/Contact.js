@@ -39,7 +39,7 @@ class Contact extends Component {
               </div>
             </div>
           </div>
-          <div className='row'>
+          {/* <div className='row'>
             <div className='col col-xs-12'>
               <div className='contact-map'>
                 <iframe
@@ -48,7 +48,7 @@ class Contact extends Component {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className='white_svg svg_white'>
           <svg x='0px' y='0px' viewBox='0 186.5 1920 113.5'>
