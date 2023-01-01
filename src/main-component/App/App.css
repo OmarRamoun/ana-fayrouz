@@ -222,7 +222,7 @@ button:focus {
 }
 .template-secondary:hover {
   background: #002b2a;
-  color: rgb(0, 0, 0);
+  color: #bfb9b9;
 }
 /*** back to top **/
 .back-to-top {

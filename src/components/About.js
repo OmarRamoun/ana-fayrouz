@@ -30,7 +30,7 @@ class About extends Component {
                     IpsumThere are many variations of passages of Lorem Ipsum available, but the
                     majority have suffered alteration in some form,
                   </p>
-                  <Link to='/' className='template-btn'>
+                  <Link to='/' className='template-secondary'>
                     Download Resume
                   </Link>
                 </div>
