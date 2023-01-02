@@ -28,10 +28,6 @@ html {
   scroll-behavior: smooth;
 }
 
-#header {
-  backdrop-filter: blur(10px);
-}
-
 body {
   font-family: 'Heebo', sans-serif;
   background-color: #111;

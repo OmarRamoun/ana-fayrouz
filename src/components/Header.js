@@ -19,7 +19,7 @@ class Header extends Component {
       <header id='header' className='site-header header-style-1' >
         <nav className='navigation navbar navbar-default'>
           <div className='container-fluid'>
-            <div className='navbar-header'>
+            <div className='navbar-header' style={{backdropFilter: 'blur(10px)'}}>
               <button
                 type='button'
                 className='open-btn'
