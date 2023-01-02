@@ -16,7 +16,7 @@ class Header extends Component {
 
   render() {
     return (
-      <header id='header' className='site-header header-style-1' style={{backdropFilter: 'blur(10px)'}}>
+      <header id='header' className='site-header header-style-1' style={!this.state.isOpen ? {backdropFilter: 'blur(10px)'} : {}}>
         <nav className='navigation navbar navbar-default'>
           <div className='container-fluid'>
             <div className='navbar-header'>
