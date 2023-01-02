@@ -81,8 +81,8 @@ class Header extends Component {
                 </li>
               </ul>
             </div>
-            <div className='menu-open-btn-holder'>
-              <button className='menu-open-btn' onClick={() => this.setState({isOpen: true})}>
+            <div className='menu-open-btn-holder mb-2' style={{top: '12px'}}>
+              <button className='menu-open-btn mb-2' onClick={() => this.setState({isOpen: true})}>
                 <span style={{height: '4px'}}></span>
                 <span style={{height: '4px'}}></span>
                 <span style={{height: '4px'}}></span>

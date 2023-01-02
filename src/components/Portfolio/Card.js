@@ -18,7 +18,7 @@ const Card = ({className, src, onClick}) => {
         }}
       >
         <button className='view-icon' style={{background: 'none', border: 'none'}}>
-          <i className='fa fa-plus' aria-hidden='true'></i>
+          {/* <i className='fa fa-plus' aria-hidden='true'></i> */}
         </button>
       </div>
     </div>
