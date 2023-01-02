@@ -13,7 +13,7 @@ class Banner extends Component {
         <div className='hero-slider hero-slider-bg'>
           <div className='slide'>
             <div className='slider-image'>
-              <img style={{filter: 'brightness(0.5) blur(2px)'}} src={Slides} alt='' />
+              <img style={{filter: 'brightness(0.4) blur(1px)'}} src={Slides} alt='' />
             </div>
             <div className='container'>
               <div className='row'>
