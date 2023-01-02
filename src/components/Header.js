@@ -16,7 +16,7 @@ class Header extends Component {
 
   render() {
     return (
-      <header id='header' className='site-header header-style-1' >
+      <header id='header' className='site-header header-style-1'>
         <nav className='navigation navbar navbar-default'>
           <div className='container-fluid'>
             <div className='navbar-header' style={{backdropFilter: 'blur(10px)'}}>
@@ -34,15 +34,20 @@ class Header extends Component {
                 <img style={{width: '47px', filter: 'invert(1)'}} src={Logo} alt='' />
               </Link>
             </div>
-            <div
+            {this.state.isOpen && <div
               id='navbar'
-              className={
-                this.state.isOpen
-                  ? 'navbar-collapse navigation-holder active'
-                  : 'navbar-collapse navigation-holder'
-              }
+              className='navbar-collapse navigation-holder'
+              style={{
+                position: 'fixed',
+                top: '0',
+                right: '0',
+              }}
             >
-              <button style={{zIndex: 1000000}} className='close-navbar' onClick={() => this.setState({isOpen: false})}>
+              <button
+                style={{zIndex: 1000000}}
+                className='close-navbar'
+                onClick={() => this.setState({isOpen: false})}
+              >
                 <i className='fa fa-times' aria-hidden='true'></i>
               </button>
               <button className='close-navbar-2' onClick={() => this.setState({isOpen: false})}>
@@ -75,7 +80,7 @@ class Header extends Component {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div>}
             <div className='menu-open-btn-holder mb-2' style={{top: '12px'}}>
               <button className='menu-open-btn mb-2' onClick={() => this.setState({isOpen: true})}>
                 <span style={{height: '4px'}}></span>
