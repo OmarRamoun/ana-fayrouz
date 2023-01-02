@@ -35,6 +35,7 @@ body {
   font-size: 1rem;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  background-attachment: fixed;
 }
 
 @media (max-width: 767px) {
@@ -1191,8 +1192,8 @@ button:focus {
   overflow: hidden;
 }
 .hero .hero-slider .slider-image {
-  -webkit-animation: kenburn 25s 2s alternate infinite;
-  -animation: kenburn 25s 2s alternate infinite;
+  -webkit-animation: kenburn 20s 2s alternate infinite;
+  -animation: kenburn 20s 2s alternate infinite;
 }
 .hero .slide-caption {
   padding-top: 0px;
