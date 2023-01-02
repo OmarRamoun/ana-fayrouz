@@ -7,8 +7,11 @@ const Card = ({className, src, onClick}) => {
         onClick={onClick}
         style={{
           cursor: 'pointer',
-          height: '100%',
-          top: '0',
+          height: '93%',
+          width: '87%',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
