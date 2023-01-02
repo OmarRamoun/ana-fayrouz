@@ -50,7 +50,7 @@ class Testimonial extends Component {
           <p>Words of my Clients</p>
         </div>
         <div className='container'>
-          <div className='testimonial-active'>
+          <div className='testimonial-active' style={{paddingInline: '30px'}}>
             <Slider {...settings}>
               <div className='testimonial-wrap'>
                 <div className='testimonial-item'>

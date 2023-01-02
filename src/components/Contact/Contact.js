@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 
-import ContactForm from './form';
+import ContactForm from '../Form/form';
+
+import './Contact.style.css';
 
 class Contact extends Component {
   render() {
@@ -9,7 +11,7 @@ class Contact extends Component {
         <div className='container'>
           <div className='row'>
             <div className='col-lg-5 col-md-12 col-sm-12'>
-              <div className='contact-page-item'>
+              <div className='contact-page-item contact-inner-container'>
                 <h2>My Contacts</h2>
                 <p>
                   Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in

@@ -17,7 +17,7 @@ class About extends Component {
                 </div>
               </div>
               <div className='col-lg-6'>
-                <div className='about-content'>
+                <div className='about-content' style={{paddingInline: '30px'}}>
                   <h2>About Me</h2>
                   <p>
                     There are many variations of passages of Lorem Ipsum available, but the majority

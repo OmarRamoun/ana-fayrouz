@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+import './form.style.css';
+
 class ContactForm extends Component {
   state = {
     name: '',
@@ -75,7 +77,7 @@ class ContactForm extends Component {
 
     return (
       <form onSubmit={this.submitHandler} className='form'>
-        <div className='row'>
+        <div className='row form-container'>
           <div className='col-lg-6 col-md-12'>
             <div className='form-field'>
               <input

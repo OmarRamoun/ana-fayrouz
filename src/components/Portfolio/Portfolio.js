@@ -129,7 +129,7 @@ const Porfolio = () => {
                   </li>
                 </ul>
               </div>
-              <div className='gallery-container gallery-fancybox masonry-gallery payra-masonary'>
+              <div className='gallery-container gallery-fancybox masonry-gallery payra-masonary' style={{paddingInline: '20px'}}>
                 <Card
                   className={
                     state.onPrintDesign

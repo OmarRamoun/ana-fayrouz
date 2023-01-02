@@ -1,10 +1,10 @@
 import React, {Fragment, useEffect} from 'react';
 import Banner from '../../components/Banner/Banner';
 import About from '../../components/About/About';
-import Service from '../../components/Service';
+import Service from '../../components/Service/Service';
 import PricingPlan from '../../components/PricingPlan';
 import Blog from '../../components/Blog';
-import Contact from '../../components/Contact';
+import Contact from '../../components/Contact/Contact';
 import Footer from '../../components/Footer';
 import Testimonial from '../../components/Testimonial';
 import Portfolio from '../../components/Portfolio/Portfolio';
