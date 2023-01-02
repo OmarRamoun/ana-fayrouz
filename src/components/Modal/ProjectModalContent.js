@@ -31,7 +31,7 @@ const ProjectModalContent = ({projectInfo}) => {
               <span className='project-modal-content__item__value'>{preview.title}</span>
             </a>
           </h3>
-          <h3 className='project-modal-content__item col-6'>
+          <h3 className='project-modal-content__item'>
             Source:{' '}
             <a href={source.link} target='_blank' rel='noopener noreferrer'>
               <span className='project-modal-content__item__value'>{source.title}</span>
