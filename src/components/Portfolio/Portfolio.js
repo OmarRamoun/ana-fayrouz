@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, useState} from 'react';
 import Gallery_1 from '../../Assets/Images/gallery/img-1.jpg';
 import Gallery_2 from '../../Assets/Images/gallery/img-2.jpg';
 import Gallery_3 from '../../Assets/Images/gallery/img-3.jpg';
@@ -6,72 +6,92 @@ import Gallery_4 from '../../Assets/Images/gallery/img-4.jpg';
 import Gallery_5 from '../../Assets/Images/gallery/img-5.jpg';
 import Gallery_6 from '../../Assets/Images/gallery/img-6.jpg';
 import {Link} from 'react-router-dom';
+import Card from './Card';
+import Modal from '../../components/Modal/Modal';
+import ProjectModalContent from '../../components/Modal/ProjectModalContent';
 
-class Porfolio extends Component {
-  state = {
+const Porfolio = () => {
+  const [state, setState] = useState({
     onWebDesign: false,
     onPrintDesign: false,
     onWebApp: false,
     onPhotography: false,
     isOpen: false,
+  });
+
+  const allElement = (event) => {
+    event.preventDefault();
+    setState({
+      onWebApp: true,
+      onPrintDesign: true,
+      onWebDesign: true,
+      onPhotography: true,
+    });
   };
 
-  render() {
-    const allElement = (event) => {
-      event.preventDefault();
-      this.setState({
-        onWebApp: true,
-        onPrintDesign: true,
-        onWebDesign: true,
-        onPhotography: true,
-      });
-    };
+  const webDesign = (event) => {
+    event.preventDefault();
+    setState({
+      onWebDesign: true,
+      onPrintDesign: false,
+      onWebApp: false,
+      onPhotography: false,
+      isOpen: true,
+    });
+  };
 
-    const webDesign = (event) => {
-      event.preventDefault();
-      this.setState({
-        onWebDesign: true,
-        onPrintDesign: false,
-        onWebApp: false,
-        onPhotography: false,
-        isOpen: true,
-      });
-    };
+  const printDesign = (event) => {
+    event.preventDefault();
+    setState({
+      onPrintDesign: true,
+      onWebDesign: false,
+      onWebApp: false,
+      onPhotography: false,
+      isOpen: true,
+    });
+  };
 
-    const printDesign = (event) => {
-      event.preventDefault();
-      this.setState({
-        onPrintDesign: true,
-        onWebDesign: false,
-        onWebApp: false,
-        onPhotography: false,
-        isOpen: true,
-      });
-    };
+  const webApp = (event) => {
+    event.preventDefault();
+    setState({
+      onWebApp: true,
+      onPrintDesign: false,
+      onWebDesign: false,
+      onPhotography: false,
+      isOpen: true,
+    });
+  };
 
-    const webApp = (event) => {
-      event.preventDefault();
-      this.setState({
-        onWebApp: true,
-        onPrintDesign: false,
-        onWebDesign: false,
-        onPhotography: false,
-        isOpen: true,
-      });
-    };
+  const Photography = (event) => {
+    event.preventDefault();
+    setState({
+      onPhotography: true,
+      onWebApp: false,
+      onPrintDesign: false,
+      onWebDesign: false,
+      isOpen: true,
+    });
+  };
 
-    const Photography = (event) => {
-      event.preventDefault();
-      this.setState({
-        onPhotography: true,
-        onWebApp: false,
-        onPrintDesign: false,
-        onWebDesign: false,
-        isOpen: true,
-      });
-    };
+  const modalItems = {
+    title: 'Rene',
+    details: 'Best project on the web, just for soso my love',
+    technologies: ['html', 'css', 'js'],
+    preview: {title: 'rene.com', link: 'https://google.com'},
+    source: {title: 'github', link: 'https://github.com/rene'},
+    client: 'IO Compnay',
+    image: Gallery_6,
+  };
 
-    return (
+  const [showModal1, setShowModal1] = useState(false);
+  const [showModal2, setShowModal2] = useState(false);
+  const [showModal3, setShowModal3] = useState(false);
+  const [showModal4, setShowModal4] = useState(false);
+  const [showModal5, setShowModal5] = useState(false);
+  const [showModal6, setShowModal6] = useState(false);
+
+  return (
+    <>
       <section id='protfolio' className='gallery-section section-padding'>
         <div className='container'>
           <div className='row'>
@@ -110,120 +130,90 @@ class Porfolio extends Component {
                 </ul>
               </div>
               <div className='gallery-container gallery-fancybox masonry-gallery payra-masonary'>
-                <div
+                <Card
                   className={
-                    this.state.onPrintDesign
+                    state.onPrintDesign
                       ? 'grid active'
-                      : 'grid' && this.state.onWebApp
+                      : 'grid' && state.onWebApp
                       ? 'grid active'
-                      : 'grid' && this.state.isOpen
+                      : 'grid' && state.isOpen
                       ? 'grid'
                       : 'grid open'
                   }
-                >
-                  <img src={Gallery_1} className='img img-responsive' alt='' />
-                  <div className='icon'>
-                    <Link to='/' className='view-icon'>
-                      <i className='fa fa-plus' aria-hidden='true'></i>
-                    </Link>
-                  </div>
-                </div>
-                <div
+                  src={Gallery_1}
+                  onClick={() => setShowModal1(true)}
+                />
+                <Card
                   className={
-                    this.state.onWebDesign
+                    state.onWebDesign
                       ? 'grid active'
-                      : 'grid' && this.state.onPrintDesign
+                      : 'grid' && state.onPrintDesign
                       ? 'grid active'
-                      : 'grid' && this.state.onWebApp
+                      : 'grid' && state.onWebApp
                       ? 'grid active'
-                      : 'grid' && this.state.onPhotography
+                      : 'grid' && state.onPhotography
                       ? 'grid active'
-                      : 'grid' && this.state.isOpen
+                      : 'grid' && state.isOpen
                       ? 'grid'
                       : 'grid open'
                   }
-                >
-                  <img src={Gallery_2} alt='' className='img img-responsive' />
-                  <div className='icon'>
-                    <Link to='/' className='view-icon'>
-                      <i className='fa fa-plus' aria-hidden='true'></i>
-                    </Link>
-                  </div>
-                </div>
-                <div
+                  src={Gallery_2}
+                  onClick={() => setShowModal2(true)}
+                />
+                <Card
                   className={
-                    this.state.onWebDesign
+                    state.onWebDesign
                       ? 'grid active'
-                      : 'grid' && this.state.onWebApp
+                      : 'grid' && state.onWebApp
                       ? 'grid active'
-                      : 'grid' && this.state.isOpen
+                      : 'grid' && state.isOpen
                       ? 'grid'
                       : 'grid open'
                   }
-                >
-                  <img src={Gallery_6} alt='' className='img img-responsive' />
-                  <div className='icon'>
-                    <Link to='/' className='view-icon'>
-                      <i className='fa fa-plus' aria-hidden='true'></i>
-                    </Link>
-                  </div>
-                </div>
-                <div
+                  src={Gallery_3}
+                  onClick={() => setShowModal3(true)}
+                />
+                <Card
                   className={
-                    this.state.onPrintDesign
+                    state.onPrintDesign
                       ? 'grid active'
-                      : 'grid' && this.state.onPhotography
+                      : 'grid' && state.onPhotography
                       ? 'grid active'
-                      : 'grid' && this.state.isOpen
+                      : 'grid' && state.isOpen
                       ? 'grid'
                       : 'grid open'
                   }
-                >
-                  <img src={Gallery_5} alt='' className='img img-responsive' />
-                  <div className='icon'>
-                    <Link to='/' className='view-icon'>
-                      <i className='fa fa-plus' aria-hidden='true'></i>
-                    </Link>
-                  </div>
-                </div>
-                <div
+                  src={Gallery_4}
+                  onClick={() => setShowModal4(true)}
+                />
+                <Card
                   className={
-                    this.state.onPrintDesign
+                    state.onPrintDesign
                       ? 'grid active'
-                      : 'grid' && this.state.onPhotography
+                      : 'grid' && state.onPhotography
                       ? 'grid active'
-                      : 'grid' && this.state.isOpen
+                      : 'grid' && state.isOpen
                       ? 'grid'
                       : 'grid open'
                   }
-                >
-                  <img src={Gallery_3} alt='' className='img img-responsive' />
-                  <div className='icon'>
-                    <Link to='/' className='view-icon'>
-                      <i className='fa fa-plus' aria-hidden='true'></i>
-                    </Link>
-                  </div>
-                </div>
-                <div
+                  src={Gallery_5}
+                  onClick={() => setShowModal5(true)}
+                />
+                <Card
                   className={
-                    this.state.onPrintDesign
+                    state.onPrintDesign
                       ? 'grid active'
-                      : 'grid' && this.state.onWebApp
+                      : 'grid' && state.onWebApp
                       ? 'grid active'
-                      : 'grid' && this.state.onPhotography
+                      : 'grid' && state.onPhotography
                       ? 'grid active'
-                      : 'grid' && this.state.isOpen
+                      : 'grid' && state.isOpen
                       ? 'grid'
                       : 'grid open'
                   }
-                >
-                  <img src={Gallery_4} alt='' className='img img-responsive' />
-                  <div className='icon'>
-                    <Link to='/' className='view-icon'>
-                      <i className='fa fa-plus' aria-hidden='true'></i>
-                    </Link>
-                  </div>
-                </div>
+                  src={Gallery_6}
+                  onClick={() => setShowModal6(true)}
+                />
               </div>
             </div>
           </div>
@@ -234,8 +224,26 @@ class Porfolio extends Component {
           </svg>
         </div>
       </section>
-    );
-  }
-}
+      <Modal show={showModal1} onClose={() => setShowModal1(!showModal1)}>
+        <ProjectModalContent projectInfo={modalItems} />
+      </Modal>
+      <Modal show={showModal2} onClose={() => setShowModal2(!showModal2)}>
+        <ProjectModalContent projectInfo={modalItems} />
+      </Modal>
+      <Modal show={showModal3} onClose={() => setShowModal3(!showModal3)}>
+        <ProjectModalContent projectInfo={modalItems} />
+      </Modal>
+      <Modal show={showModal4} onClose={() => setShowModal4(!showModal4)}>
+        <ProjectModalContent projectInfo={modalItems} />
+      </Modal>
+      <Modal show={showModal5} onClose={() => setShowModal5(!showModal5)}>
+        <ProjectModalContent projectInfo={modalItems} />
+      </Modal>
+      <Modal show={showModal6} onClose={() => setShowModal6(!showModal6)}>
+        <ProjectModalContent projectInfo={modalItems} />
+      </Modal>
+    </>
+  );
+};
 
 export default Porfolio;

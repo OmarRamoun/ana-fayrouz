@@ -1,32 +1,25 @@
-                    this.state.onPrintDesign
-                      ? 'grid active'
-                      : 'grid' && this.state.onWebApp
-                      ? 'grid active'
-                      : 'grid' && this.state.isOpen
-                      ? 'grid'
-                      : 'grid open'
-                >
+const Card = ({className, src, onClick}) => {
+  return (
+    <div className={className}>
+      <img src={src} className='img img-responsive' alt='' />
+      <div
+        className='icon'
+        onClick={onClick}
+        style={{
+          cursor: 'pointer',
+          height: '100%',
+          top: '0',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <button className='view-icon' style={{background: 'none', border: 'none'}}>
+          <i className='fa fa-plus' aria-hidden='true'></i>
+        </button>
+      </div>
+    </div>
+  );
+};
 
-                    this.state.onWebDesign
-                      ? 'grid active'
-                      : 'grid' && this.state.onWebApp
-                      ? 'grid active'
-                      : 'grid' && this.state.isOpen
-                      ? 'grid'
-                      : 'grid open'
-
-                <div
-                  className={
-                    this.state.onWebDesign
-                      ? 'grid active'
-                      : 'grid' && this.state.onPrintDesign
-                      ? 'grid active'
-                      : 'grid' && this.state.onWebApp
-                      ? 'grid active'
-                      : 'grid' && this.state.onPhotography
-                      ? 'grid active'
-                      : 'grid' && this.state.isOpen
-                      ? 'grid'
-                      : 'grid open'
-                  }
-                >
+export default Card;

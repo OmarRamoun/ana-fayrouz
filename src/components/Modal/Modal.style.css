@@ -14,14 +14,14 @@
 .modal-content-box {
   background-color: rgb(28, 30, 31);
   border-radius: 4px;
-  height: 620px;
-  width: 1000px;
+  height: 80vh;
+  width: 70vw;
   overflow: auto;
 }
 
 .modal-close {
   align-self: flex-start;
-  margin-top: 4%;
+  margin-top: 10vh;
   margin-left: 6px;
   border-radius: 50%;
   width: 30px;

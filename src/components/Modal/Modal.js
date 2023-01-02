@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import {useEffect} from 'react';
 import './Modal.style.css';
 
 const Modal = ({show, onClose, children}) => {
@@ -14,7 +14,14 @@ const Modal = ({show, onClose, children}) => {
   return (
     <>
       {show && (
-        <div className='modal-root'>
+        <div
+          className='modal-root'
+          onClick={(event) => {
+            if (event.currentTarget === event.target) {
+              onClose();
+            }
+          }}
+        >
           <div className='modal-content-box'>{children}</div>
           <button className='modal-close' onClick={onClose}>
             <i className='fa fa-times' aria-hidden='true'></i>
