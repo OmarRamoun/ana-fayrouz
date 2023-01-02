@@ -1095,7 +1095,7 @@ button:focus {
   vertical-align: middle;
 }
 
-.hero .copy {
+.copy {
   font-family: 'Oswald', sans-serif;
   width: 100%;
   font-size: 16px;
@@ -1106,6 +1106,11 @@ button:focus {
   right: -10px;
   transform: rotate(-13deg);
   display: block;
+}
+
+.testimonial-area .copy {
+  right: 222px;
+  font-size: 22px;
 }
 
 @media (max-width: 991px) {
@@ -1505,7 +1510,7 @@ button:focus {
   content: '';
   position: absolute;
   left: 0;
-  top: 60%;
+  top: 70%;
   width: 180px;
   height: 5px;
   background: #666;

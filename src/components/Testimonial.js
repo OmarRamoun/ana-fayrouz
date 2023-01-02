@@ -46,6 +46,9 @@ class Testimonial extends Component {
     };
     return (
       <div className='testimonial-area'>
+        <div className='copy'>
+          <p>Words of my Clients</p>
+        </div>
         <div className='container'>
           <div className='testimonial-active'>
             <Slider {...settings}>

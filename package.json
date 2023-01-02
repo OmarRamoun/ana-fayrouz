@@ -7,6 +7,7 @@
     "bootstrap": "latest",
     "html2canvas": "latest",
     "node-sass": "latest",
+    "proptypes": "^1.1.0",
     "react": "latest",
     "react-anchor-link-smooth-scroll": "latest",
     "react-animated-css": "latest",

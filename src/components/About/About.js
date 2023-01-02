@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import aboutImg from '../Assets/Images/about.png';
+import aboutImg from '../../Assets/Images/about.png';
+import './About.css';
 import {Link} from 'react-router-dom';
 
 class About extends Component {
@@ -30,7 +31,7 @@ class About extends Component {
                     IpsumThere are many variations of passages of Lorem Ipsum available, but the
                     majority have suffered alteration in some form,
                   </p>
-                  <Link to='/' className='template-secondary'>
+                  <Link to='/' className='template-secondary hover-border-none' style={{borderColor: '#bfb9b9'}}>
                     Download Resume
                   </Link>
                 </div>
