@@ -16,10 +16,10 @@ class Header extends Component {
 
   render() {
     return (
-      <header id='header' className='site-header header-style-1'>
+      <header id='header' className='site-header header-style-1' style={{backdropFilter: 'blur(10px)'}}>
         <nav className='navigation navbar navbar-default'>
           <div className='container-fluid'>
-            <div className='navbar-header' style={{backdropFilter: 'blur(10px)'}}>
+            <div className='navbar-header'>
               <button
                 type='button'
                 className='open-btn'
