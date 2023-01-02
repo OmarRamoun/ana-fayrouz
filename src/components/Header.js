@@ -16,8 +16,8 @@ class Header extends Component {
 
   render() {
     return (
-      <header id='header' className='site-header header-style-1' style={{backdropFilter: 'blur(20px)'}}>
-        <nav className='navigation navbar navbar-default'>
+      <header id='header' className='site-header header-style-1' >
+        <nav className='navigation navbar navbar-default' style={{backdropFilter: 'blur(20px)'}}>
           <div className='container-fluid'>
             <div className='navbar-header'>
               <button
