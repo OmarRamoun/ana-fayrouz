@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import Gallery_1 from '../Assets/Images/gallery/img-1.jpg';
-import Gallery_2 from '../Assets/Images/gallery/img-2.jpg';
-import Gallery_3 from '../Assets/Images/gallery/img-3.jpg';
-import Gallery_4 from '../Assets/Images/gallery/img-4.jpg';
-import Gallery_5 from '../Assets/Images/gallery/img-5.jpg';
-import Gallery_6 from '../Assets/Images/gallery/img-6.jpg';
+import Gallery_1 from '../../Assets/Images/gallery/img-1.jpg';
+import Gallery_2 from '../../Assets/Images/gallery/img-2.jpg';
+import Gallery_3 from '../../Assets/Images/gallery/img-3.jpg';
+import Gallery_4 from '../../Assets/Images/gallery/img-4.jpg';
+import Gallery_5 from '../../Assets/Images/gallery/img-5.jpg';
+import Gallery_6 from '../../Assets/Images/gallery/img-6.jpg';
 import {Link} from 'react-router-dom';
 
 class Porfolio extends Component {
