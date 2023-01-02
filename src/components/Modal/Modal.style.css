@@ -21,8 +21,8 @@
 
 .modal-close {
   position: fixed;
-  top: 4vh;
-  right: 3vw;
+  top: 8vh;
+  right: 14vw;
   border-radius: 50%;
   width: 30px;
   height: 30px;
@@ -75,6 +75,10 @@
   .project-modal-content__info .col-6 {
     width: 100%;
   }
+  .modal-close {
+  top: 4vh;
+  right: 3vw;
+}
 }
 
 @media all and (max-width: 576px) {
