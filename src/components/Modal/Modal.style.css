@@ -49,17 +49,14 @@
 }
 
 .project-modal-content__item {
-  color: #fff;
+  color: #bfb9b9;
 }
 
-.project-modal-content__item a {
-  text-decoration: underline;
-  text-decoration-color: #fff;
-}
+/* bfb9b9 */
 
 .project-modal-content__item__value {
   font-weight: bold;
-  color: rgb(97, 97, 97);
+  color: #808b8b;
 }
 
 .project-modal-content__image {
