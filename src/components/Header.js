@@ -42,7 +42,7 @@ class Header extends Component {
                   : 'navbar-collapse navigation-holder'
               }
             >
-              <button className='close-navbar' onClick={() => this.setState({isOpen: false})}>
+              <button style={{zIndex: 1000000}} className='close-navbar' onClick={() => this.setState({isOpen: false})}>
                 <i className='fa fa-times' aria-hidden='true'></i>
               </button>
               <button className='close-navbar-2' onClick={() => this.setState({isOpen: false})}>
@@ -67,11 +67,6 @@ class Header extends Component {
                 <li className='protfolio'>
                   <a href='#protfolio'>
                     <img src={Home_4} alt='' />
-                  </a>
-                </li>
-                <li className='blog'>
-                  <a href='#blog'>
-                    <img src={Home_5} alt='' />
                   </a>
                 </li>
                 <li className='contact'>

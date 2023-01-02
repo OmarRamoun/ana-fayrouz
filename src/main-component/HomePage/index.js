@@ -1,5 +1,5 @@
 import React, {Fragment, useEffect} from 'react';
-import Banner from '../../components/Banner';
+import Banner from '../../components/Banner/Banner';
 import About from '../../components/About/About';
 import Service from '../../components/Service';
 import PricingPlan from '../../components/PricingPlan';

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import aboutImg from '../../Assets/Images/about.png';
-import './About.css';
+import './About.style.css';
 import {Link} from 'react-router-dom';
 
 class About extends Component {

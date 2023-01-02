@@ -3,13 +3,14 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import {Typewriter} from 'react-simple-typewriter';
 // import Slides from '../Assets/Images/slide-2.jpg';
-import Slides from '../Assets/Images/home/amoled.jpg';
+import Slides from '../../Assets/Images/home/amoled.jpg';
+import './Banner.style.css';
 
 class Banner extends Component {
   render() {
     return (
       <section id='home' className='hero hero-slider-wrapper hero-style-1'>
-        <div className='hero-slider' style={{height: '100vh'}}>
+        <div className='hero-slider hero-slider-bg'>
           <div className='slide'>
             <div className='slider-image'>
               <img src={Slides} alt='' />

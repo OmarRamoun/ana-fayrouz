@@ -1,0 +1,23 @@
+.hover-border-none:hover {
+  border-color: transparent !important;
+}
+
+@media all and (max-width: 767px) {
+  .about-img {
+    width: 40vw !important;
+    height: 40vw !important;
+  }
+  .about-img::before {
+    width: 56vw !important;
+    height: 56vw !important;
+    right: 2vw !important;
+  }
+  .about-img::after {
+    width: 56vw !important;
+    height: 56vw !important;
+    right: 4vw !important;
+  }
+  .about-content {
+    margin-top: 150px;
+  }
+}

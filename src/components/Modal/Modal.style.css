@@ -70,13 +70,13 @@
 @media all and (max-width: 768px) {
   .modal-content-box {
     width: 90vw;
-    height: 90vh;
+    height: 82vh;
   }
   .project-modal-content__info .col-6 {
     width: 100%;
   }
   .modal-close {
-  top: 4vh;
+  top: 8vh;
   right: 3vw;
 }
 }
