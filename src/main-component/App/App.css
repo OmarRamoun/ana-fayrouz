@@ -23,6 +23,13 @@ TABLE OF CONTENTS:
 /*--------------------------------------------------------------
 #0.1    Template Reset Style
 --------------------------------------------------------------*/
+.fixed-navbar.active .site-header.header-style-1 {
+  background: none !important;
+}
+.header-style-1 {
+  background: none !important
+}
+
 html {
   font-size: 15px;
   scroll-behavior: smooth;

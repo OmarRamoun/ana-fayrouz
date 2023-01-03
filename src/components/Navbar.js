@@ -15,7 +15,7 @@ export default function Navbar() {
 
   return (
     <div className={className}>
-      <Header />
+      <Header scroll={scroll > 100} />
     </div>
   );
 }
