@@ -1116,7 +1116,8 @@ button:focus {
 }
 
 .testimonial-area .copy {
-  right: 222px;
+  right: 8vw;
+  bottom: -3vw;
   font-size: 22px;
 }
 
