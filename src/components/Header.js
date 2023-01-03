@@ -16,7 +16,11 @@ class Header extends Component {
 
   render() {
     return (
-      <header id='header' className='site-header header-style-1' style={!this.state.isOpen ? {backdropFilter: 'blur(10px)'} : {}}>
+      <header
+        id='header'
+        className='site-header header-style-1'
+        style={!this.state.isOpen ? {backdropFilter: 'blur(10px)'} : {}}
+      >
         <nav className='navigation navbar navbar-default'>
           <div className='container-fluid'>
             <div className='navbar-header'>
@@ -34,53 +38,76 @@ class Header extends Component {
                 <img style={{width: '47px', filter: 'invert(1)'}} src={Logo} alt='' />
               </Link>
             </div>
-            {this.state.isOpen && <div
-              id='navbar'
-              className='navbar-collapse navigation-holder'
-              style={{
-                position: 'fixed',
-                top: '0',
-                right: '0',
-              }}
-            >
-              <button
-                style={{zIndex: 1000000}}
-                className='close-navbar'
-                onClick={() => this.setState({isOpen: false})}
+            {this.state.isOpen && (
+              <div
+                style={{
+                  position: 'fixed',
+                  top: 0,
+                  left: 0,
+                  width: '100vw',
+                  height: '100vh',
+                  backgroundColor: 'rgba(0,0,0,0)',
+                }}
+                onClick={(event) => {
+                  if (event.currentTarget === event.target) {
+                    this.setState({isOpen: false});
+                  }
+                }}
               >
-                <i className='fa fa-times' aria-hidden='true'></i>
-              </button>
-              <button className='close-navbar-2' onClick={() => this.setState({isOpen: false})}>
-                <i className='fa fa-times' aria-hidden='true'></i>
-              </button>
-              <ul className='nav navbar-nav'>
-                <li className='home'>
-                  <a href='#home'>
-                    <img src={Home_1} alt='' />
-                  </a>
-                </li>
-                <li className='about'>
-                  <a href='#about'>
-                    <img src={Home_2} alt='' />
-                  </a>
-                </li>
-                <li className='service'>
-                  <a href='#service'>
-                    <img src={Home_3} alt='' />
-                  </a>
-                </li>
-                <li className='protfolio'>
-                  <a href='#protfolio'>
-                    <img src={Home_4} alt='' />
-                  </a>
-                </li>
-                <li className='contact'>
-                  <a href='#contact'>
-                    <img src={Home_6} alt='' />
-                  </a>
-                </li>
-              </ul>
-            </div>}
+                <div
+                  id='navbar'
+                  className='navbar-collapse navigation-holder'
+                  style={{
+                    position: 'fixed',
+                    top: '0',
+                    right: '0',
+                  }}
+                  onClick={(event) => {
+                    if (event.currentTarget !== event.target) {
+                      this.setState({isOpen: false});
+                    }
+                  }}
+                >
+                  <button
+                    style={{zIndex: 1000000}}
+                    className='close-navbar'
+                    onClick={() => this.setState({isOpen: false})}
+                  >
+                    <i className='fa fa-times' aria-hidden='true'></i>
+                  </button>
+                  <button className='close-navbar-2' onClick={() => this.setState({isOpen: false})}>
+                    <i className='fa fa-times' aria-hidden='true'></i>
+                  </button>
+                  <ul className='nav navbar-nav'>
+                    <li className='home'>
+                      <a href='#home'>
+                        <img src={Home_1} alt='' />
+                      </a>
+                    </li>
+                    <li className='about'>
+                      <a href='#about'>
+                        <img src={Home_2} alt='' />
+                      </a>
+                    </li>
+                    <li className='service'>
+                      <a href='#service'>
+                        <img src={Home_3} alt='' />
+                      </a>
+                    </li>
+                    <li className='protfolio'>
+                      <a href='#protfolio'>
+                        <img src={Home_4} alt='' />
+                      </a>
+                    </li>
+                    <li className='contact'>
+                      <a href='#contact'>
+                        <img src={Home_6} alt='' />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            )}
             <div className='menu-open-btn-holder mb-2' style={{top: '12px'}}>
               <button className='menu-open-btn mb-2' onClick={() => this.setState({isOpen: true})}>
                 <span style={{height: '4px'}}></span>
