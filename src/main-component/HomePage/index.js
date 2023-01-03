@@ -24,6 +24,12 @@ const HomePage = () => {
   //   });
   // }, []);
 
+  // TODO: https://stackoverflow.com/questions/13918441/javascript-addeventlistener-without-selecting-children
+  // TODO: https://developer.mozilla.org/en-US/docs/Web/API/Event/currentTarget
+  // TODO: https://favicon.io/favicon-converter/
+  // TDOD: https://favicon.io/favicon-converter/
+  // TODO: https://webdesign.tutsplus.com/tutorials/how-to-create-a-frosted-glass-effect-in-css--cms-32535
+
   return (
     <Fragment>
       <Navbar />

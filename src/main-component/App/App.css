@@ -865,7 +865,7 @@ button:focus {
 }
 
 .header-style-1 .menu-open-btn-holder {
-  background-color: #1919197c;
+  background-color: none;
   width: 45px;
   height: 45px;
   position: absolute;

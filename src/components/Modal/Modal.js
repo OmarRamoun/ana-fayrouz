@@ -21,6 +21,7 @@ const Modal = ({show, onClose, children}) => {
               onClose();
             }
           }}
+          style={{backdropFilter: 'blur(5px)'}}
         >
           <div className='modal-content-box'>{children}</div>
           <button className='modal-close' onClick={onClose}>

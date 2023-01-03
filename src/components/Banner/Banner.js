@@ -15,7 +15,7 @@ class Banner extends Component {
             <div className='slider-image'>
               <img style={{filter: 'brightness(0.4) blur(1px)'}} src={Slides} alt='' />
             </div>
-            <div className='container'>
+            <div className='container' style={{position: 'relative', zIndex: 1000}}>
               <div className='row'>
                 <div style={{marginTop: '20px'}} className='col col-md-8 col-sm-12 slide-caption'>
                   <div className='slide-subtitle'>
