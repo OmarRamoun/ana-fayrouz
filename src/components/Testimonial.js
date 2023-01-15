@@ -59,15 +59,17 @@ class Testimonial extends Component {
                   </div>
                   <div className='testimonial-content'>
                     <p>
-                      If you are going to use a passage of Lorem Ipsum, you need to be sure there
-                      isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum.
+                      I had the pleasure of working with Isra on a project and I was extremely
+                      impressed with her attention to detail and ability to deliver high-quality
+                      work on time. She is a skilled software engineer and a great team player. I
+                      highly recommend her for any project.
                     </p>
                   </div>
                   <div className='testimonial-img'>
                     <img src={testimonialImg_1} alt='' />
                   </div>
                   <div className='testimonial-content'>
-                    <h4>Jimmy Alex</h4>
+                    <h4>BP. Alex</h4>
                     <span>SEO of Northy</span>
                   </div>
                 </div>
@@ -79,16 +81,18 @@ class Testimonial extends Component {
                   </div>
                   <div className='testimonial-content'>
                     <p>
-                      If you are going to use a passage of Lorem Ipsum, you need to be sure there
-                      isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum.
+                      Isra is a top-notch developer, who consistently exceeds expectations. She is a
+                      problem-solver and always goes above and beyond to deliver the best possible
+                      solution. She is a great communicator and a pleasure to work with. I highly
+                      recommend her to anyone looking for a reliable and skilled developer
                     </p>
                   </div>
                   <div className='testimonial-img'>
                     <img src={testimonialImg_2} alt='' />
                   </div>
                   <div className='testimonial-content'>
-                    <h4>Jimmy Alex</h4>
-                    <span>SEO of Northy</span>
+                    <h4>Rosa Alejandro</h4>
+                    <span>Head of Product Development at DEF Co.y</span>
                   </div>
                 </div>
               </div>
@@ -99,16 +103,37 @@ class Testimonial extends Component {
                   </div>
                   <div className='testimonial-content'>
                     <p>
-                      If you are going to use a passage of Lorem Ipsum, you need to be sure there
-                      isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum.
+                      I had the opportunity to work with Isra on a project, and I was thoroughly
+                      impressed with her skill set and work ethic. She is a true professional and
+                      her expertise in web development was a great asset to our team. I would highly
+                      recommend her for any project.
                     </p>
                   </div>
                   <div className='testimonial-img'>
                     <img src={testimonialImg_3} alt='' />
                   </div>
                   <div className='testimonial-content'>
-                    <h4>Jimmy Alex</h4>
-                    <span>SEO of Northy</span>
+                    <h4>Emily Brown</h4>
+                    <span>Lead Developer at Xoommit Inc.</span>
+                  </div>
+                </div>
+              </div>
+              <div className='testimonial-wrap'>
+                <div className='testimonial-item'>
+                  <div className='testimonial-icon'>
+                    <i className='fi flaticon-writer'></i>
+                  </div>
+                  <div className='testimonial-content'>
+                    <p>
+                      Isra was a pleasure to work with. She is a highly skilled developer with a great eye for detail. She was able to deliver high-quality work on time, and she was always willing to go the extra mile to make sure that the project was a success. I would recommend her to anyone looking for a top-notch developer.
+                    </p>
+                  </div>
+                  <div className='testimonial-img'>
+                    <img src={testimonialImg_3} alt='' />
+                  </div>
+                  <div className='testimonial-content'>
+                    <h4>Jessica Lee</h4>
+                    <span>CEO of VWX LLC</span>
                   </div>
                 </div>
               </div>

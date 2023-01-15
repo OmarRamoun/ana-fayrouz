@@ -1,7 +1,7 @@
 const Card = ({className, src, onClick}) => {
   return (
     <div className={className}>
-      <img src={src} className='img img-responsive' alt='' />
+      <img height={262} src={src} className='img img-responsive' alt='' />
       <div
         className='icon'
         onClick={onClick}

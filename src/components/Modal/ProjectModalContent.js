@@ -6,7 +6,7 @@ const ProjectModalContent = ({projectInfo}) => {
     <div className='project-modal-content'>
       <h2 className='project-modal-content__title'>{title}</h2>
       <div className='project-modal-content__info'>
-        <h3 className='project-modal-content__item'>
+        <h3 className='project-modal-content__item' style={{marginBottom: '50px'}}>
           Details: <span className='project-modal-content__item__value'>{details}</span>
         </h3>
         <div className='row'>

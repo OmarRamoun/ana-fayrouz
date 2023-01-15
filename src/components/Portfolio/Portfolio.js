@@ -1,10 +1,7 @@
-import React, {Component, useState} from 'react';
-import Gallery_1 from '../../Assets/Images/gallery/img-1.jpg';
-import Gallery_2 from '../../Assets/Images/gallery/img-2.jpg';
-import Gallery_3 from '../../Assets/Images/gallery/img-3.jpg';
-import Gallery_4 from '../../Assets/Images/gallery/img-4.jpg';
-import Gallery_5 from '../../Assets/Images/gallery/img-5.jpg';
-import Gallery_6 from '../../Assets/Images/gallery/img-6.jpg';
+import React, {useState} from 'react';
+import Gallery_1 from '../../Assets/Images/gallery/merkado.png';
+import Gallery_2 from '../../Assets/Images/gallery/portfolio.png';
+import Gallery_3 from '../../Assets/Images/gallery/popular.png';
 import {Link} from 'react-router-dom';
 import Card from './Card';
 import Modal from '../../components/Modal/Modal';
@@ -12,10 +9,8 @@ import ProjectModalContent from '../../components/Modal/ProjectModalContent';
 
 const Porfolio = () => {
   const [state, setState] = useState({
-    onWebDesign: false,
-    onPrintDesign: false,
+    onPortfolio: false,
     onWebApp: false,
-    onPhotography: false,
     isOpen: false,
   });
 
@@ -23,30 +18,15 @@ const Porfolio = () => {
     event.preventDefault();
     setState({
       onWebApp: true,
-      onPrintDesign: true,
-      onWebDesign: true,
-      onPhotography: true,
+      onPortfolio: true,
     });
   };
 
-  const webDesign = (event) => {
+  const portfolio = (event) => {
     event.preventDefault();
     setState({
-      onWebDesign: true,
-      onPrintDesign: false,
+      onPortfolio: true,
       onWebApp: false,
-      onPhotography: false,
-      isOpen: true,
-    });
-  };
-
-  const printDesign = (event) => {
-    event.preventDefault();
-    setState({
-      onPrintDesign: true,
-      onWebDesign: false,
-      onWebApp: false,
-      onPhotography: false,
       isOpen: true,
     });
   };
@@ -55,40 +35,47 @@ const Porfolio = () => {
     event.preventDefault();
     setState({
       onWebApp: true,
-      onPrintDesign: false,
-      onWebDesign: false,
-      onPhotography: false,
+      onPortfolio: false,
       isOpen: true,
     });
   };
 
-  const Photography = (event) => {
-    event.preventDefault();
-    setState({
-      onPhotography: true,
-      onWebApp: false,
-      onPrintDesign: false,
-      onWebDesign: false,
-      isOpen: true,
-    });
+  const merkadoItems = {
+    title: 'Merkado',
+    details:
+      'Merkado is a full e-commerce website for a wide variety of products. The website was designed with a focus on providing customers with a seamless and intuitive shopping experience. It features a clean and modern design, with a user-friendly interface that makes it easy to browse and search for products. Customers can easily add items to their cart, view their order history, and manage their account. The website also includes a variety of features such as a shopping cart, wishlist, and a checkout system that makes it easy to purchase items. The website is fully responsive and optimized for all devices.',
+    technologies: ['nextjs', 'scss', 'strapi'],
+    preview: {title: 'merkado.israarvin.com', link: 'http://merkado.israarvin.com'},
+    source: {title: 'github', link: 'https://github.com/israMarvin/merkado'},
+    client: 'private',
+    image: Gallery_1,
   };
 
-  const modalItems = {
-    title: 'Rene',
-    details: 'Best project on the web, just for soso my love',
-    technologies: ['html', 'css', 'js'],
-    preview: {title: 'rene.com', link: 'https://google.com'},
-    source: {title: 'github', link: 'https://github.com/rene'},
-    client: 'IO Compnay',
-    image: Gallery_6,
+  const portfolioItems = {
+    title: 'Portfolio',
+    details:
+      'A full portfolio website. The website features a modern and responsive design, built using react.js, and CSS. The website includes an "About Me" section, a "My Projects" section where I showcase some of my recent work, and a "Contact Me" section where users can reach out to me.',
+    technologies: ['react', 'css', 'strapi'],
+    preview: {title: 'portfolio.israarvin.com', link: 'http://portfolio.israarvin.com'},
+    source: {title: 'github', link: 'https://github.com/israMarvin/portfolio'},
+    client: 'private',
+    image: Gallery_2,
+  };
+
+  const popularItems = {
+    title: 'Popular',
+    details:
+      'The "Popular" project is a fashion ecommerce website that allows users to browse and purchase a wide range of fashion products, from clothing to accessories. The website features a clean and modern design, with a user-friendly interface that makes it easy to browse and search for products. Customers can easily add items to their cart, view their order history, and manage their account.',
+    technologies: ['nextjs', 'scss', 'strapi'],
+    preview: {title: 'popular.israarvin.com', link: 'http://popular.israarvin.com'},
+    source: {title: 'github', link: 'https://github.com/israMarvin/popular'},
+    client: 'private',
+    image: Gallery_3,
   };
 
   const [showModal1, setShowModal1] = useState(false);
   const [showModal2, setShowModal2] = useState(false);
   const [showModal3, setShowModal3] = useState(false);
-  const [showModal4, setShowModal4] = useState(false);
-  const [showModal5, setShowModal5] = useState(false);
-  const [showModal6, setShowModal6] = useState(false);
 
   return (
     <>
@@ -108,33 +95,24 @@ const Porfolio = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link data-filter='.Web-Design' to='/' onClick={webDesign}>
-                      Web Design
-                    </Link>
-                  </li>
-                  <li>
-                    <Link data-filter='.Print-Design' to='/' onClick={printDesign}>
-                      Print Design
-                    </Link>
-                  </li>
-                  <li>
                     <Link data-filter='.Web-Application' to='/' onClick={webApp}>
                       Web Application
                     </Link>
                   </li>
                   <li>
-                    <Link data-filter='.Photography' to='/' onClick={Photography}>
-                      Photography
+                    <Link data-filter='.Photography' to='/' onClick={portfolio}>
+                      Portfolios
                     </Link>
                   </li>
                 </ul>
               </div>
-              <div className='gallery-container gallery-fancybox masonry-gallery payra-masonary' style={{paddingInline: '20px'}}>
+              <div
+                className='gallery-container gallery-fancybox masonry-gallery payra-masonary'
+                style={{paddingInline: '20px'}}
+              >
                 <Card
                   className={
-                    state.onPrintDesign
-                      ? 'grid active'
-                      : 'grid' && state.onWebApp
+                    state.onWebApp
                       ? 'grid active'
                       : 'grid' && state.isOpen
                       ? 'grid'
@@ -145,13 +123,7 @@ const Porfolio = () => {
                 />
                 <Card
                   className={
-                    state.onWebDesign
-                      ? 'grid active'
-                      : 'grid' && state.onPrintDesign
-                      ? 'grid active'
-                      : 'grid' && state.onWebApp
-                      ? 'grid active'
-                      : 'grid' && state.onPhotography
+                    state.onPortfolio
                       ? 'grid active'
                       : 'grid' && state.isOpen
                       ? 'grid'
@@ -162,9 +134,7 @@ const Porfolio = () => {
                 />
                 <Card
                   className={
-                    state.onWebDesign
-                      ? 'grid active'
-                      : 'grid' && state.onWebApp
+                    state.onWebApp
                       ? 'grid active'
                       : 'grid' && state.isOpen
                       ? 'grid'
@@ -172,47 +142,6 @@ const Porfolio = () => {
                   }
                   src={Gallery_3}
                   onClick={() => setShowModal3(true)}
-                />
-                <Card
-                  className={
-                    state.onPrintDesign
-                      ? 'grid active'
-                      : 'grid' && state.onPhotography
-                      ? 'grid active'
-                      : 'grid' && state.isOpen
-                      ? 'grid'
-                      : 'grid open'
-                  }
-                  src={Gallery_4}
-                  onClick={() => setShowModal4(true)}
-                />
-                <Card
-                  className={
-                    state.onPrintDesign
-                      ? 'grid active'
-                      : 'grid' && state.onPhotography
-                      ? 'grid active'
-                      : 'grid' && state.isOpen
-                      ? 'grid'
-                      : 'grid open'
-                  }
-                  src={Gallery_5}
-                  onClick={() => setShowModal5(true)}
-                />
-                <Card
-                  className={
-                    state.onPrintDesign
-                      ? 'grid active'
-                      : 'grid' && state.onWebApp
-                      ? 'grid active'
-                      : 'grid' && state.onPhotography
-                      ? 'grid active'
-                      : 'grid' && state.isOpen
-                      ? 'grid'
-                      : 'grid open'
-                  }
-                  src={Gallery_6}
-                  onClick={() => setShowModal6(true)}
                 />
               </div>
             </div>
@@ -225,22 +154,13 @@ const Porfolio = () => {
         </div>
       </section>
       <Modal show={showModal1} onClose={() => setShowModal1(!showModal1)}>
-        <ProjectModalContent projectInfo={modalItems} />
+        <ProjectModalContent projectInfo={merkadoItems} />
       </Modal>
       <Modal show={showModal2} onClose={() => setShowModal2(!showModal2)}>
-        <ProjectModalContent projectInfo={modalItems} />
+        <ProjectModalContent projectInfo={portfolioItems} />
       </Modal>
       <Modal show={showModal3} onClose={() => setShowModal3(!showModal3)}>
-        <ProjectModalContent projectInfo={modalItems} />
-      </Modal>
-      <Modal show={showModal4} onClose={() => setShowModal4(!showModal4)}>
-        <ProjectModalContent projectInfo={modalItems} />
-      </Modal>
-      <Modal show={showModal5} onClose={() => setShowModal5(!showModal5)}>
-        <ProjectModalContent projectInfo={modalItems} />
-      </Modal>
-      <Modal show={showModal6} onClose={() => setShowModal6(!showModal6)}>
-        <ProjectModalContent projectInfo={modalItems} />
+        <ProjectModalContent projectInfo={popularItems} />
       </Modal>
     </>
   );

@@ -37,8 +37,8 @@ class Service extends Component {
                     <h2>Web Design</h2>
                     <p>
                       {' '}
-                      am an expert web designer and developer. Contrary to popular belief, Lorem
-                      Ipsum is not simply random text. It has
+                      Professional and visually appealing design for your website, tailored to your
+                      brand and target audience.
                     </p>
                   </div>
                 </div>
@@ -59,8 +59,8 @@ class Service extends Component {
                     <h2>Web Development</h2>
                     <p>
                       {' '}
-                      am an expert web designer and developer. Contrary to popular belief, Lorem
-                      Ipsum is not simply random text. It has
+                      Custom web development services, utilizing the latest technologies and best
+                      practices to build high-performance, scalable websites.
                     </p>
                   </div>
                 </div>
@@ -81,8 +81,8 @@ class Service extends Component {
                     <h2>Creative Design</h2>
                     <p>
                       {' '}
-                      am an expert web designer and developer. Contrary to popular belief, Lorem
-                      Ipsum is not simply random text. It has
+                      Innovative and unique design solutions for all your creative needs, including
+                      graphic design, UI/UX, and branding.
                     </p>
                   </div>
                 </div>
@@ -103,8 +103,8 @@ class Service extends Component {
                     <h2>Responsive Design</h2>
                     <p>
                       {' '}
-                      am an expert web designer and developer. Contrary to popular belief, Lorem
-                      Ipsum is not simply random text. It has
+                      Ensuring your website looks great and functions seamlessly across all devices,
+                      including desktop, tablet, and mobile.
                     </p>
                   </div>
                 </div>
@@ -125,8 +125,8 @@ class Service extends Component {
                     <h2>Branding Identity</h2>
                     <p>
                       {' '}
-                      am an expert web designer and developer. Contrary to popular belief, Lorem
-                      Ipsum is not simply random text. It has
+                      Creating a strong, cohesive brand identity that accurately represents your
+                      business and resonates with your target audience.
                     </p>
                   </div>
                 </div>
@@ -144,11 +144,11 @@ class Service extends Component {
                     </i>
                   </div>
                   <div className='service-content'>
-                    <h2>24/Support</h2>
+                    <h2>Customer Support</h2>
                     <p>
                       {' '}
-                      am an expert web designer and developer. Contrary to popular belief, Lorem
-                      Ipsum is not simply random text. It has
+                      Providing top-notch customer support to ensure that your website is running
+                      smoothly and your users are satisfied.
                     </p>
                   </div>
                 </div>

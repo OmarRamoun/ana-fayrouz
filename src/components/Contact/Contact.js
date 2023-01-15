@@ -14,21 +14,11 @@ class Contact extends Component {
               <div className='contact-page-item contact-inner-container'>
                 <h2>My Contacts</h2>
                 <p>
-                  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in
-                  a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                  Ready to take your project to the next level? Contact me now!
                 </p>
-                <div className='adress'>
-                  <h3>Address</h3>
-                  <span>245 King Street, Touterie Victoria 8520 Australia</span>
-                </div>
-                <div className='phone'>
-                  <h3>Phone</h3>
-                  <span>0-123-456-7890</span>
-                  <span>0-123-456-7890</span>
-                </div>
                 <div className='email'>
                   <h3>Email</h3>
-                  <span>sample@gmail.com</span>
+                  <span>contact@israarvin.com</span>
                 </div>
               </div>
             </div>

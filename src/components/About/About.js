@@ -20,20 +20,25 @@ class About extends Component {
                 <div className='about-content' style={{paddingInline: '30px'}}>
                   <h2>About Me</h2>
                   <p>
-                    There are many variations of passages of Lorem Ipsum available, but the majority
-                    have suffered alteration in some form, by injected humour, or randomised words
-                    which don't look even slightly believable. All the Lorem IpsumThere are many
-                    variations of passages of Lorem Ipsum available.
+                    I am a highly experienced and accomplished software engineer with over 5 years
+                    of industry experience. I have a proven track record of delivering high-quality,
+                    scalable software solutions for a variety of industries, including finance,
+                    healthcare, and e-commerce.
                   </p>
                   <p className='mt-20'>
-                    If you are going to use a passage of Lorem Ipsum, you need to be sure there
-                    isn't anything embarrassing hidden in the middle of text. All the Lorem
-                    IpsumThere are many variations of passages of Lorem Ipsum available, but the
-                    majority have suffered alteration in some form,
+                    My expertise includes a deep understanding of multiple programming languages and
+                    technologies such as Next.js, Python and Node.js, and a proven ability to design and
+                    implement complex systems. I am passionate about staying current with the latest technologies and trends in the industry and am always looking for new opportunities to challenge myself and push the boundaries of what is possible.
                   </p>
-                  <Link to='/' className='template-secondary hover-border-none' style={{borderColor: '#bfb9b9'}}>
+                  <a
+                    href='./IsraArvinResume.pdf'
+                    target='_blank'
+                    className='template-secondary hover-border-none'
+                    style={{borderColor: '#bfb9b9'}}
+                    Download
+                  >
                     Download Resume
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>

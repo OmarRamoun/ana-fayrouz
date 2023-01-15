@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 
-import {Link} from 'react-router-dom';
 import {Typewriter} from 'react-simple-typewriter';
 // import Slides from '../Assets/Images/slide-2.jpg';
 import Slides from '../../Assets/Images/home/amoled.jpg';
@@ -13,7 +12,7 @@ class Banner extends Component {
         <div className='hero-slider hero-slider-bg'>
           <div className='slide'>
             <div className='slider-image'>
-              <img style={{filter: 'brightness(0.4) blur(1px)'}} src={Slides} alt='' />
+              <img style={{filter: 'brightness(0.4) blur(1px)'}} src={Slides} alt='bg' />
             </div>
             <div className='container' style={{position: 'relative', zIndex: 1000}}>
               <div className='row'>
@@ -35,10 +34,35 @@ class Banner extends Component {
                     </h2>
                   </div>
                   <div className='btns' style={{display: 'flex', alignItems: 'center'}}>
-                    <a href='#contact' className='template-secondary go-contact-area mr-3' style={{display: 'flex', alignItems: 'center', justifyContent: 'center', height: '50px', paddingInline: '30px'}}>
+                    <a
+                      href='#contact'
+                      className='template-secondary go-contact-area mr-3'
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        height: '50px',
+                        paddingInline: '30px',
+                      }}
+                    >
                       Contact Me
                     </a>
-                    <a href='#contact' className='btn template-secondary btn-lg round go-contact-area' style={{display: 'flex', alignItems: 'center', justifyContent: 'center', 'borderRadius': '40px', height: '50px', fontFamily: "'Oswald', sans-serif", textTransform: 'uppercase', paddingInline: '30px'}}>
+                    <a
+                      href='./IsraArvinResume.pdf'
+                      className='btn template-secondary btn-lg round go-contact-area'
+                      target='_blank'
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        borderRadius: '40px',
+                        height: '50px',
+                        fontFamily: "'Oswald', sans-serif",
+                        textTransform: 'uppercase',
+                        paddingInline: '30px',
+                      }}
+                      Download
+                    >
                       Download CV
                     </a>
                   </div>
@@ -54,25 +78,25 @@ class Banner extends Component {
         <div className='social-links position-fixed fixed-bottom'>
           <ul style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
             <li>
-              <Link to='#'>
+              <a href='https://linkedin.com/in/israarvin' target='_blank' rel="noreferrer">
                 <i style={{fontSize: '28px'}} className='fa fa-linkedin'></i>
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to='#'>
+              <a href='https://upwork.com/IsraArvin' target='_blank' rel="noreferrer">
                 {/* <i className='fa fa-twitter'></i> */}
-                <img src="https://img.icons8.com/ios-filled/25/ffffff/upwork.png"/>
-              </Link>
+                <img alt='upwork' src='https://img.icons8.com/ios-filled/25/ffffff/upwork.png' />
+              </a>
             </li>
             <li>
-              <Link to='#'>
+              <a href='https://github.com/isaMarvin' target='_blank' rel="noreferrer">
                 <i style={{fontSize: '28px'}} className='fa fa-github'></i>
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to='#'>
+              <a href='mailto:contact@israarvin.com?subject=Hello&body=Hello, I saw your portfolio and I would like to know more about your work'>
                 <i style={{fontSize: '23px'}} className='fa fa-envelope'></i>
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
