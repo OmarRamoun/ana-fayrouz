@@ -83,13 +83,13 @@ class Banner extends Component {
               </a>
             </li>
             <li>
-              <a href='https://upwork.com/IsraArvin' target='_blank' rel="noreferrer">
+              <a href='https://upwork.com/israarvin' target='_blank' rel="noreferrer">
                 {/* <i className='fa fa-twitter'></i> */}
                 <img alt='upwork' src='https://img.icons8.com/ios-filled/25/ffffff/upwork.png' />
               </a>
             </li>
             <li>
-              <a href='https://github.com/isaMarvin' target='_blank' rel="noreferrer">
+              <a href='https://github.com/israarvin' target='_blank' rel="noreferrer">
                 <i style={{fontSize: '28px'}} className='fa fa-github'></i>
               </a>
             </li>

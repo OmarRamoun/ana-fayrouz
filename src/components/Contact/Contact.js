@@ -11,10 +11,10 @@ class Contact extends Component {
         <div className='container'>
           <div className='row'>
             <div className='col-lg-5 col-md-12 col-sm-12'>
-              <div className='contact-page-item contact-inner-container'>
+              <div className='contact-page-item contact-inner-container' style={{maxWidth: '450px'}}>
                 <h2>My Contacts</h2>
                 <p>
-                  Ready to take your project to the next level? Contact me now!
+                  Ready to take your project to the next level? If you're looking for a skilled and dedicated software engineer to help bring your project to life, I would love to hear from you.
                 </p>
                 <div className='email'>
                   <h3>Email</h3>
