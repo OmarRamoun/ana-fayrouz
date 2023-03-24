@@ -1,11 +1,10 @@
 {
-  "name": "isra-arvin",
+  "name": "omarramoun.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@material-ui/core": "latest",
     "bootstrap": "latest",
-    "html2canvas": "latest",
     "node-sass": "latest",
     "proptypes": "^1.1.0",
     "react": "latest",
