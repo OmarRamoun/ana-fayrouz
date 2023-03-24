@@ -1,68 +1,52 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![](https://img.shields.io/static/v1?label=BY&message=RAMOUN&color=birghtgreen)](https://omarramoun.com)
+[![Website](https://img.shields.io/badge/OmarRamoun.com--yellow?style=social&logo=Firefox)](https://www.omarramoun.com/)
 
-## Available Scripts
+![React](https://img.shields.io/badge/-React-1f1f1f?logo=react&logoColor=61DAFB&style=for-the-badge)
+![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
+![Styled-Components](https://img.shields.io/badge/Styled_Components-fbfbfb?style=for-the-badge&logo=styled-components&logoColor=DB7093)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 
-In the project directory, you can run:
+# Ana Fayrouz
 
-### `npm start`
+> A Software Engineer Portfolio App Made with React, React-Router, and Bootstrap. The Project Contains a Showcase with Information About Me, All of My Works (Apps), and a Contact Form for Communication.The app includes a range of customizable components such as project cards, skill tags, and contact forms, that create a unique and engaging portfolio website that stands out from the crowd.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## A Screenshot of the Homepage
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+![screenshot](screenshots/anafayrouz-1.png)
 
-### `npm test`
+## Collective Screenshots of the Mobile Version
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p align="center" justify="center">
+  <img width="180px" height="320px" src="screenshots/anafayrouz-2.png" />
+  <img width="180px" height="320px" src="screenshots/anafayrouz-3.png" />
+  <img width="180px" height="320px" src="screenshots/anafayrouz-4.png" />
+  <img width="180px" height="320px" src="screenshots/anafayrouz-5.png" />
+</p>
 
-### `npm run build`
+## A Demo for the App
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [Demo](https://anafayrouz.omarramoun.com/)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Built With
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Languages: _**JS/ES6**_
+- Framework: _**React, Redux, Styled-Components, React-Router**_
+- Technologies used: _**GIT, GITHUB, LINTERS**_
 
-### `npm run eject`
+## Authors
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+👤 **Ramoun**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **GitHub**: [![@omarramoun](https://img.shields.io/github/followers/omarramoun?label=OmarRamoun&style=social)](https://github.com/omarramoun)
+- **Twitter**: [![@omarramoun](https://img.shields.io/twitter/follow/omarramoun?label=OmarRamoun&style=social)](https://twitter.com/omarramoun)
+- **LinkdIn**: [![@omarramoun](https://img.shields.io/github/followers/omarramoun?label=OmarRamoun&logo=linkedin&style=social)](https://www.linkedin.com/in/omarramoun/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🤝 Contributing
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Contributions, issues, and feature requests are welcome!
 
-## Learn More
+Feel free to check the [issues page](../../issues).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Show your support
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Give a ⭐️ if you like this project!
