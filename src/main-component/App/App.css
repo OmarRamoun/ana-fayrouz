@@ -24,7 +24,7 @@ TABLE OF CONTENTS:
 #0.1    Template Reset Style
 --------------------------------------------------------------*/
 .fixed-navbar.active .site-header.header-style-1 {
-  background: none !important;
+  background: #2424241c !important;
 }
 .header-style-1 {
   background: none !important
@@ -1328,7 +1328,7 @@ button:focus {
 .hero-style-1 .slide-title h2 {
   font-family: 'Exo 2', sans-serif;
   -webkit-text-stroke-color : #fff;
-  -webkit-text-stroke-width : 0.6mm;
+  -webkit-text-stroke-width : 0.5mm;
   font-size: 2.5rem;
   font-weight: bold;
   line-height: 1.2em;
@@ -2664,7 +2664,6 @@ button:focus {
   left: 0;
   width: 100%;
   background: #242424;
-  border: none;
 }
 
 /* smothscroll  */

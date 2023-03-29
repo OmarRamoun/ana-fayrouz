@@ -1,3 +1,7 @@
+:root {
+  --modal-image-radius: 20px;
+}
+
 .modal-root {
   position: fixed;
   background-color: rgba(0,0,0, 0.7);
@@ -49,11 +53,14 @@
 }
 
 .project-modal-content__item {
-  color: #bfb9b9;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #000;
 }
 
 .project-modal-content__item__value {
   font-weight: bold;
+  font-weight: normal;
   color: #808b8b;
 }
 
@@ -65,6 +72,49 @@
 .project-modal-content__image img {
   width: 100%;
   border-radius: 4px;
+}
+
+.modal-image-row {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-image {
+  height: 360px;
+}
+
+.landscape1,
+.landscape2 {
+  flex-basis: 75.4%;
+}
+
+.portrait1,
+.portrait2 {
+  flex-basis: 22.5%;
+}
+
+.portrait1 {
+  margin-left: 22px;
+  margin-bottom: 22px;
+}
+.portrait2 {
+  margin-right: 22px;
+}
+
+.landscape1 {
+  border-top-left-radius: var(--modal-image-radius) !important;
+}
+
+.portrait1 {
+  border-top-right-radius: var(--modal-image-radius) !important;
+}
+
+.landscape2 {
+  border-bottom-right-radius: var(--modal-image-radius) !important;
+}
+
+.portrait2 {
+  border-bottom-left-radius: var(--modal-image-radius) !important;
 }
 
 @media all and (max-width: 768px) {

@@ -122,11 +122,10 @@ class Service extends Component {
                     </i>
                   </div>
                   <div className='service-content'>
-                    <h2>Branding Identity</h2>
+                    <h2>Back-End Development</h2>
                     <p>
                       {' '}
-                      Creating a strong, cohesive brand identity that accurately represents your
-                      business and resonates with your target audience.
+                      create scalable solutions that meet your business requirements. Whether it is a new feature, an optimization, or a project built from scratch.
                     </p>
                   </div>
                 </div>

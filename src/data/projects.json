@@ -1,0 +1,376 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "nursery story",
+      "description": "a Cloud-based SaaS platform designed to provide a comprehensive solution for nursery schools. It offers a range of features to help schools manage their operations, including student registration and enrollment, class scheduling, attendance tracking, parent communication, and billing and payments. It's a Mono-Repo Project Built with React-Native and GraphQL. It consists of 3 Apps: Admin, Nursery App, and a Parent App.",
+      "client": "Nursery-Story (as a Freelancer)",
+      "shots": {
+        "landscape": [
+          {
+            "id": 1,
+            "src": "./Assets/projects/nursery-story/ns-1.png"
+          },
+          {
+            "id": 2,
+            "src": "./Assets/projects/nursery-story/ns-2.png"
+          }
+        ],
+        "portrait": [
+          {
+            "id": 3,
+            "src": "./Assets/projects/nursery-story/ns-3.png"
+          },
+          {
+            "id": 4,
+            "src": "./Assets/projects/nursery-story/ns-4.png"
+          }
+        ]
+      },
+      "source": "https://github.com/nursery-story/nursery-story",
+      "preview": "https://my.nurserystory.co.uk",
+      "technologies": [
+        "Lerna",
+        "TypeScript",
+        "React-Native",
+        "React Native Web",
+        "Comp. Lib. w/ styled-system",
+        "GQLmutations",
+        "GraphQL+NodeJS backend service",
+        "GraphQL API on AWS Lambda",
+        "GraphQL Codegen",
+        "type-definitions & React Hooks",
+        "formik",
+        "yup",
+        "Jest",
+        "git-secret",
+        "Postgres",
+        "knex",
+        "Eslint",
+        "Prettier",
+        "Commitlint"," Lint-staged", "CI/CD with GitHub Actions"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "sellGo",
+      "description": "An open-source ecommerce platform designed to provide a flexible and customizable solution for online retailers. Built on modern web technologies, it offers a range of features including product catalog management, shopping cart functionality, order processing, and payment gateway integration.",
+      "client": "Freelance",
+      "shots": {
+        "landscape": [
+          {
+            "id": 1,
+            "src": "./Assets/projects/sellgo/sellgo-1.png"
+          },
+          {
+            "id": 2,
+            "src": "./Assets/projects/sellgo/sellgo-6.png"
+          }
+        ],
+        "portrait": [
+          {
+            "id": 3,
+            "src": "./Assets/projects/sellgo/sellgo-3.png"
+          },
+          {
+            "id": 4,
+            "src": "./Assets/projects/sellgo/sellgo-4.png"
+          }
+        ]
+      },
+      "source": "https://github.com/OmarRamoun/SellGo",
+      "preview": "https://sellgo.omarramoun.com",
+      "technologies": [
+        "Next.js",
+        "React Hooks",
+        "Eslint",
+        "Prettier",
+        "SCSS",
+        "redux",
+        "wordpress"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "rene",
+      "description": "A SaaS Project Management App Landing Website. The design is modern, beautiful and responsive. It displays your content nicely on Desktop, Laptop, iPad, iPhone, Android Mobile, and tablets.",
+      "client": "Mike Van Eckendonk",
+      "shots": {
+        "landscape": [
+          {
+            "id": 1,
+            "src": "./Assets/projects/rene/rene-1.png"
+          },
+          {
+            "id": 2,
+            "src": "./Assets/projects/rene/rene-2.png"
+          }
+        ],
+        "portrait": [
+          {
+            "id": 3,
+            "src": "./Assets/projects/rene/rene-3.png"
+          },
+          {
+            "id": 4,
+            "src": "./Assets/projects/rene/rene-4.png"
+          }
+        ]
+      },
+      "source": "https://github.com/OmarRamoun/rene",
+      "preview": "https://rene.omarramoun.com",
+      "technologies": [
+        "React",
+        "React Hooks",
+        "Eslint",
+        "Prettier",
+        "SCSS",
+        "Bootstrap",
+        "React-Router",
+        "react-hook-form",
+        "yup"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "serra",
+      "description": "A Prototype for a Signup Page and Login Page of The Awesome NFT Trading Card Game Synergy Of Serra. Implemented in React, Redux, Styled-Components, and Jest.",
+      "client": "Calystral Games",
+      "shots": {
+        "landscape": [
+          {
+            "id": 1,
+            "src": "./Assets/projects/serra/serra-1.png"
+          },
+          {
+            "id": 2,
+            "src": "./Assets/projects/serra/serra-2.png"
+          }
+        ],
+        "portrait": [
+          {
+            "id": 3,
+            "src": "./Assets/projects/serra/serra-3.png"
+          },
+          {
+            "id": 4,
+            "src": "./Assets/projects/serra/serra-4.gif"
+          }
+        ]
+      },
+      "source": "https://github.com/OmarRamoun/serra",
+      "preview": "https://serra.omarramoun.com",
+      "technologies": [
+        "React",
+        "React Hooks",
+        "Eslint",
+        "Prettier",
+        "Styled Components",
+        "Redux Toolkit",
+        "React-Router",
+        "React Testing Library",
+        "Jest"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "sweet yellow",
+      "description": "A Software Engineer Portfolio App Made with React, React Router, and Bootstrap. The Project Contains a Showcase with Information About Developer, All of My Works (Apps), and a Contact Form for Communication.",
+      "client": "Open Source",
+      "shots": {
+        "landscape": [
+          {
+            "id": 1,
+            "src": "./Assets/projects/sweetyellow/sweetyellow-1.png"
+          },
+          {
+            "id": 2,
+            "src": "./Assets/projects/sweetyellow/sweetyellow-2.png"
+          }
+        ],
+        "portrait": [
+          {
+            "id": 3,
+            "src": "./Assets/projects/sweetyellow/sweetyellow-3.png"
+          },
+          {
+            "id": 4,
+            "src": "./Assets/projects/sweetyellow/sweetyellow-4.png"
+          }
+        ]
+      },
+      "source": "https://github.com/OmarRamoun/sweet-yellow",
+      "preview": "https://sweetyellow.omarramoun.com",
+      "technologies": [
+        "React",
+        "React Hooks",
+        "Eslint",
+        "Prettier",
+        "Bootstrap",
+        "React-Router",
+        "SCSS",
+        "AOS"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "clean blue",
+      "description": "A Simple Software Engineer Portfolio Website Made with Vanilla HTML5, CSS3, ES6. The Project Contains a Showcase with Information About Me, All of My Works (Apps), and a Contact Form for Communication.",
+      "client": "Open Source",
+      "shots": {
+        "landscape": [
+          {
+            "id": 1,
+            "src": "./Assets/projects/cleanblue/cleanblue-1.png"
+          },
+          {
+            "id": 3,
+            "src": "./Assets/projects/cleanblue/cleanblue-3.png"
+          }
+        ],
+        "portrait": [
+          {
+            "id": 2,
+            "src": "./Assets/projects/cleanblue/cleanblue-2.png"
+          },
+          {
+            "id": 4,
+            "src": "./Assets/projects/cleanblue/cleanblue-4.png"
+          }
+        ]
+      },
+      "source": "https://github.com/OmarRamoun/clean-blue",
+      "preview": "https://cleanblue.omarramoun.com",
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "ES6",
+        "Eslint",
+        "Prettier",
+        "Stylelint",
+        "Webhint"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "awesome books",
+      "description": "A Web Application that Helps You Save Your Favorite Books in a List Alongside Author's Name. Made using HTML5, CSS3, ES6, Bootstrap.",
+      "client": "Open Source",
+      "shots": {
+        "landscape": [
+          {
+            "id": 1,
+            "src": "./Assets/projects/awesome/awesome-1.png"
+          },
+          {
+            "id": 2,
+            "src": "./Assets/projects/awesome/awesome-2.png"
+          }
+        ],
+        "portrait": [
+          {
+            "id": 3,
+            "src": "./Assets/projects/awesome/awesome-3.png"
+          },
+          {
+            "id": 4,
+            "src": "./Assets/projects/awesome/awesome-4.png"
+          }
+        ]
+      },
+      "source": "https://github.com/OmarRamoun/awesome-books",
+      "preview": "https://awesomebooks.omarramoun.com",
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "ES6",
+        "Bootstrap",
+        "Eslint",
+        "Prettier",
+        "Stylelint",
+        "Webhint"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "corona tracker",
+      "description": "This is a mobile web application that features 2 pages: The homepage and the details page. The homepage displays all today's statistics about confirmed cases, deaths, and recoveries caused by Covid-19 in the world, as a total and separated by countrie",
+      "client": "Open Source",
+      "shots": {
+        "landscape": [
+          {
+            "id": 1,
+            "src": "./Assets/projects/corona/corona-1.png"
+          },
+          {
+            "id": 2,
+            "src": "./Assets/projects/corona/corona-2.png"
+          }
+        ],
+        "portrait": [
+          {
+            "id": 3,
+            "src": "./Assets/projects/corona/corona-3.png"
+          },
+          {
+            "id": 4,
+            "src": "./Assets/projects/corona/corona-4.png"
+          }
+        ]
+      },
+      "source": "https://github.com/OmarRamoun/corona",
+      "preview": "https://corona.omarramoun.com",
+      "technologies": [
+        "React",
+        "Redux",
+        "React Hooks",
+        "Bootstrap",
+        "Eslint",
+        "Prettier",
+        "Jest",
+        "React-Router",
+        "React-Testing-Library"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "wonka conference",
+      "description": "Wonka Converence 2021 Made with Vanilla HTML5, CSS3, & JS (ES6). The Website Contains A Homepage With Information About The Main Program Of The Conference Speakers And Partners And An About Page With Information About The Conference.",
+      "client": "Open Source",
+      "shots": {
+        "landscape": [
+          {
+            "id": 1,
+            "src": "./Assets/projects/wonka/wonka-1.png"
+          },
+          {
+            "id": 2,
+            "src": "./Assets/projects/wonka/wonka-2.png"
+          }
+        ],
+        "portrait": [
+          {
+            "id": 3,
+            "src": "./Assets/projects/wonka/wonka-3.png"
+          },
+          {
+            "id": 4,
+            "src": "./Assets/projects/wonka/wonka-4.png"
+          }
+        ]
+      },
+      "source": "https://github.com/OmarRamoun/wonka-conference",
+      "preview": "https://wonka.omarramoun.com",
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "JS",
+        "ES6",
+        "Eslint",
+        "Prettier",
+        "Stylelint",
+        "Webhint"
+      ]
+    }
+  ]
+}

@@ -1,7 +1,19 @@
-const Card = ({className, src, onClick}) => {
+import './card.css';
+
+const Card = ({className, src, title, onClick}) => {
   return (
     <div className={className}>
-      <img height={262} src={src} className='img img-responsive' alt='' />
+      <div className='img img-responsive' style={{overflow: 'hidden'}}>
+        <img
+          height={262}
+          src={src}
+          className='img-cover img img-responsive'
+          alt=''
+          style={{
+            boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.2)',
+          }}
+        />
+      </div>
       <div
         className='icon'
         onClick={onClick}
@@ -18,7 +30,12 @@ const Card = ({className, src, onClick}) => {
         }}
       >
         <button className='view-icon' style={{background: 'none', border: 'none'}}>
-          {/* <i className='fa fa-plus' aria-hidden='true'></i> */}
+          <h3 className='card-cover-title'>
+            {title
+              .split(' ')
+              .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+              .join(' ')}
+          </h3>
         </button>
       </div>
     </div>

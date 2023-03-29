@@ -1,146 +1,190 @@
-import React, {Component} from 'react';
+import React, {useRef, useState} from 'react';
+import CircularProgress from '@mui/joy/CircularProgress';
+import Snackbar from '@mui/material/Snackbar';
+
+import emailjs from '@emailjs/browser';
 
 import './form.style.css';
 
-class ContactForm extends Component {
-  state = {
-    name: '',
-    email: '',
-    subject: '',
-    lastname: '',
-    events: '',
-    notes: '',
-    error: {},
-  };
+const initialState = {
+  firstName: '',
+  lastName: '',
+  email: '',
+  subject: '',
+  message: '',
+};
 
-  changeHandler = (e) => {
-    const error = this.state.error;
-    error[e.target.name] = '';
+const ContactForm = () => {
+  const [open, setOpen] = useState(false);
+  const [formState, setFormState] = useState(initialState);
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState({...initialState});
 
-    this.setState({
-      [e.target.name]: e.target.value,
-      error,
+  const form = useRef();
+
+  const {firstName, lastName, email, subject, message} = formState;
+
+  const changeHandler = (e) => {
+    const {name, value} = e.target;
+    error[name] = '';
+
+    setFormState({
+      ...formState,
+      [name]: value,
     });
   };
 
-  submitHandler = (e) => {
+  const submitHandler = (e) => {
     e.preventDefault();
+    setLoading(true);
+    setOpen(true);
 
-    const {name, email, subject, lastname, events, notes, error} = this.state;
+    Object.keys(formState).forEach((key) => {
+      if (formState[key] === '') {
+        setSuccess(false);
+        error[key] = 'Please enter your ' + key;
+      }
+    });
 
-    if (name === '') {
-      error.name = 'Please enter your name';
-    }
-    if (email === '') {
-      error.email = 'Please enter your email';
-    }
-    if (subject === '') {
-      error.subject = 'Please enter your subject';
-    }
-    if (lastname === '') {
-      error.lastname = 'Please enter your Lastname';
-    }
-    if (events === '') {
-      error.events = 'Select your event list';
-    }
-    if (notes === '') {
-      error.notes = 'Please enter your note';
-    }
-
-    if (error) {
-      this.setState({
-        error,
-      });
-    }
     if (
-      error.name === '' &&
+      error.firstName === '' &&
+      error.lastName === '' &&
       error.email === '' &&
-      error.email === '' &&
-      error.lastname === '' &&
       error.subject === '' &&
-      error.events === '' &&
-      error.notes === ''
+      error.message === ''
     ) {
-      this.setState({
-        name: '',
-        email: '',
-        subject: '',
-        events: '',
-        notes: '',
-        error: {},
-      });
+      sendEmail(e);
+    } else {
+      setError({...error});
+      setLoading(false);
     }
   };
 
-  render() {
-    const {name, email, subject, lastname, error} = this.state;
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-    return (
-      <form onSubmit={this.submitHandler} className='form'>
-        <div className='row form-container'>
-          <div className='col-lg-6 col-md-12'>
-            <div className='form-field'>
-              <input
-                value={name}
-                onChange={this.changeHandler}
-                type='text'
-                name='name'
-                placeholder='Name'
-              />
-              <p>{error.name ? error.name : ''}</p>
-            </div>
-          </div>
-          <div className='col-lg-6 col-md-12'>
-            <div className='form-field'>
-              <input
-                value={lastname}
-                onChange={this.changeHandler}
-                type='text'
-                name='lastname'
-                placeholder='Lastname'
-              />
-              <p>{error.lastname ? error.lastname : ''}</p>
-            </div>
-          </div>
-          <div className='col-lg-6 col-md-12'>
-            <div className='form-field'>
-              <input
-                onChange={this.changeHandler}
-                value={email}
-                type='email'
-                name='email'
-                placeholder='Email'
-              />
-              <p>{error.email ? error.email : ''}</p>
-            </div>
-          </div>
-          <div className='col-lg-6 col-md-12'>
-            <div className='form-field'>
-              <input
-                onChange={this.changeHandler}
-                value={subject}
-                type='text'
-                name='subject'
-                placeholder='Subject'
-              />
-              <p>{error.subject ? error.subject : ''}</p>
-            </div>
-          </div>
-          <div className='col-lg-12'>
-            <div className='form-field'>
-              <textarea name='message' placeholder='Message'></textarea>
-            </div>
-          </div>
-          <div className='col-lg-12'>
-            <div className='form-submit'>
-              <button type='submit' className='template-btn-s3'>
-                Send Message
-              </button>
-            </div>
+    emailjs.sendForm('service_xofolwt', 'template_aohnq1v', form.current, 'oSTadiDMxfihxDo1m').then(
+      (result) => {
+        setLoading(false);
+        setSuccess(true);
+        setFormState(initialState);
+      },
+      (error) => {
+        setLoading(false);
+        setSuccess(false);
+      },
+    );
+  };
+
+  return (
+    <form ref={form} onSubmit={submitHandler} className='form'>
+      <div className='row form-container'>
+        <div className='col-lg-6 col-md-12'>
+          <div className='form-field'>
+            <input
+              value={firstName}
+              onChange={changeHandler}
+              type='text'
+              name='firstName'
+              placeholder='First Name'
+            />
+            <p>{error.firstName ?? ''}</p>
           </div>
         </div>
-      </form>
-    );
-  }
-}
+
+        <div className='col-lg-6 col-md-12'>
+          <div className='form-field'>
+            <input
+              value={lastName}
+              onChange={changeHandler}
+              type='text'
+              name='lastName'
+              placeholder='Last Name'
+            />
+            <p>{error.lastName ?? ''}</p>
+          </div>
+        </div>
+
+        <div className='col-lg-6 col-md-12'>
+          <div className='form-field'>
+            <input
+              onChange={changeHandler}
+              value={email}
+              type='email'
+              name='email'
+              placeholder='Email'
+            />
+            <p>{error.email ?? ''}</p>
+          </div>
+        </div>
+
+        <div className='col-lg-6 col-md-12'>
+          <div className='form-field'>
+            <input
+              onChange={changeHandler}
+              value={subject}
+              type='text'
+              name='subject'
+              placeholder='Subject'
+            />
+            <p>{error.subject ?? ''}</p>
+          </div>
+        </div>
+
+        <div className='col-lg-12'>
+          <div className='form-field'>
+            <textarea
+              value={message}
+              onChange={changeHandler}
+              name='message'
+              placeholder='Message'
+            ></textarea>
+            <p>{error.message ?? ''}</p>
+          </div>
+        </div>
+
+        <div className='col-lg-12'>
+          <div className='form-submit'>
+            <button
+              style={{
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}
+              type='submit'
+              className='template-btn-s3'
+              disabled={loading}
+            >
+              {loading ? (
+                <CircularProgress color='neutral' variant='plain' size='sm' />
+              ) : (
+                'Send Message'
+              )}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <Snackbar open={open} autoHideDuration={6000} onClose={() => setOpen(false)}>
+        <div>
+          {success ? (
+            <div className='alert success'>Your Message Was Sent Successfully</div>
+          ) : (
+            <div className='alert error'>
+              {error.email === '' &&
+              error.firstName === '' &&
+              error.lastName === '' &&
+              error.subject === '' &&
+              error.message === ''
+                ?  'Something Went Wrong, Please Try Submitting Again'
+                : 'Please Fill All The Fields'}
+            </div>
+          )}
+        </div>
+      </Snackbar>
+    </form>
+  );
+};
 export default ContactForm;

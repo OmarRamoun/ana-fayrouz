@@ -3,3 +3,24 @@
     padding: 0 20px !important;
   }
 }
+
+.alert {
+  background: rgb(37, 38, 43) !important;
+  color: rgba(32, 201, 151, 1) !important;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  border: 2px solid rgb(32, 201, 151) !important;
+}
+
+.success {
+  color:rgb(32, 201, 151) !important;
+  border-color: rgb(32, 201, 151) !important;
+}
+
+.error {
+  color: rgb(255, 107, 107) !important;
+  border-color: rgb(255, 107, 107)  !important;
+}

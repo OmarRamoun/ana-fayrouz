@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
-import aboutImg from '../../Assets/Images/about.png';
+import aboutImg from '../../Assets/Images/darwin_center.jpg';
 import './About.style.css';
-import {Link} from 'react-router-dom';
 
 class About extends Component {
   render() {
@@ -13,7 +12,7 @@ class About extends Component {
             <div className='row'>
               <div className='col-lg-6'>
                 <div className='about-img'>
-                  <img style={{marginTop: '52px'}} src={aboutImg} alt='' />
+                  <img style={{marginTop: '52px', filter: 'grayscale(45%)'}} src={aboutImg} alt='' />
                 </div>
               </div>
               <div className='col-lg-6'>
@@ -23,19 +22,19 @@ class About extends Component {
                     I am a highly experienced and accomplished software engineer with over 5 years
                     of industry experience. I have a proven track record of delivering high-quality,
                     scalable software solutions for a variety of industries, including finance,
-                    healthcare, and e-commerce.
+                    healthcare, educational SaaS, and e-commerce.
                   </p>
                   <p className='mt-20'>
                     My expertise includes a deep understanding of multiple programming languages and
-                    technologies such as Next.js, Python and Node.js, and a proven ability to design and
-                    implement complex systems. I am passionate about staying current with the latest technologies and trends in the industry and am always looking for new opportunities to challenge myself and push the boundaries of what is possible.
+                    technologies such as <code>Next.js</code>, <code>React</code>, <code>React-Native</code>, <code>Django</code>, <code>Ruby on Rails</code>, <code>Postgres</code> and <code>Node.js</code>, and a proven ability to design and
+                    implement complex systems. I am <strong>obsessed</strong> with staying current with the latest technologies and trends in the industry and am always looking for new opportunities to challenge myself and push the boundaries of what is possible.
                   </p>
                   <a
-                    href='./IsraArvinResume.pdf'
+                    href='./ramoun_resume_v2.pdf'
                     target='_blank'
                     className='template-secondary hover-border-none'
                     style={{borderColor: '#bfb9b9'}}
-                    Download
+                    download
                   >
                     Download Resume
                   </a>

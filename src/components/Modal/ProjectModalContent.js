@@ -1,24 +1,24 @@
 import './Modal.style.css';
 
 const ProjectModalContent = ({projectInfo}) => {
-  const {title, details, technologies, preview, source, client, image} = projectInfo;
+  const {title, description, technologies, preview, source, client, shots} = projectInfo;
   return (
     <div className='project-modal-content'>
       <h2 className='project-modal-content__title'>{title}</h2>
       <div className='project-modal-content__info'>
         <h3 className='project-modal-content__item' style={{marginBottom: '50px'}}>
-          Details: <span className='project-modal-content__item__value'>{details}</span>
+          Details: <span className='project-modal-content__item__value'>{description}</span>
         </h3>
-        <div className='row'>
+        <div className='row' style={{marginBottom: '50px'}}>
           <h3 className='project-modal-content__item col-6'>
             Technologies:{' '}
-            <span className='project-modal-content__item__value'>
+            <div className='project-modal-content__item__value'>
               {technologies
                 .toString()
                 .split(',')
-                .map((item) => ' '.concat(item))
-                .join()}
-            </span>
+                .map((item) => <span className='pill'>{item}</span>)
+              }
+            </div>
           </h3>
           <h3 className='project-modal-content__item col-6'>
             Client: <span className='project-modal-content__item__value'>{client}</span>
@@ -27,19 +27,38 @@ const ProjectModalContent = ({projectInfo}) => {
         <div className='row'>
           <h3 className='project-modal-content__item col-6'>
             Preview:{' '}
-            <a href={preview.link} target='_blank' rel='noopener noreferrer'>
-              <span className='project-modal-content__item__value'>{preview.title}</span>
+            <a href={preview} target='_blank' rel='noopener noreferrer'>
+              <span className='project-modal-content__item__value'>Link</span>
+              <img
+                width={20}
+                src='./Assets/arrow.svg'
+                alt=''
+                style={{color: 'white', marginLeft: '9px'}}
+              />
             </a>
           </h3>
           <h3 className='project-modal-content__item col-6'>
             Source:{' '}
-            <a href={source.link} target='_blank' rel='noopener noreferrer'>
-              <span className='project-modal-content__item__value'>{source.title}</span>
+            <a href={source} target='_blank' rel='noopener noreferrer'>
+              <span className='project-modal-content__item__value'>Link</span>
+              <img
+                width={20}
+                src='./Assets/arrow.svg'
+                alt=''
+                style={{color: 'white', marginLeft: '9px'}}
+              />
             </a>
           </h3>
         </div>
         <div className='project-modal-content__image'>
-          <img src={image} alt='' />
+          <div className="row1 modal-image-row">
+            <img className="modal-image landscape1" src={shots.landscape[0].src} alt="" />
+            <img className="modal-image portrait1" src={shots.portrait[0].src} alt="" />
+          </div>
+          <div className="row2 modal-image-row">
+            <img className="modal-image portrait2" src={shots.portrait[1].src} alt="" />
+            <img className="modal-image landscape2" src={shots.landscape[1].src} alt="" />
+          </div>
         </div>
       </div>
     </div>

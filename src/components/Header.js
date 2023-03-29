@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import Logo from '../Assets/Images/logo.svg';
-import Home_1 from '../Assets/Images/home/img-1.jpg';
-import Home_2 from '../Assets/Images/home/img-6.jpg';
-import Home_3 from '../Assets/Images/home/img-4.jpg';
-import Home_4 from '../Assets/Images/home/img-5.jpg';
-// import Home_5 from '../Assets/Images/home/img-2.jpg';
-import Home_6 from '../Assets/Images/home/img-3.jpg';
+import Logo from '../Assets/Images/darwin.jpg';
+import Ramoun from '../Assets/Images/Ramoun.svg';
+import home from '../Assets/sections_shots/home.png';
+import about from '../Assets/sections_shots/about.png';
+import services from '../Assets/sections_shots/services.png';
+import portfolio from '../Assets/sections_shots/portfolio.png';
+import contact from '../Assets/sections_shots/contact.png';
 
 import {Link} from 'react-router-dom';
 
@@ -35,7 +35,8 @@ class Header extends Component {
                 <span className='icon-bar'></span>
               </button>
               <Link className='navbar-brand' to='/'>
-                <img style={{width: '47px', filter: 'invert(1)'}} src={Logo} alt='' />
+                <img style={{width: '47px', borderRadius: '50%'}} src={Logo} alt='' />
+                <img style={{height: '20px', filter: 'invert(1)', opacity: '0.7'}} src={Ramoun} alt='' />
               </Link>
             </div>
             {this.state.isOpen && (
@@ -81,35 +82,35 @@ class Header extends Component {
                   <ul className='nav navbar-nav'>
                     <li className='home'>
                       <a href='#home'>
-                        <img src={Home_1} alt='' />
+                        <img src={home} alt='' />
                       </a>
                     </li>
                     <li className='about'>
                       <a href='#about'>
-                        <img src={Home_2} alt='' />
+                        <img src={about} alt='' />
                       </a>
                     </li>
                     <li className='service'>
                       <a href='#service'>
-                        <img src={Home_3} alt='' />
+                        <img src={services} alt='' />
                       </a>
                     </li>
                     <li className='protfolio'>
                       <a href='#protfolio'>
-                        <img src={Home_4} alt='' />
+                        <img src={portfolio} alt='' />
                       </a>
                     </li>
                     <li className='contact'>
                       <a href='#contact'>
-                        <img src={Home_6} alt='' />
+                        <img src={contact} alt='' />
                       </a>
                     </li>
                   </ul>
                 </div>
               </div>
             )}
-            <div className='menu-open-btn-holder mb-2' style={{top: '12px'}}>
-              <button className='menu-open-btn mb-2' onClick={() => this.setState({isOpen: true})}>
+            <div className='menu-open-btn-holder'>
+              <button className='menu-open-btn' onClick={() => this.setState({isOpen: true})}>
                 <span style={{height: '4px'}}></span>
                 <span style={{height: '4px'}}></span>
                 <span style={{height: '4px'}}></span>

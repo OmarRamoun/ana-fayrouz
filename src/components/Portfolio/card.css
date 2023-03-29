@@ -1,0 +1,53 @@
+.card-cover-title {
+  font-size: 2.8rem;
+  transform: scale(0);
+  transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.img-cover {
+  background-size: cover !important;
+  background-position: center;
+  filter: grayscale(20%) blur(1px) hue-rotate(20deg);
+  transform: scale(1.1);
+  animation: scale 16s ease infinite !important;
+  box-shadow: inset 0 0 50px 20px rgba(0,0,0, 0.5) !important;
+}
+
+.icon:hover .card-cover-title,
+.img-cover:hover .card-cover-title {
+  transform: scale(1);
+}
+
+.icon:hover .img-cover {
+  filter: grayscale(0%) blur(0px) hue-rotate(0deg) !important;
+  transform: scale(1) !important;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.507);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  padding: 0.3rem;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  margin: 0.2rem;
+  border-radius: 9999rem;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1.1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
