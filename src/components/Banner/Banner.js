@@ -27,7 +27,7 @@ const Banner = () => {
                       typeSpeed={100}
                       deleteSpeed={50}
                       delaySpeed={1000}
-                      words={['Software Engineer', 'Full-Stack Developer', 'UI Engineer']}
+                      words={['Software Engineer', 'Front-End Developer', 'React Developer']}
                     />
                   </h2>
                 </div>
@@ -75,7 +75,14 @@ const Banner = () => {
       </div>
 
       <div className='social-links position-fixed fixed-bottom' style={{maxWidth: '2rem'}}>
-        <ul style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', maxWidth: '2rem'}}>
+        <ul
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            maxWidth: '2rem',
+          }}
+        >
           <li>
             <a href='https://linkedin.com/in/omarramoun' target='_blank' rel='noreferrer'>
               <i style={{fontSize: '28px'}} className='fa fa-linkedin'></i>

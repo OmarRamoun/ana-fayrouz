@@ -12,22 +12,33 @@ class About extends Component {
             <div className='row'>
               <div className='col-lg-6'>
                 <div className='about-img'>
-                  <img style={{marginTop: '52px', filter: 'grayscale(45%)'}} src={aboutImg} alt='' />
+                  <img
+                    style={{marginTop: '52px', filter: 'grayscale(45%)'}}
+                    src={aboutImg}
+                    alt=''
+                  />
                 </div>
               </div>
               <div className='col-lg-6'>
                 <div className='about-content' style={{paddingInline: '30px'}}>
                   <h2>About Me</h2>
-                  <p>
-                    I am a highly experienced and accomplished software engineer with over 5 years
-                    of industry experience. I have a proven track record of delivering high-quality,
-                    scalable software solutions for a variety of industries, including finance,
-                    healthcare, educational SaaS, and e-commerce.
+                  <p className='fs-p'>
+                    I am react developer with over 5 years of industry experience. I have a proven
+                    track record of delivering high-quality, scalable software solutions for a
+                    variety of industries, including finance, healthcare, educational SaaS, and
+                    e-commerce.
                   </p>
-                  <p className='mt-20'>
-                    My expertise includes a deep understanding of multiple programming languages and
-                    technologies such as <code>Next.js</code>, <code>React</code>, <code>React-Native</code>, <code>Django</code>, <code>Ruby on Rails</code>, <code>Postgres</code> and <code>Node.js</code>, and a proven ability to design and
-                    implement complex systems. I am <strong>obsessed</strong> with staying current with the latest technologies and trends in the industry and am always looking for new opportunities to challenge myself and push the boundaries of what is possible.
+                  <p className='mt-20 fs-p'>
+                    My expertise includes a deep understanding of multiple technologies such as{' '}
+                    <code>javascript</code>, <code>React</code>, <code>React-Native</code>,{' '}
+                    <code>Next.js</code>, <code>Django</code>, <code>Postgres</code>,{' '}
+                    <code>serverless AWS</code>, and <code>Typescript</code>, and a proven ability
+                    to design and implement complex systems in Agile settings. I am{' '}
+                    <strong>obsessed</strong> with staying current with the latest technologies and
+                    trends in the industry (that's why I am currently building a JAM Stack
+                    application for a non-profit organization named "WA3EY") and I am always looking
+                    for new opportunities to challenge myself and push the boundaries of what is
+                    possible.
                   </p>
                   <a
                     href='./ramoun_resume_v2.pdf'
