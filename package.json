@@ -30,6 +30,7 @@
     "react-router-dom": "latest",
     "react-scripts": "latest",
     "react-scroll": "latest",
+    "react-scroll-parallax": "^3.4.2",
     "react-simple-typewriter": "latest",
     "react-slick": "latest",
     "react-sticky-header": "latest",

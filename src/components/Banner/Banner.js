@@ -1,6 +1,7 @@
 import React from 'react';
 
 import {Typewriter} from 'react-simple-typewriter';
+import {ParallaxBanner} from 'react-scroll-parallax';
 import Slides from '../../Assets/Images/home/amoled.jpg';
 import './Banner.style.css';
 
@@ -8,66 +9,65 @@ const Banner = () => {
   return (
     <section id='home' className='hero hero-slider-wrapper hero-style-1'>
       <div className='hero-slider hero-slider-bg'>
-        <div className='slide'>
-          <div className='slider-image'>
-            <img style={{filter: 'brightness(0.4) blur(1px)'}} src={Slides} alt='bg' />
-          </div>
-          <div className='container' style={{position: 'relative', zIndex: 1000}}>
-            <div className='row'>
-              <div style={{marginTop: '20px'}} className='col col-md-8 col-sm-12 slide-caption'>
-                <div className='slide-subtitle'>
-                  <h1>I Am Ramoun</h1>
-                </div>
-                <div className='slide-title'>
-                  <h2>
-                    <Typewriter
-                      loop
-                      cursor
-                      cursorBlinking
-                      typeSpeed={100}
-                      deleteSpeed={50}
-                      delaySpeed={1000}
-                      words={['Software Engineer', 'Front-End Developer', 'React Developer']}
-                    />
-                  </h2>
-                </div>
-                <div className='btns' style={{display: 'flex', alignItems: 'center'}}>
-                  <a
-                    href='#contact'
-                    className='template-secondary go-contact-area mr-3'
-                    style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      height: '50px',
-                      paddingInline: '30px',
-                    }}
-                  >
-                    Contact Me
-                  </a>
-                  <a
-                    href='./ramoun_resume_v2.pdf'
-                    className='btn template-secondary btn-lg round go-contact-area'
-                    target='_blank'
-                    style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      borderRadius: '40px',
-                      height: '50px',
-                      fontFamily: "'Oswald', sans-serif",
-                      textTransform: 'uppercase',
-                      paddingInline: '30px',
-                    }}
-                    download
-                  >
-                    Download CV
-                  </a>
+        <ParallaxBanner layers={[{image: Slides, speed: -50, className: 'bg-hero-img'}]} className='bg-container'>
+          <div className='slide'>
+            <div className='container' style={{position: 'relative', zIndex: 1000}}>
+              <div className='row'>
+                <div style={{marginTop: '20px'}} className='col col-md-8 col-sm-12 slide-caption'>
+                  <div className='slide-subtitle'>
+                    <h1>I Am Ramoun</h1>
+                  </div>
+                  <div className='slide-title'>
+                    <h2>
+                      <Typewriter
+                        loop
+                        cursor
+                        cursorBlinking
+                        typeSpeed={100}
+                        deleteSpeed={50}
+                        delaySpeed={1000}
+                        words={['Software Engineer', 'Front-End Developer', 'React Developer']}
+                      />
+                    </h2>
+                  </div>
+                  <div className='btns' style={{display: 'flex', alignItems: 'center'}}>
+                    <a
+                      href='#contact'
+                      className='template-secondary go-contact-area mr-3'
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        height: '50px',
+                        paddingInline: '30px',
+                      }}
+                    >
+                      Contact Me
+                    </a>
+                    <a
+                      href='./ramoun_resume_v2.pdf'
+                      className='btn template-secondary btn-lg round go-contact-area'
+                      target='_blank'
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        borderRadius: '40px',
+                        height: '50px',
+                        fontFamily: "'Oswald', sans-serif",
+                        textTransform: 'uppercase',
+                        paddingInline: '30px',
+                      }}
+                      download
+                    >
+                      Download CV
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </ParallaxBanner>
       </div>
 
       <div className='copy'>
