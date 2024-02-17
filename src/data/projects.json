@@ -9,21 +9,21 @@
         "landscape": [
           {
             "id": 1,
-            "src": "./Assets/projects/nursery-story/ns-1.png"
+            "src": "./assets/projects/nursery-story/ns-1.png"
           },
           {
             "id": 2,
-            "src": "./Assets/projects/nursery-story/ns-2.png"
+            "src": "./assets/projects/nursery-story/ns-2.png"
           }
         ],
         "portrait": [
           {
             "id": 3,
-            "src": "./Assets/projects/nursery-story/ns-3.png"
+            "src": "./assets/projects/nursery-story/ns-3.png"
           },
           {
             "id": 4,
-            "src": "./Assets/projects/nursery-story/ns-4.png"
+            "src": "./assets/projects/nursery-story/ns-4.png"
           }
         ]
       },
@@ -48,7 +48,9 @@
         "knex",
         "Eslint",
         "Prettier",
-        "Commitlint"," Lint-staged", "CI/CD with GitHub Actions"
+        "Commitlint",
+        " Lint-staged",
+        "CI/CD with GitHub Actions"
       ]
     },
     {
@@ -60,35 +62,27 @@
         "landscape": [
           {
             "id": 1,
-            "src": "./Assets/projects/sellgo/sellgo-1.png"
+            "src": "./assets/projects/sellgo/sellgo-1.png"
           },
           {
             "id": 2,
-            "src": "./Assets/projects/sellgo/sellgo-6.png"
+            "src": "./assets/projects/sellgo/sellgo-6.png"
           }
         ],
         "portrait": [
           {
             "id": 3,
-            "src": "./Assets/projects/sellgo/sellgo-3.png"
+            "src": "./assets/projects/sellgo/sellgo-3.png"
           },
           {
             "id": 4,
-            "src": "./Assets/projects/sellgo/sellgo-4.png"
+            "src": "./assets/projects/sellgo/sellgo-4.png"
           }
         ]
       },
       "source": "https://github.com/OmarRamoun/SellGo",
       "preview": "https://sellgo.omarramoun.com",
-      "technologies": [
-        "Next.js",
-        "React Hooks",
-        "Eslint",
-        "Prettier",
-        "SCSS",
-        "redux",
-        "wordpress"
-      ]
+      "technologies": ["Next.js", "React Hooks", "Eslint", "Prettier", "SCSS", "redux", "wordpress"]
     },
     {
       "id": 3,
@@ -99,21 +93,21 @@
         "landscape": [
           {
             "id": 1,
-            "src": "./Assets/projects/rene/rene-1.png"
+            "src": "./assets/projects/rene/rene-1.png"
           },
           {
             "id": 2,
-            "src": "./Assets/projects/rene/rene-2.png"
+            "src": "./assets/projects/rene/rene-2.png"
           }
         ],
         "portrait": [
           {
             "id": 3,
-            "src": "./Assets/projects/rene/rene-3.png"
+            "src": "./assets/projects/rene/rene-3.png"
           },
           {
             "id": 4,
-            "src": "./Assets/projects/rene/rene-4.png"
+            "src": "./assets/projects/rene/rene-4.png"
           }
         ]
       },
@@ -140,21 +134,21 @@
         "landscape": [
           {
             "id": 1,
-            "src": "./Assets/projects/serra/serra-1.png"
+            "src": "./assets/projects/serra/serra-1.png"
           },
           {
             "id": 2,
-            "src": "./Assets/projects/serra/serra-2.png"
+            "src": "./assets/projects/serra/serra-2.png"
           }
         ],
         "portrait": [
           {
             "id": 3,
-            "src": "./Assets/projects/serra/serra-3.png"
+            "src": "./assets/projects/serra/serra-3.png"
           },
           {
             "id": 4,
-            "src": "./Assets/projects/serra/serra-4.gif"
+            "src": "./assets/projects/serra/serra-4.gif"
           }
         ]
       },
@@ -181,21 +175,21 @@
         "landscape": [
           {
             "id": 1,
-            "src": "./Assets/projects/sweetyellow/sweetyellow-1.png"
+            "src": "./assets/projects/sweetyellow/sweetyellow-1.png"
           },
           {
             "id": 2,
-            "src": "./Assets/projects/sweetyellow/sweetyellow-2.png"
+            "src": "./assets/projects/sweetyellow/sweetyellow-2.png"
           }
         ],
         "portrait": [
           {
             "id": 3,
-            "src": "./Assets/projects/sweetyellow/sweetyellow-3.png"
+            "src": "./assets/projects/sweetyellow/sweetyellow-3.png"
           },
           {
             "id": 4,
-            "src": "./Assets/projects/sweetyellow/sweetyellow-4.png"
+            "src": "./assets/projects/sweetyellow/sweetyellow-4.png"
           }
         ]
       },
@@ -221,35 +215,27 @@
         "landscape": [
           {
             "id": 1,
-            "src": "./Assets/projects/cleanblue/cleanblue-1.png"
+            "src": "./assets/projects/cleanblue/cleanblue-1.png"
           },
           {
             "id": 3,
-            "src": "./Assets/projects/cleanblue/cleanblue-3.png"
+            "src": "./assets/projects/cleanblue/cleanblue-3.png"
           }
         ],
         "portrait": [
           {
             "id": 2,
-            "src": "./Assets/projects/cleanblue/cleanblue-2.png"
+            "src": "./assets/projects/cleanblue/cleanblue-2.png"
           },
           {
             "id": 4,
-            "src": "./Assets/projects/cleanblue/cleanblue-4.png"
+            "src": "./assets/projects/cleanblue/cleanblue-4.png"
           }
         ]
       },
       "source": "https://github.com/OmarRamoun/clean-blue",
       "preview": "https://cleanblue.omarramoun.com",
-      "technologies": [
-        "HTML5",
-        "CSS3",
-        "ES6",
-        "Eslint",
-        "Prettier",
-        "Stylelint",
-        "Webhint"
-      ]
+      "technologies": ["HTML5", "CSS3", "ES6", "Eslint", "Prettier", "Stylelint", "Webhint"]
     },
     {
       "id": 7,
@@ -260,21 +246,21 @@
         "landscape": [
           {
             "id": 1,
-            "src": "./Assets/projects/awesome/awesome-1.png"
+            "src": "./assets/projects/awesome/awesome-1.png"
           },
           {
             "id": 2,
-            "src": "./Assets/projects/awesome/awesome-2.png"
+            "src": "./assets/projects/awesome/awesome-2.png"
           }
         ],
         "portrait": [
           {
             "id": 3,
-            "src": "./Assets/projects/awesome/awesome-3.png"
+            "src": "./assets/projects/awesome/awesome-3.png"
           },
           {
             "id": 4,
-            "src": "./Assets/projects/awesome/awesome-4.png"
+            "src": "./assets/projects/awesome/awesome-4.png"
           }
         ]
       },
@@ -300,21 +286,21 @@
         "landscape": [
           {
             "id": 1,
-            "src": "./Assets/projects/corona/corona-1.png"
+            "src": "./assets/projects/corona/corona-1.png"
           },
           {
             "id": 2,
-            "src": "./Assets/projects/corona/corona-2.png"
+            "src": "./assets/projects/corona/corona-2.png"
           }
         ],
         "portrait": [
           {
             "id": 3,
-            "src": "./Assets/projects/corona/corona-3.png"
+            "src": "./assets/projects/corona/corona-3.png"
           },
           {
             "id": 4,
-            "src": "./Assets/projects/corona/corona-4.png"
+            "src": "./assets/projects/corona/corona-4.png"
           }
         ]
       },
@@ -341,36 +327,27 @@
         "landscape": [
           {
             "id": 1,
-            "src": "./Assets/projects/wonka/wonka-1.png"
+            "src": "./assets/projects/wonka/wonka-1.png"
           },
           {
             "id": 2,
-            "src": "./Assets/projects/wonka/wonka-2.png"
+            "src": "./assets/projects/wonka/wonka-2.png"
           }
         ],
         "portrait": [
           {
             "id": 3,
-            "src": "./Assets/projects/wonka/wonka-3.png"
+            "src": "./assets/projects/wonka/wonka-3.png"
           },
           {
             "id": 4,
-            "src": "./Assets/projects/wonka/wonka-4.png"
+            "src": "./assets/projects/wonka/wonka-4.png"
           }
         ]
       },
       "source": "https://github.com/OmarRamoun/wonka-conference",
       "preview": "https://wonka.omarramoun.com",
-      "technologies": [
-        "HTML5",
-        "CSS3",
-        "JS",
-        "ES6",
-        "Eslint",
-        "Prettier",
-        "Stylelint",
-        "Webhint"
-      ]
+      "technologies": ["HTML5", "CSS3", "JS", "ES6", "Eslint", "Prettier", "Stylelint", "Webhint"]
     }
   ]
 }

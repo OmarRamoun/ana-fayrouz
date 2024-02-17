@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React, { Fragment } from 'react';
 import Banner from '../../components/Banner/Banner';
 import About from '../../components/About/About';
 import Service from '../../components/Service/Service';
@@ -9,18 +9,16 @@ import Scrollbar from '../../components/scroolbar';
 import Navbar from '../../components/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const HomePage = () => {
-  return (
-    <Fragment>
-      <Navbar />
-      <Banner />
-      <About />
-      <Service />
-      <Portfolio />
-      <Testimonial />
-      <Contact />
-      <Scrollbar />
-    </Fragment>
-  );
-};
+const HomePage = () => (
+  <>
+    <Navbar />
+    <Banner />
+    <About />
+    <Service />
+    <Portfolio />
+    <Testimonial />
+    <Contact />
+    <Scrollbar />
+  </>
+);
 export default HomePage;

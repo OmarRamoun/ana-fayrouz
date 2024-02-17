@@ -280,12 +280,6 @@ button:focus {
 /*--------------------------------------------------------------
  header
 --------------------------------------------------------------*/
-.site-header {
-  /* navigation open and close btn hide for width screen */
-  /* style for navigation less than 992px */
-  /*navbar collaps less then 992px*/
-  /*** cart-search-contact ***/
-}
 
 .site-header .navigation {
   background-color: transparent;
@@ -915,9 +909,7 @@ button:focus {
   right: 0;
 }
 
-.header-style-1 a img {
-  width: 100%;
-}
+
 .header-style-1 .home a {
   width: 100%;
   transition: all 0.5s;

@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import testimonialImg_1 from '../Assets/Images/testimonial/1.jpg';
-import testimonialImg_2 from '../Assets/Images/testimonial/2.jpg';
-import testimonialImg_3 from '../Assets/Images/testimonial/3.jpg';
+import testimonialImg_1 from '../assets/images/testimonial/1.jpg';
+import testimonialImg_2 from '../assets/images/testimonial/2.jpg';
+import testimonialImg_3 from '../assets/images/testimonial/3.jpg';
 
 class Testimonial extends Component {
   render() {
@@ -45,19 +45,19 @@ class Testimonial extends Component {
       ],
     };
     return (
-      <div className='testimonial-area'>
-        <div className='copy'>
+      <div className="testimonial-area">
+        <div className="copy">
           <p>Words of my Clients</p>
         </div>
-        <div className='container'>
-          <div className='testimonial-active' style={{paddingInline: '30px'}}>
+        <div className="container">
+          <div className="testimonial-active" style={{ paddingInline: '30px' }}>
             <Slider {...settings}>
-              <div className='testimonial-wrap'>
-                <div className='testimonial-item'>
-                  <div className='testimonial-icon'>
-                    <i className='fi flaticon-writer'></i>
+              <div className="testimonial-wrap">
+                <div className="testimonial-item">
+                  <div className="testimonial-icon">
+                    <i className="fi flaticon-writer" />
                   </div>
-                  <div className='testimonial-content'>
+                  <div className="testimonial-content">
                     <p>
                       I had the pleasure of working with Ramoun on a project and I was extremely
                       impressed with his attention to details and ability to deliver high-quality
@@ -65,21 +65,21 @@ class Testimonial extends Component {
                       highly recommend him for any project.
                     </p>
                   </div>
-                  <div className='testimonial-img'>
-                    <img src={testimonialImg_1} alt='' />
+                  <div className="testimonial-img">
+                    <img src={testimonialImg_1} alt="" />
                   </div>
-                  <div className='testimonial-content'>
+                  <div className="testimonial-content">
                     <h4>BP. Alex</h4>
                     <span>SEO of Northy</span>
                   </div>
                 </div>
               </div>
-              <div className='testimonial-wrap'>
-                <div className='testimonial-item'>
-                  <div className='testimonial-icon'>
-                    <i className='fi flaticon-writer'></i>
+              <div className="testimonial-wrap">
+                <div className="testimonial-item">
+                  <div className="testimonial-icon">
+                    <i className="fi flaticon-writer" />
                   </div>
-                  <div className='testimonial-content'>
+                  <div className="testimonial-content">
                     <p>
                       Ramoun is a top-notch developer, who consistently exceeds expectations. He is a
                       problem-solver and always goes above and beyond to deliver the best possible
@@ -87,21 +87,21 @@ class Testimonial extends Component {
                       recommend him to anyone looking for a reliable and skilled developer
                     </p>
                   </div>
-                  <div className='testimonial-img'>
-                    <img src={testimonialImg_2} alt='' />
+                  <div className="testimonial-img">
+                    <img src={testimonialImg_2} alt="" />
                   </div>
-                  <div className='testimonial-content'>
+                  <div className="testimonial-content">
                     <h4>Rosa Naser</h4>
                     <span>Head of Product Development at Alex Lab</span>
                   </div>
                 </div>
               </div>
-              <div className='testimonial-wrap'>
-                <div className='testimonial-item'>
-                  <div className='testimonial-icon'>
-                    <i className='fi flaticon-writer'></i>
+              <div className="testimonial-wrap">
+                <div className="testimonial-item">
+                  <div className="testimonial-icon">
+                    <i className="fi flaticon-writer" />
                   </div>
-                  <div className='testimonial-content'>
+                  <div className="testimonial-content">
                     <p>
                       I had the opportunity to work with Omar on a project, and I was thoroughly
                       impressed with his skill set and work ethic. He is a true professional and
@@ -109,10 +109,10 @@ class Testimonial extends Component {
                       recommend him for any project.
                     </p>
                   </div>
-                  <div className='testimonial-img'>
-                    <img src={testimonialImg_3} alt='' />
+                  <div className="testimonial-img">
+                    <img src={testimonialImg_3} alt="" />
                   </div>
-                  <div className='testimonial-content'>
+                  <div className="testimonial-content">
                     <h4>Emily Brown</h4>
                     <span>Lead Developer at Xoommit Inc.</span>
                   </div>
@@ -121,9 +121,9 @@ class Testimonial extends Component {
             </Slider>
           </div>
         </div>
-        <div className='white_svg'>
-          <svg x='0px' y='0px' viewBox='0 186.5 1920 113.5'>
-            <polygon points='0,300 655.167,210.5 1432.5,300 1920,198.5 1920,300 '></polygon>
+        <div className="white_svg">
+          <svg x="0px" y="0px" viewBox="0 186.5 1920 113.5">
+            <polygon points="0,300 655.167,210.5 1432.5,300 1920,198.5 1920,300 " />
           </svg>
         </div>
       </div>

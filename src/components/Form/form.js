@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react';
+import React, { useRef, useState } from 'react';
 import CircularProgress from '@mui/joy/CircularProgress';
 import Snackbar from '@mui/material/Snackbar';
 
@@ -19,14 +19,16 @@ const ContactForm = () => {
   const [formState, setFormState] = useState(initialState);
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
-  const [error, setError] = useState({...initialState});
+  const [error, setError] = useState({ ...initialState });
 
   const form = useRef();
 
-  const {firstName, lastName, email, subject, message} = formState;
+  const {
+    firstName, lastName, email, subject, message,
+  } = formState;
 
   const changeHandler = (e) => {
-    const {name, value} = e.target;
+    const { name, value } = e.target;
     error[name] = '';
 
     setFormState({
@@ -43,20 +45,20 @@ const ContactForm = () => {
     Object.keys(formState).forEach((key) => {
       if (formState[key] === '') {
         setSuccess(false);
-        error[key] = 'Please enter your ' + key;
+        error[key] = `Please enter your ${key}`;
       }
     });
 
     if (
-      error.firstName === '' &&
-      error.lastName === '' &&
-      error.email === '' &&
-      error.subject === '' &&
-      error.message === ''
+      error.firstName === ''
+      && error.lastName === ''
+      && error.email === ''
+      && error.subject === ''
+      && error.message === ''
     ) {
       sendEmail(e);
     } else {
-      setError({...error});
+      setError({ ...error });
       setLoading(false);
     }
   };
@@ -78,74 +80,74 @@ const ContactForm = () => {
   };
 
   return (
-    <form ref={form} onSubmit={submitHandler} className='form'>
-      <div className='row form-container'>
-        <div className='col-lg-6 col-md-12'>
-          <div className='form-field'>
+    <form ref={form} onSubmit={submitHandler} className="form">
+      <div className="row form-container">
+        <div className="col-lg-6 col-md-12">
+          <div className="form-field">
             <input
               value={firstName}
               onChange={changeHandler}
-              type='text'
-              name='firstName'
-              placeholder='First Name'
+              type="text"
+              name="firstName"
+              placeholder="First Name"
             />
             <p>{error.firstName ?? ''}</p>
           </div>
         </div>
 
-        <div className='col-lg-6 col-md-12'>
-          <div className='form-field'>
+        <div className="col-lg-6 col-md-12">
+          <div className="form-field">
             <input
               value={lastName}
               onChange={changeHandler}
-              type='text'
-              name='lastName'
-              placeholder='Last Name'
+              type="text"
+              name="lastName"
+              placeholder="Last Name"
             />
             <p>{error.lastName ?? ''}</p>
           </div>
         </div>
 
-        <div className='col-lg-6 col-md-12'>
-          <div className='form-field'>
+        <div className="col-lg-6 col-md-12">
+          <div className="form-field">
             <input
               onChange={changeHandler}
               value={email}
-              type='email'
-              name='email'
-              placeholder='Email'
+              type="email"
+              name="email"
+              placeholder="Email"
             />
             <p>{error.email ?? ''}</p>
           </div>
         </div>
 
-        <div className='col-lg-6 col-md-12'>
-          <div className='form-field'>
+        <div className="col-lg-6 col-md-12">
+          <div className="form-field">
             <input
               onChange={changeHandler}
               value={subject}
-              type='text'
-              name='subject'
-              placeholder='Subject'
+              type="text"
+              name="subject"
+              placeholder="Subject"
             />
             <p>{error.subject ?? ''}</p>
           </div>
         </div>
 
-        <div className='col-lg-12'>
-          <div className='form-field'>
+        <div className="col-lg-12">
+          <div className="form-field">
             <textarea
               value={message}
               onChange={changeHandler}
-              name='message'
-              placeholder='Message'
-            ></textarea>
+              name="message"
+              placeholder="Message"
+            />
             <p>{error.message ?? ''}</p>
           </div>
         </div>
 
-        <div className='col-lg-12'>
-          <div className='form-submit'>
+        <div className="col-lg-12">
+          <div className="form-submit">
             <button
               style={{
                 cursor: 'pointer',
@@ -153,12 +155,12 @@ const ContactForm = () => {
                 alignItems: 'center',
                 justifyContent: 'center',
               }}
-              type='submit'
-              className='template-btn-s3'
+              type="submit"
+              className="template-btn-s3"
               disabled={loading}
             >
               {loading ? (
-                <CircularProgress color='neutral' variant='plain' size='sm' />
+                <CircularProgress color="neutral" variant="plain" size="sm" />
               ) : (
                 'Send Message'
               )}
@@ -170,15 +172,15 @@ const ContactForm = () => {
       <Snackbar open={open} autoHideDuration={6000} onClose={() => setOpen(false)}>
         <div>
           {success ? (
-            <div className='alert success'>Your Message Was Sent Successfully</div>
+            <div className="alert success">Your Message Was Sent Successfully</div>
           ) : (
-            <div className='alert error'>
-              {error.email === '' &&
-              error.firstName === '' &&
-              error.lastName === '' &&
-              error.subject === '' &&
-              error.message === ''
-                ?  'Something Went Wrong, Please Try Submitting Again'
+            <div className="alert error">
+              {error.email === ''
+              && error.firstName === ''
+              && error.lastName === ''
+              && error.subject === ''
+              && error.message === ''
+                ? 'Something Went Wrong, Please Try Submitting Again'
                 : 'Please Fill All The Fields'}
             </div>
           )}

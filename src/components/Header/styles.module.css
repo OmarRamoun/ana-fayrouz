@@ -1,0 +1,36 @@
+.header {
+  -webkit-backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
+  -o-backdrop-filter: blur(10px);
+  -ms-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  width: 47px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: 15px;
+}
+
+.ramoun {
+  height: 20px;
+  filter: invert(1);
+  opacity: 0.7;
+}
+
+.menu_bar_stick {
+  height: 4px;
+}
+
+.navbar_collapse {
+  position: 'fixed';
+  top: 0;
+  left: 0;
+  width: '100vw';
+  height: '100vh';
+  background-color: 'rgba(0,0,0,0)';
+}
