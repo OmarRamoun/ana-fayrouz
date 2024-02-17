@@ -1,0 +1,8 @@
+*.css
+*.svg
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.ico
+src/**/*.js
