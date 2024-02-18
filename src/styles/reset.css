@@ -1,0 +1,66 @@
+html {
+  font-size: 15px;
+  overflow-x: clip
+}
+
+body {
+  font-family: 'Heebo', sans-serif;
+  background-color: #111;
+  font-size: 15px;
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip
+}
+
+p {
+  color: #999;
+  line-height: 1.7em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Oswald', sans-serif;
+  color: #2a2a2a;
+}
+
+ul {
+  padding-inline-start: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.owl-carousel .owl-item img {
+  width: auto;
+}
+
+button:focus {
+  outline: none;
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+}

@@ -1,9 +1,27 @@
 .header {
-  -webkit-backdrop-filter: blur(10px);
-  -moz-backdrop-filter: blur(10px);
-  -o-backdrop-filter: blur(10px);
-  -ms-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  --blur: 14px;
+
+  -webkit-backdrop-filter: blur(var(--blur));
+  -moz-backdrop-filter: blur(var(--blur));
+  -o-backdrop-filter: blur(var(--blur));
+  -ms-backdrop-filter: blur(var(--blur));
+  backdrop-filter: blur(var(--blur));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0) 100%);
+  border-bottom: 1px solid rgba(102, 102, 102, 0.3);
+}
+
+.navbar_container {
+  --padding-horizontal: 25px;
+  --padding-vertical: 15px;
+
+  width: 100%;
+  padding-left: var(--padding-horizontal);
+  padding-right: var(--padding-horizontal);
+  padding-top: var(--padding-vertical);
+  padding-bottom: var(--padding-vertical);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -22,15 +40,238 @@
   opacity: 0.7;
 }
 
-.menu_bar_stick {
-  height: 4px;
+.side_nav {
+  --transition: 0.4s transform ease-in-out;
+  --blur: 30px;
+  --transform: translateX(110%);
+
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  border-left: 1px solid rgba(102, 102, 102, 0.3);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
+  -webkit-backdrop-filter: blur(var(--blur));
+  -moz-backdrop-filter: blur(var(--blur));
+  -o-backdrop-filter: blur(var(--blur));
+  -ms-backdrop-filter: blur(var(--blur));
+  backdrop-filter: blur(var(--blur));
+  position: fixed;
+  right: 0;
+  top: 0;
+  -webkit-transform: var(--transform);
+  -moz-transform: var(--transform);
+  -ms-transform: var(--transform);
+  -o-transform: var(--transform);
+  transform: var(--transform);
 }
 
-.navbar_collapse {
-  position: 'fixed';
-  top: 0;
+.nav_open {
+  --transform: translateX(0%);
+  transform: var(--transform);
+  -webkit-transform: var(--transform);
+  -moz-transform: var(--transform);
+  -ms-transform: var(--transform);
+  -o-transform: var(--transform);
+}
+
+.burger_menu_btn {
+  --transition: 0.3s gap ease-in-out;
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
+}
+
+.burger_menu_btn:hover {
+  gap: 10px;
+}
+
+.menu_bar_stick {
+  --transition: 0.3s background-color ease-in-out;
+
+  background-color: #fff;
+  width: 27px;
+  height: 3px;
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
+}
+
+.burger_menu_btn:hover .menu_bar_stick {
+  background-color: #b1b1b1;
+}
+
+.menu_bar_stick:nth-child(3) {
+  width: 18px;
+}
+
+.close_btn {
+  --blur: 10px;
+  --transition: 0.25s all ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.36) !important;
+  /* background-color: rgba(255,255,255,0.2) !important; */
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.2), transparent) !important;
+  -webkit-backdrop-filter: blur(var(--blur));
+  -moz-backdrop-filter: blur(var(--blur));
+  -o-backdrop-filter: blur(var(--blur));
+  -ms-backdrop-filter: blur(var(--blur));
+  backdrop-filter: blur(var(--blur));
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  border-radius: 50%;
+  outline: none;
+  position: absolute;
+  left: -18px;
+  top: 10px;
+  z-index: 999;
+}
+
+.close_btn:hover {
+  --scale: 1.3;
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  -webkit-transform: scale(var(--scale));
+  -moz-transform: scale(var(--scale));
+  -ms-transform: scale(var(--scale));
+  -o-transform: scale(var(--scale));
+  transform: scale(var(--scale));
+}
+
+.fa_times {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.pictorial_anchors {
+  --transition: 0.5s all ease-in-out;
+  --blur: 10px;
+  --padding: 20px 30px;
+
+  padding: var(--padding);
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  overflow-y: scroll; /* Add this line */
+}
+
+.pictorial_anchors>li>a {
+  text-transform: uppercase;
+  display: block;
+  font-size: 16px;
+  font-size: 1.06667rem;
+  color: #fff;
+  width: 100%;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  position: relative;
+}
+
+.pictorial_anchors a:before {
+  position: absolute;
   left: 0;
-  width: '100vw';
-  height: '100vh';
-  background-color: 'rgba(0,0,0,0)';
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  content: '';
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.pictorial_anchors a:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: 'Home';
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+  z-index: 999;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.blog a:after {
+  content: 'blog';
+}
+
+.about a:after {
+  content: 'About Me';
+}
+
+.service a:after {
+  content: 'Service';
+}
+
+.protfolio a:after {
+  content: 'Protfolio';
+}
+
+.contact a:after {
+  content: 'contact';
+}
+
+.pictorial_anchors a:hover:after {
+  opacity: 1;
+}
+
+.pictorial_anchors a:hover:before {
+  opacity: 0.7;
+} 
+ 
+@media (max-width: 768px) {
+  .logo {
+    width: 30px;
+  }
+
+  .header {
+    --pvert: 12px;
+
+    padding-top: var(--pvert);
+    padding-bottom: var(--pvert);
+  }
+
+  .ramoun {
+    height: 15px;
+  }
+
+  .pictorial_anchors>li a {
+    display: block;
+    font-size: 14px;
+    font-size: 0.93333rem;
+  }
 }

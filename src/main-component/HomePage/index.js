@@ -6,7 +6,7 @@ import Contact from '../../components/Contact/Contact';
 import Testimonial from '../../components/Testimonial';
 import Portfolio from '../../components/Portfolio/Portfolio';
 import Scrollbar from '../../components/scroolbar';
-import Navbar from '../../components/Navbar';
+import { Navbar } from '../../components/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const HomePage = () => (
@@ -18,7 +18,6 @@ const HomePage = () => (
     <Portfolio />
     <Testimonial />
     <Contact />
-    <Scrollbar />
   </>
 );
 export default HomePage;
