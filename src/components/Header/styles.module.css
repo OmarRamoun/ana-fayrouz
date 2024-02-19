@@ -261,15 +261,22 @@
     width: 30px;
   }
 
-  .header {
-    --pvert: 12px;
-
-    padding-top: var(--pvert);
-    padding-bottom: var(--pvert);
-  }
-
   .ramoun {
     height: 15px;
+  }
+
+  .navbar_container {
+    --padding-horizontal: 25px;
+    --padding-vertical: 8px;
+
+    padding-left: var(--padding-horizontal);
+    padding-right: var(--padding-horizontal);
+    padding-top: var(--padding-vertical);
+    padding-bottom: var(--padding-vertical);
+  }
+
+  .pictorial_anchors {
+    max-width: 300px;
   }
 
   .pictorial_anchors>li a {
