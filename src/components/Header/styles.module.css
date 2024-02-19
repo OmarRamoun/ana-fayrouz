@@ -240,8 +240,8 @@
   content: 'Service';
 }
 
-.protfolio a:after {
-  content: 'Protfolio';
+.portfolio a:after {
+  content: 'Portfolio';
 }
 
 .contact a:after {
