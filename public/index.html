@@ -29,7 +29,6 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.23/bundled/lenis.min.js"></script>
 </head>
 
 <body>
@@ -45,26 +44,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  <script>
-    // LENIS SMOOTH SCROLL
-    document.addEventListener("DOMContentLoaded", function () {
-      const lenis = new Lenis({
-        lerp: 0.1,
-        wheelMultiplier: 0.9,
-        gestureOrientation: "vertical",
-        normalizeWheel: false,
-        smoothTouch: false,
-        duration: 1.2
-      });
-
-      function raf(time) {
-        lenis.raf(time);
-        requestAnimationFrame(raf);
-      }
-
-      requestAnimationFrame(raf);
-    });
-  </script>
 </body>
 
 </html>

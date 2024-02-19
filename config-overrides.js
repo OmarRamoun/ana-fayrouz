@@ -6,6 +6,8 @@ module.exports = function override(config) {
     '@assets': 'src/assets',
     '@styles': 'src/styles',
     '@lib': 'src/lib',
+    '@contexts': 'src/contexts',
+    '@hooks': 'src/hooks',
   })(config);
 
   return config;

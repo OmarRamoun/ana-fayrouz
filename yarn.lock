@@ -1499,6 +1499,14 @@
   resolved "https://registry.yarnpkg.com/@gar/promisify/-/promisify-1.1.3.tgz#555193ab2e3bb3b6adc3d551c9c030d9e860daf6"
   integrity sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==
 
+"@gsap/react@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@gsap/react/-/react-2.1.0.tgz#fe65901d64c00d2eea4e3e8b571ae293d781622f"
+  integrity sha512-pwdFXvOM5IsRZXpWTKkQoEjb3/iUjDCU1BCJDlE6pHgVjG+7Ep/7+sszUgqVZ2Jc0mR8gnhtDWyx5cQAT4kwQw==
+  dependencies:
+    gsap "^3.12.4"
+    react ">=16"
+
 "@hint/configuration-accessibility@^2.0.27":
   version "2.0.27"
   resolved "https://registry.yarnpkg.com/@hint/configuration-accessibility/-/configuration-accessibility-2.0.27.tgz#49018309b60bb709eeb4a94c70727547b4804451"
@@ -3160,6 +3168,11 @@
   integrity sha512-OAPJUAtgeINhh/TAlUID4QTs53Njm7xzddaVlEs/SXwgtiD1tW22zAB/W1wdqfrpmikgaWQ9Fw6Ws+hsiRm5Vg==
   dependencies:
     "@sinonjs/commons" "^1.7.0"
+
+"@studio-freight/lenis@^1.0.35":
+  version "1.0.35"
+  resolved "https://registry.yarnpkg.com/@studio-freight/lenis/-/lenis-1.0.35.tgz#039d1064363306f6554b8d676421db647dffd770"
+  integrity sha512-dduQqZERC5EaJSVGBoCt2WdPFQlr39zFewkQxvJcYZrMl1aVTPPIQCnZMqIjl4KZBQIL3kIXes+HP22T9XVh4w==
 
 "@styled-system/background@^5.1.2":
   version "5.1.2"
@@ -7819,6 +7832,11 @@ graphemer@^1.4.0:
   resolved "https://registry.yarnpkg.com/graphemer/-/graphemer-1.4.0.tgz#fb2f1d55e0e3a1849aeffc90c4fa0dd53a0e66c6"
   integrity sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==
 
+gsap@^3.12.4, gsap@^3.12.5:
+  version "3.12.5"
+  resolved "https://registry.yarnpkg.com/gsap/-/gsap-3.12.5.tgz#136c02dad4c673b441bdb1ca00104bfcb4eae7f4"
+  integrity sha512-srBfnk4n+Oe/ZnMIOXt3gT605BX9x5+rh/prT2F1SsNJsU1XuMiP0E2aptW481OnonOGACZWBqseH5Z7csHxhQ==
+
 gzip-size@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/gzip-size/-/gzip-size-6.0.0.tgz#065367fd50c239c0671cbcbad5be3e2eeb10e462"
@@ -12255,6 +12273,13 @@ react@16.14.0, react@^16.5.2:
     object-assign "^4.1.1"
     prop-types "^15.6.2"
 
+react@>=16, react@latest:
+  version "18.2.0"
+  resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
+  integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
+  dependencies:
+    loose-envify "^1.1.0"
+
 react@^15.5.4, react@^15.6.1:
   version "15.7.0"
   resolved "https://registry.yarnpkg.com/react/-/react-15.7.0.tgz#10308fd42ac6912a250bf00380751abc41ac7106"
@@ -12265,13 +12290,6 @@ react@^15.5.4, react@^15.6.1:
     loose-envify "^1.1.0"
     object-assign "^4.1.0"
     prop-types "^15.5.10"
-
-react@latest:
-  version "18.2.0"
-  resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
-  integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
-  dependencies:
-    loose-envify "^1.1.0"
 
 reactjs-countdown@latest:
   version "0.0.8"

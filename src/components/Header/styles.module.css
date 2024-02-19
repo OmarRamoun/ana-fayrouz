@@ -12,7 +12,7 @@
 
 .navbar_container {
   --padding-horizontal: 25px;
-  --padding-vertical: 15px;
+  --padding-vertical: 12px;
 
   width: 100%;
   padding-left: var(--padding-horizontal);
@@ -65,6 +65,7 @@
   -ms-transform: var(--transform);
   -o-transform: var(--transform);
   transform: var(--transform);
+  height: 100%;
 }
 
 .nav_open {
@@ -170,9 +171,11 @@
   max-width: 500px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
+  align-items: start;
   gap: 20px;
-  overflow-y: scroll; /* Add this line */
+  overflow-y: scroll;
+  height: 100%;
 }
 
 .pictorial_anchors>li>a {
@@ -225,8 +228,8 @@
   transition: all 0.5s;
 }
 
-.blog a:after {
-  content: 'blog';
+.home a:after {
+  content: 'home';
 }
 
 .about a:after {

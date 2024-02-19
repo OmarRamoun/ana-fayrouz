@@ -25,6 +25,10 @@
       "@styles": ["styles"],
       "@lib/*": ["lib/*"],
       "@lib": ["lib"],
+      "@contexts/*": ["contexts/*"],
+      "@contexts": ["contexts"],   
+      "@hooks/*": ["hooks/*"],
+      "@hooks": ["hooks"],   
     }
   },
   "include": ["src"]
