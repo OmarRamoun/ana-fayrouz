@@ -131,7 +131,6 @@ const Header: React.FC = () => {
             >
               <i className={cn('fa fa-times', styles.fa_times)} />
             </button>
-
             <ul
               ref={pictorialAnchorsRef}
               className={styles.pictorial_anchors}

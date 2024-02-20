@@ -65,7 +65,7 @@
   -ms-transform: var(--transform);
   -o-transform: var(--transform);
   transform: var(--transform);
-  height: 100%;
+  height: 100vh;
 }
 
 .nav_open {
