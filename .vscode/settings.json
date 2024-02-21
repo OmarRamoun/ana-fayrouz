@@ -1,7 +1,11 @@
 {
   "cSpell.words": [
+    "amoled",
+    "Calystral",
+    "Codegen",
     "csstree",
     "fancybox",
+    "Fayrouz",
     "fontawesome",
     "gsap",
     "lerp",
@@ -11,8 +15,18 @@
     "pvert",
     "ramoun",
     "reactjs",
+    "Signup",
     "stylelint",
-    "tabler"
+    "swenson",
+    "tabler",
+    "upwork",
+    "webflow"
   ],
-  "cSpell.ignoreWords": ["protfolio"]
+  "cSpell.ignoreWords": [
+    "Converence",
+    "Eckendonk",
+    "Webhint",
+    "Wonka",
+    "protfolio"
+  ]
 }
