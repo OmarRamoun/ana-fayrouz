@@ -5,6 +5,7 @@
       "description": "A SaaS Project Management App Landing Website. The design is modern, beautiful and responsive. It displays your content nicely on Desktop, Laptop, iPad, iPhone, Android Mobile, and tablets.",
       "client": "Mike Van Eckendonk",
       "shots": {
+        "thumbnail": "./assets/projects/rene/rene-1.png",
         "landscape": [{
             "id": 1,
             "src": "./assets/projects/rene/rene-1.png"
@@ -83,16 +84,16 @@
       "description": "A sample app for a contacts management system. react native application that allows the user to add, delete, update the contact they want.",
       "client": "tempMe",
       "shots": {
-        "landscape": [],
-        "portrait": [{
-            "id": 1,
+        "landscape": [{
+            "id": 5,
             "src": "./assets/projects/contacts/contacts-1.png"
           },
           {
-            "id": 2,
+            "id": 6,
             "src": "./assets/projects/contacts/contacts-2.png"
-          },
-          {
+          }
+        ],
+        "portrait": [{
             "id": 3,
             "src": "./assets/projects/contacts/contacts-3.png"
           },
