@@ -132,31 +132,6 @@ TABLE OF CONTENTS:
   color: #333;
 }
 
-.template-secondary {
-  font-family: 'Oswald', sans-serif;
-  height: 50px;
-  line-height: 47px;
-  font-size: 16px;
-  font-size: 1.06667rem;
-  color: #bfb9b9;
-  border: 1px solid #121f1f;
-  padding: 0 30px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  display: inline-block;
-  border-radius: 50px;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.template-secondary:hover {
-  background: #121f1f;
-  color: #bfb9b9;
-}
-
-
 /*******************************************
 0.2	header-style 1
 *******************************************/
@@ -365,70 +340,6 @@ TABLE OF CONTENTS:
   }
 }
 
-.hero .social-links {
-  width: auto;
-  position: absolute;
-  left: 15px;
-  bottom: 15px;
-}
-
-@media (max-width: 1300px) {
-  .hero .social-links {
-    left: 25px;
-  }
-}
-
-@media (max-width: 850px) {
-  .hero .social-links {
-    display: none;
-  }
-}
-
-.hero .social-links:before {
-  content: '';
-  width: 3px;
-  height: 50px;
-  background: rgba(125, 125, 125, 0.4);
-  position: absolute;
-  left: 13px;
-  top: -70px;
-}
-
-.hero .social-links:after {
-  font-family: 'Oswald', sans-serif;
-  font-size: 18px;
-  color: #888;
-  content: 'SOCIAL';
-  position: absolute;
-  left: -26px;
-  top: -140px;
-  letter-spacing: 5px;
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-}
-
-.hero .social-links ul {
-  list-style: none;
-}
-
-.hero .social-links ul > li + li {
-  margin-top: 10px;
-}
-
-.hero .social-links li a {
-  font-size: 14px;
-  font-size: 0.93333rem;
-  color: #fff;
-}
-
-.hero .social-links li a:hover {
-  color: #ddd;
-}
-
-.hero .slide-caption > div {
-  overflow: hidden;
-}
 .hero .hero-slider .slider-image {
   -webkit-animation: kenburn 25s 2s alternate infinite;
   -animation: kenburn 25s 2s alternate infinite;
@@ -553,20 +464,6 @@ TABLE OF CONTENTS:
     font-size: 0.93333rem;
     letter-spacing: 4px;
   }
-}
-
-.hero-style-1 .slide-title h2 {
-  font-family: 'Exo 2', sans-serif;
-  -webkit-text-stroke-color: #fff;
-  -webkit-text-stroke-width: 0.5mm;
-  font-size: 2.5rem;
-  font-weight: bold;
-  line-height: 1.2em;
-  text-transform: uppercase;
-  color: transparent;
-  margin-bottom: 30px;
-  margin-top: 20px;
-  letter-spacing: 5px;
 }
 
 .hero-style-1 .slide-subtitle {
