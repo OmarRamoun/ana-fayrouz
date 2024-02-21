@@ -16,9 +16,6 @@
   .br-app:after {
     right: 2%;
   }
-  .hero .copy {
-    bottom: -50px;
-  }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1500px) {
@@ -33,9 +30,6 @@
   }
   .br-app:after {
     right: 6%;
-  }
-  .hero .copy {
-    bottom: -80px;
   }
 }
 /* Normal desktop :992px. */
@@ -60,9 +54,6 @@
     min-height: 800px;
   }
 
-  .hero .copy {
-    bottom: -40px;
-  }
   .hero-style-1 .slide {
     height: 100vh;
     min-height: 800px;
@@ -151,9 +142,7 @@
   .about-area:before {
     display: none;
   }
-  .hero .copy {
-    display: none;
-  }
+
   .blog-section {
     padding-bottom: 70px;
     padding-top: 90px;
@@ -237,9 +226,7 @@
   .about-area:before {
     display: none;
   }
-  .hero .copy {
-    display: none;
-  }
+
   .blog-section {
     padding-bottom: 70px;
     padding-top: 90px;
@@ -342,9 +329,6 @@
     display: none;
   }
 
-  .hero .copy {
-    display: none;
-  }
   .blog-section {
     padding-bottom: 40px;
     padding-top: 60px;
