@@ -21,7 +21,10 @@ const About = (): React.JSX.Element => (
             </div>
           </div>
           <div className="col-lg-6">
-            <div className="about-content" style={{ paddingInline: '30px' }}>
+            <div
+              className="about-content"
+              style={{ paddingInline: '30px' } && window.innerWidth < 700 ? { paddingTop: '150px' } : {}}
+            >
               <h2>About Me</h2>
               <p className={styles['fs-p']}>
                 I am react developer with over 5 years of industry experience. I have a proven
