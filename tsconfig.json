@@ -19,6 +19,8 @@
     "paths": {
       "@components/*": ["components/*"],
       "@components": ["components"],
+      "@data/*": ["data/*"],
+      "@data": ["data"],
       "@assets/*": ["assets/*"],
       "@assets": ["assets"],
       "@styles/*": ["styles/*"],
@@ -31,5 +33,5 @@
       "@hooks": ["hooks"],   
     }
   },
-  "include": ["src"]
+  "include": ["src", "src/components/Portfolio/Card/.tsx"]
 }
