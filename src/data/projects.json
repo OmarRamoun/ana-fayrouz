@@ -1,97 +1,11 @@
 {
-  "items": [
-    {
+  "items": [{
       "id": 1,
-      "title": "nursery story",
-      "description": "a Cloud-based SaaS platform designed to provide a comprehensive solution for nursery schools. It offers a range of features to help schools manage their operations, including student registration and enrollment, class scheduling, attendance tracking, parent communication, and billing and payments. It's a Mono-Repo Project Built with React-Native and GraphQL. It consists of 3 Apps: Admin, Nursery App, and a Parent App.",
-      "client": "Nursery-Story (as a Freelancer)",
-      "shots": {
-        "landscape": [
-          {
-            "id": 1,
-            "src": "./assets/projects/nursery-story/ns-1.png"
-          },
-          {
-            "id": 2,
-            "src": "./assets/projects/nursery-story/ns-2.png"
-          }
-        ],
-        "portrait": [
-          {
-            "id": 3,
-            "src": "./assets/projects/nursery-story/ns-3.png"
-          },
-          {
-            "id": 4,
-            "src": "./assets/projects/nursery-story/ns-4.png"
-          }
-        ]
-      },
-      "source": "https://github.com/nursery-story/nursery-story",
-      "preview": "https://my.nurserystory.co.uk",
-      "technologies": [
-        "Lerna",
-        "TypeScript",
-        "React-Native",
-        "React Native Web",
-        "Comp. Lib. w/ styled-system",
-        "GQLmutations",
-        "GraphQL+NodeJS backend service",
-        "GraphQL API on AWS Lambda",
-        "GraphQL Codegen",
-        "type-definitions & React Hooks",
-        "formik",
-        "yup",
-        "Jest",
-        "git-secret",
-        "Postgres",
-        "knex",
-        "Eslint",
-        "Prettier",
-        "Commitlint",
-        " Lint-staged",
-        "CI/CD with GitHub Actions"
-      ]
-    },
-    {
-      "id": 2,
-      "title": "sellGo",
-      "description": "An open-source ecommerce platform designed to provide a flexible and customizable solution for online retailers. Built on modern web technologies, it offers a range of features including product catalog management, shopping cart functionality, order processing, and payment gateway integration.",
-      "client": "Freelance",
-      "shots": {
-        "landscape": [
-          {
-            "id": 1,
-            "src": "./assets/projects/sellgo/sellgo-1.png"
-          },
-          {
-            "id": 2,
-            "src": "./assets/projects/sellgo/sellgo-6.png"
-          }
-        ],
-        "portrait": [
-          {
-            "id": 3,
-            "src": "./assets/projects/sellgo/sellgo-3.png"
-          },
-          {
-            "id": 4,
-            "src": "./assets/projects/sellgo/sellgo-4.png"
-          }
-        ]
-      },
-      "source": "https://github.com/OmarRamoun/SellGo",
-      "preview": "https://sellgo.omarramoun.com",
-      "technologies": ["Next.js", "React Hooks", "Eslint", "Prettier", "SCSS", "redux", "wordpress"]
-    },
-    {
-      "id": 3,
       "title": "rene",
       "description": "A SaaS Project Management App Landing Website. The design is modern, beautiful and responsive. It displays your content nicely on Desktop, Laptop, iPad, iPhone, Android Mobile, and tablets.",
       "client": "Mike Van Eckendonk",
       "shots": {
-        "landscape": [
-          {
+        "landscape": [{
             "id": 1,
             "src": "./assets/projects/rene/rene-1.png"
           },
@@ -100,8 +14,7 @@
             "src": "./assets/projects/rene/rene-2.png"
           }
         ],
-        "portrait": [
-          {
+        "portrait": [{
             "id": 3,
             "src": "./assets/projects/rene/rene-3.png"
           },
@@ -126,13 +39,12 @@
       ]
     },
     {
-      "id": 4,
+      "id": 2,
       "title": "serra",
       "description": "A Prototype for a Signup Page and Login Page of The Awesome NFT Trading Card Game Synergy Of Serra. Implemented in React, Redux, Styled-Components, and Jest.",
       "client": "Calystral Games",
       "shots": {
-        "landscape": [
-          {
+        "landscape": [{
             "id": 1,
             "src": "./assets/projects/serra/serra-1.png"
           },
@@ -141,8 +53,7 @@
             "src": "./assets/projects/serra/serra-2.png"
           }
         ],
-        "portrait": [
-          {
+        "portrait": [{
             "id": 3,
             "src": "./assets/projects/serra/serra-3.png"
           },
@@ -167,13 +78,41 @@
       ]
     },
     {
-      "id": 5,
+      "id": 3,
+      "title": "contacts",
+      "description": "A sample app for a contacts management system. react native application that allows the user to add, delete, update the contact they want.",
+      "client": "tempMe",
+      "shots": {
+        "landscape": [],
+        "portrait": [{
+            "id": 1,
+            "src": "./assets/projects/contacts/contacts-1.png"
+          },
+          {
+            "id": 2,
+            "src": "./assets/projects/contacts/contacts-2.png"
+          },
+          {
+            "id": 3,
+            "src": "./assets/projects/contacts/contacts-3.png"
+          },
+          {
+            "id": 4,
+            "src": "./assets/projects/contacts/contacts-4.png"
+          }
+        ]
+      },
+      "source": "https://github.com/OmarRamoun/contacts",
+      "preview": "",
+      "technologies": ["React-Native", "React Hooks", "Redux Toolkit", "React-Navigation", "Formik", "Yup", "Styled Components", "styled-system", "React Native Animated", "Jest", "Typescript", "Eslint", "Prettier"]
+    },
+    {
+      "id": 4,
       "title": "sweet yellow",
       "description": "A Software Engineer Portfolio App Made with React, React Router, and Bootstrap. The Project Contains a Showcase with Information About Developer, All of My Works (Apps), and a Contact Form for Communication.",
       "client": "Open Source",
       "shots": {
-        "landscape": [
-          {
+        "landscape": [{
             "id": 1,
             "src": "./assets/projects/sweetyellow/sweetyellow-1.png"
           },
@@ -182,8 +121,7 @@
             "src": "./assets/projects/sweetyellow/sweetyellow-2.png"
           }
         ],
-        "portrait": [
-          {
+        "portrait": [{
             "id": 3,
             "src": "./assets/projects/sweetyellow/sweetyellow-3.png"
           },
@@ -207,13 +145,41 @@
       ]
     },
     {
+      "id": 5,
+      "title": "sellGo",
+      "description": "An open-source e-commerce platform designed to provide a flexible and customizable solution for online retailers. Built on modern web technologies, it offers a range of features including product catalog management, shopping cart functionality, order processing, and payment gateway integration.",
+      "client": "Freelance",
+      "shots": {
+        "landscape": [{
+            "id": 1,
+            "src": "./assets/projects/sellgo/sellgo-1.png"
+          },
+          {
+            "id": 2,
+            "src": "./assets/projects/sellgo/sellgo-6.png"
+          }
+        ],
+        "portrait": [{
+            "id": 3,
+            "src": "./assets/projects/sellgo/sellgo-3.png"
+          },
+          {
+            "id": 4,
+            "src": "./assets/projects/sellgo/sellgo-4.png"
+          }
+        ]
+      },
+      "source": "https://github.com/OmarRamoun/SellGo",
+      "preview": "https://sellgo.omarramoun.com",
+      "technologies": ["Next.js", "React Hooks", "Eslint", "Prettier", "SCSS", "redux", "wordpress"]
+    },
+    {
       "id": 6,
       "title": "clean blue",
       "description": "A Simple Software Engineer Portfolio Website Made with Vanilla HTML5, CSS3, ES6. The Project Contains a Showcase with Information About Me, All of My Works (Apps), and a Contact Form for Communication.",
       "client": "Open Source",
       "shots": {
-        "landscape": [
-          {
+        "landscape": [{
             "id": 1,
             "src": "./assets/projects/cleanblue/cleanblue-1.png"
           },
@@ -222,8 +188,7 @@
             "src": "./assets/projects/cleanblue/cleanblue-3.png"
           }
         ],
-        "portrait": [
-          {
+        "portrait": [{
             "id": 2,
             "src": "./assets/projects/cleanblue/cleanblue-2.png"
           },
@@ -239,93 +204,43 @@
     },
     {
       "id": 7,
-      "title": "awesome books",
-      "description": "A Web Application that Helps You Save Your Favorite Books in a List Alongside Author's Name. Made using HTML5, CSS3, ES6, Bootstrap.",
-      "client": "Open Source",
+      "title": "swenson he: Event Building Inc.",
+      "description": "A sample screen from the Event Building Inc. web application that allows the user to select the task they want. All tasks are categorized under different categories like (Staff, Food, Catering ..etc). As such, the user selects a category and should be able to see all the items under this category.",
+      "client": "swenson he",
       "shots": {
-        "landscape": [
-          {
-            "id": 1,
-            "src": "./assets/projects/awesome/awesome-1.png"
+        "landscape": [{
+          "id": 1,
+          "src": "./assets/projects/event-builder/event-builder-1.png"
+        }],
+        "portrait": [{
+            "id": 2,
+            "src": "./assets/projects/event-builder/event-builder-2.png"
           },
           {
-            "id": 2,
-            "src": "./assets/projects/awesome/awesome-2.png"
-          }
-        ],
-        "portrait": [
-          {
             "id": 3,
-            "src": "./assets/projects/awesome/awesome-3.png"
+            "src": "./assets/projects/event-builder/event-builder-3.png"
           },
           {
             "id": 4,
-            "src": "./assets/projects/awesome/awesome-4.png"
+            "src": "./assets/projects/event-builder/event-builder-4.png"
+          },
+          {
+            "id": 5,
+            "src": "./assets/projects/event-builder/contacts-5.png"
           }
         ]
       },
-      "source": "https://github.com/OmarRamoun/awesome-books",
-      "preview": "https://awesomebooks.omarramoun.com",
-      "technologies": [
-        "HTML5",
-        "CSS3",
-        "ES6",
-        "Bootstrap",
-        "Eslint",
-        "Prettier",
-        "Stylelint",
-        "Webhint"
-      ]
+      "source": "https://github.com/OmarRamoun/swenson-he",
+      "preview": "https://swensonhe.omarramoun.com/",
+      "technologies": ["Next.js", "React Hooks", "Redux Toolkit", "css modules", "Framer Motion", "SWR", "Jest", "Typescript", "Eslint", "Prettier"]
     },
     {
       "id": 8,
-      "title": "corona tracker",
-      "description": "This is a mobile web application that features 2 pages: The homepage and the details page. The homepage displays all today's statistics about confirmed cases, deaths, and recoveries caused by Covid-19 in the world, as a total and separated by countrie",
-      "client": "Open Source",
-      "shots": {
-        "landscape": [
-          {
-            "id": 1,
-            "src": "./assets/projects/corona/corona-1.png"
-          },
-          {
-            "id": 2,
-            "src": "./assets/projects/corona/corona-2.png"
-          }
-        ],
-        "portrait": [
-          {
-            "id": 3,
-            "src": "./assets/projects/corona/corona-3.png"
-          },
-          {
-            "id": 4,
-            "src": "./assets/projects/corona/corona-4.png"
-          }
-        ]
-      },
-      "source": "https://github.com/OmarRamoun/corona",
-      "preview": "https://corona.omarramoun.com",
-      "technologies": [
-        "React",
-        "Redux",
-        "React Hooks",
-        "Bootstrap",
-        "Eslint",
-        "Prettier",
-        "Jest",
-        "React-Router",
-        "React-Testing-Library"
-      ]
-    },
-    {
-      "id": 9,
       "title": "wonka conference",
       "description": "Wonka Converence 2021 Made with Vanilla HTML5, CSS3, & JS (ES6). The Website Contains A Homepage With Information About The Main Program Of The Conference Speakers And Partners And An About Page With Information About The Conference.",
       "client": "Open Source",
       "shots": {
-        "landscape": [
-          {
+        "landscape": [{
             "id": 1,
             "src": "./assets/projects/wonka/wonka-1.png"
           },
@@ -334,8 +249,7 @@
             "src": "./assets/projects/wonka/wonka-2.png"
           }
         ],
-        "portrait": [
-          {
+        "portrait": [{
             "id": 3,
             "src": "./assets/projects/wonka/wonka-3.png"
           },
@@ -348,6 +262,163 @@
       "source": "https://github.com/OmarRamoun/wonka-conference",
       "preview": "https://wonka.omarramoun.com",
       "technologies": ["HTML5", "CSS3", "JS", "ES6", "Eslint", "Prettier", "Stylelint", "Webhint"]
+    },
+    {
+      "id": 9,
+      "title": "Ana Fayrouz",
+      "description": "A Software Engineer Portfolio App Made with React, React-Router, and Bootstrap. The Project Contains a Showcase, All of the Works (Apps), and a Contact Form for Communication.The app includes a range of customizable components such as project cards, skill tags, and contact forms, that create a unique and engaging portfolio.",
+      "client": "side project",
+      "shots": {
+        "landscape": [{
+          "id": 1,
+          "src": "./assets/projects/ana-fayrouz/ana-fayrouz-1.png"
+        }],
+        "portrait": [{
+            "id": 2,
+            "src": "./assets/projects/ana-fayrouz/ana-fayrouz-2.png"
+          },
+          {
+            "id": 3,
+            "src": "./assets/projects/ana-fayrouz/ana-fayrouz-3.png"
+          },
+          {
+            "id": 4,
+            "src": "./assets/projects/ana-fayrouz/ana-fayrouz-4.png"
+          },
+          {
+            "id": 5,
+            "src": "./assets/projects/ana-fayrouz/ana-fayrouz-5.png"
+          }
+        ]
+      },
+      "source": "https://github.com/OmarRamoun/ana-fayrouz",
+      "preview": "https://anafayrouz.omarramoun.com/",
+      "technologies": ["React.js", "React Hooks", "Redux Toolkit", "css modules", "Gsap.js", "Jest", "Typescript", "Javascript", "Eslint", "Prettier"]
+    },
+    {
+      "id": 10,
+      "title": "nursery story",
+      "description": "a Cloud-based SaaS platform designed to provide a comprehensive solution for nursery schools. It offers a range of features to help schools manage their operations, including student registration and enrollment, class scheduling, attendance tracking, parent communication, and billing and payments. It's a Mono-Repo Project Built with React-Native and GraphQL. It consists of 3 Apps: Admin, Nursery App, and a Parent App.",
+      "client": "Nursery-Story (as a Freelancer)",
+      "shots": {
+        "landscape": [{
+            "id": 1,
+            "src": "./assets/projects/nursery-story/ns-1.png"
+          },
+          {
+            "id": 2,
+            "src": "./assets/projects/nursery-story/ns-2.png"
+          }
+        ],
+        "portrait": [{
+            "id": 3,
+            "src": "./assets/projects/nursery-story/ns-3.png"
+          },
+          {
+            "id": 4,
+            "src": "./assets/projects/nursery-story/ns-4.png"
+          }
+        ]
+      },
+      "source": "https://github.com/nursery-story/nursery-story",
+      "preview": "https://my.nurserystory.co.uk",
+      "technologies": [
+        "Lerna",
+        "TypeScript",
+        "React-Native",
+        "React Native Web",
+        "styled-system",
+        "GQL mutations",
+        "GraphQL+NodeJS backend service",
+        "GraphQL API on AWS Lambda",
+        "GraphQL Codegen",
+        "type-definitions & React Hooks",
+        "formik",
+        "yup",
+        "Jest",
+        "git-secret",
+        "Postgres",
+        "knex",
+        "Eslint",
+        "Prettier",
+        "Commitlint",
+        " Lint-staged",
+        "CI/CD with GitHub Actions"
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Swenson He Website",
+      "description": "The Website of Swenson He (Software LLC.) Made with webflow, javascript, and Gsap.js. The Project Contains a Showcase, All of the Works (Produced by Swenson He), and a Blog.",
+      "client": "Swenson He",
+      "shots": {
+        "landscape": [{
+            "id": 1,
+            "src": "./assets/projects/swenson-he/swenson-he-1.png"
+          },
+          {
+            "id": 2,
+            "src": "./assets/projects/swenson-he/swenson-he-2.png"
+          },
+          {
+            "id": 3,
+            "src": "./assets/projects/swenson-he/swenson-he-3.png"
+          },
+          {
+            "id": 4,
+            "src": "./assets/projects/swenson-he/swenson-he-4.png"
+          }
+        ],
+        "portrait": [{
+            "id": 5,
+            "src": "./assets/projects/swenson-he/swenson-he-5.png"
+          },
+          {
+            "id": 6,
+            "src": "./assets/projects/swenson-he/swenson-he-6.png"
+          },
+          {
+            "id": 7,
+            "src": "./assets/projects/swenson-he/swenson-he-7.png"
+          },
+          {
+            "id": 8,
+            "src": "./assets/projects/swenson-he/swenson-he-8.png"
+          }
+        ]
+      },
+      "source": "https://preview.webflow.com/preview/swensonhe?utm_medium=preview_link&utm_source=designer&utm_content=swensonhe&preview=e7f23349cd6bb9f1e6eaafa9feffe08a&workflow=preview",
+      "preview": "https://sensonhe.com/",
+      "technologies": ["Webflow", "Gsap.js", "Javascript"]
+    },
+    {
+      "id": 12,
+      "title": "Andrew Golf",
+      "description": "The Landing Page of Andrew Golf (Gold Game App.) Made with webflow, javascript, and Gsap.js.",
+      "client": "Andrew Golf",
+      "shots": {
+        "landscape": [{
+            "id": 1,
+            "src": "./assets/projects/andrew-golf/andrew-golf-1.png"
+          },
+          {
+            "id": 2,
+            "src": "./assets/projects/andrew-golf/andrew-golf-2.png"
+          }
+        ],
+        "portrait": [{
+            "id": 3,
+            "src": "./assets/projects/andrew-golf/andrew-golf-3.png"
+          },
+          {
+            "id": 4,
+            "src": "./assets/projects/andrew-golf/andrew-golf-4.png"
+          }
+        ]
+      },
+      "source": "https://preview.webflow.com/preview/andrew-golf?utm_medium=preview_link&utm_source=designer&utm_content=andrew-golf&preview=80da118d73a7e0b093b2242917c9c4eb&workflow=preview",
+      "preview": "https://andrew.golf/",
+      "technologies": ["Webflow", "Gsap.js", "Javascript"]
     }
   ]
 }

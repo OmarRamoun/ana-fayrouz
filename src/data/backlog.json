@@ -1,0 +1,85 @@
+{
+  "items": [
+    {
+      "id": 8,
+      "title": "corona tracker",
+      "description": "This is a mobile web application that features 2 pages: The homepage and the details page. The homepage displays all today's statistics about confirmed cases, deaths, and recoveries caused by Covid-19 in the world, as a total and separated by countrie",
+      "client": "Open Source",
+      "shots": {
+        "landscape": [
+          {
+            "id": 1,
+            "src": "./assets/projects/corona/corona-1.png"
+          },
+          {
+            "id": 2,
+            "src": "./assets/projects/corona/corona-2.png"
+          }
+        ],
+        "portrait": [
+          {
+            "id": 3,
+            "src": "./assets/projects/corona/corona-3.png"
+          },
+          {
+            "id": 4,
+            "src": "./assets/projects/corona/corona-4.png"
+          }
+        ]
+      },
+      "source": "https://github.com/OmarRamoun/corona",
+      "preview": "https://corona.omarramoun.com",
+      "technologies": [
+        "React",
+        "Redux",
+        "React Hooks",
+        "Bootstrap",
+        "Eslint",
+        "Prettier",
+        "Jest",
+        "React-Router",
+        "React-Testing-Library"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "awesome books",
+      "description": "A Web Application that Helps You Save Your Favorite Books in a List Alongside Author's Name. Made using HTML5, CSS3, ES6, Bootstrap.",
+      "client": "Open Source",
+      "shots": {
+        "landscape": [
+          {
+            "id": 1,
+            "src": "./assets/projects/awesome/awesome-1.png"
+          },
+          {
+            "id": 2,
+            "src": "./assets/projects/awesome/awesome-2.png"
+          }
+        ],
+        "portrait": [
+          {
+            "id": 3,
+            "src": "./assets/projects/awesome/awesome-3.png"
+          },
+          {
+            "id": 4,
+            "src": "./assets/projects/awesome/awesome-4.png"
+          }
+        ]
+      },
+      "source": "https://github.com/OmarRamoun/awesome-books",
+      "preview": "https://awesomebooks.omarramoun.com",
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "ES6",
+        "Bootstrap",
+        "Eslint",
+        "Prettier",
+        "Stylelint",
+        "Webhint"
+      ]
+    }
+  ]
+}
