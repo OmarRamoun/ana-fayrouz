@@ -22,6 +22,7 @@ const LenisProvider = ({ children }: LenisContextProviderProps): React.JSX.Eleme
 
   useEffect(() => {
     // Ensure Lenis is only instantiated once
+    console.log('how many', lenisRef.current);
     if (!lenisRef.current) {
       const lenis = new Lenis({
         lerp: 0.1,
@@ -37,14 +38,12 @@ const LenisProvider = ({ children }: LenisContextProviderProps): React.JSX.Eleme
       gsap.ticker.add((time) => lenis.raf(time * 1000));
       gsap.ticker.lagSmoothing(0);
     }
-
-    // Cleanup function
-    return () => lenisRef.current && lenisRef.current.destroy();
   }, []);
 
-  const values: LenisContextProps = React.useMemo(() => ({
+  // eslint-disable-next-line
+  const values: LenisContextProps = {
     lenis: lenisRef.current,
-  }), []);
+  };
 
   return <LenisContext.Provider value={values}>{children}</LenisContext.Provider>;
 };
