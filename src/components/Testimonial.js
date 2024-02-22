@@ -113,7 +113,7 @@ class Testimonial extends Component {
                     <img src={testimonialImg_3} alt="" />
                   </div>
                   <div className="testimonial-content">
-                    <h4>Emily Brown</h4>
+                    <h4>Emily Morse</h4>
                     <span>Lead Developer at Xoommit Inc.</span>
                   </div>
                 </div>

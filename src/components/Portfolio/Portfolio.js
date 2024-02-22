@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Card from './Card';
 import Modal from '../Modal/Modal';
@@ -7,11 +7,13 @@ import projects from '../../data/projects.json';
 
 const { items } = projects;
 
-const Porfolio = () => {
+const Porfolio = ({lenisState}) => {
   const [state, setState] = useState({
     onReact: false,
+    onReactNative: false,
     onVanilla: false,
     onNext: false,
+    onWebflow: false,
     isOpen: false,
   });
   const [modals, setModals] = useState(items.map((item) => ({ id: item.id, isOpen: false })));
@@ -20,8 +22,10 @@ const Porfolio = () => {
     event.preventDefault();
     setState({
       onReact: true,
+      onReactNative: true,
       onVanilla: true,
       onNext: true,
+      onWebflow: true,
       isOpen: false,
     });
   };
@@ -31,15 +35,18 @@ const Porfolio = () => {
       onReact: true,
       onVanilla: false,
       onNext: false,
+      onWebflow: false,
       isOpen: true,
     });
   };
-  const vanilla = (event) => {
+  const reactNative = (event) => {
     event.preventDefault();
     setState({
       onReact: false,
-      onVanilla: true,
+      onReactNative: true,
+      onVanilla: false,
       onNext: false,
+      onWebflow: false,
       isOpen: true,
     });
   };
@@ -49,6 +56,27 @@ const Porfolio = () => {
       onReact: false,
       onVanilla: false,
       onNext: true,
+      onWebflow: false,
+      isOpen: true,
+    });
+  };
+  const webflow = (event) => {
+    event.preventDefault();
+    setState({
+      onReact: false,
+      onVanilla: false,
+      onNext: false,
+      onWebflow: true,
+      isOpen: true,
+    });
+  };
+  const vanilla = (event) => {
+    event.preventDefault();
+    setState({
+      onReact: false,
+      onVanilla: true,
+      onNext: false,
+      onWebflow: false,
       isOpen: true,
     });
   };
@@ -60,9 +88,26 @@ const Porfolio = () => {
       return 'grid active';
     } if (state.onNext && item.technologies.map((tag) => tag.toLowerCase()).includes('next.js')) {
       return 'grid active';
+    } if (state.onWebflow && item.technologies.map((tag) => tag.toLowerCase()).includes('webflow')) {
+      return 'grid active';
+    } if (state.onReactNative && item.technologies.map((tag) => tag.toLowerCase()).includes('react-native')) {
+      return 'grid active';
     }
+
     return 'grid' && state.isOpen ? 'grid' : 'grid open';
   };
+
+  useEffect(() => {
+    if (modals.some((modal) => modal.isOpen) && window.innerWidth > 768) {
+      lenisState?.current?.stop();
+      console.log('stop lenis now')
+      console.log('lenis should be now stopped', lenisState)
+    } else {
+      lenisState?.current?.start();
+      console.log('start lenis now')
+      console.log('lenis should be now started', lenisState)
+    }
+  }, [modals]);
 
   return (
     <>
@@ -90,14 +135,26 @@ const Porfolio = () => {
                   </li>
 
                   <li>
-                    <Link data-filter=".vanilla" to="/" onClick={vanilla}>
-                      vanilla
+                    <Link data-filter=".react-native" to="/" onClick={reactNative}>
+                      React Native
                     </Link>
                   </li>
 
                   <li>
                     <Link data-filter=".next" to="/" onClick={next}>
                       Next.js
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link data-filter=".webflow" to="/" onClick={webflow}>
+                      Webflow
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link data-filter=".vanilla" to="/" onClick={vanilla}>
+                      vanilla
                     </Link>
                   </li>
                 </ul>
@@ -112,7 +169,7 @@ const Porfolio = () => {
                     <Card
                       key={`card-${item.id}`}
                       className={displayClass(item)}
-                      src={item.shots.landscape[0].src}
+                      src={item.shots.thumbnail}
                       title={item.title}
                       onClick={() => setModals(modals.map((modal) => (modal.id === item.id ? { ...modal, isOpen: true } : modal)))}
                     />
@@ -132,12 +189,12 @@ const Porfolio = () => {
 
       <>
         {
-        modals.map((modal) => (
-          <Modal key={`modal-${modal.id}`} show={modal.isOpen} onClose={() => setModals(modals.map((modal) => ({ ...modal, isOpen: false })))}>
-            <ProjectModalContent projectInfo={items.find((item) => item.id === modal.id)} />
-          </Modal>
-        ))
-      }
+          modals.map((modal) => (
+            <Modal key={`modal-${modal.id}`} show={modal.isOpen} onClose={() => setModals(modals.map((modal) => ({ ...modal, isOpen: false })))}>
+              <ProjectModalContent projectInfo={items.find((item) => item.id === modal.id)} />
+            </Modal>
+          ))
+        }
       </>
     </>
   );

@@ -8,7 +8,6 @@ const Card = ({
       <img
         height={262}
         src={src}
-        className="img-cover img img-responsive"
         alt=""
         style={{
           boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.2)',
