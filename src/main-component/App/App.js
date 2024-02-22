@@ -3,7 +3,7 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 
 import AllRoute from '../router';
 import './App.css';
-import '@assets/Css/Responsive.css';
+import '@assets/css/responsive.css';
 
 import Lenis from '@studio-freight/lenis';
 
