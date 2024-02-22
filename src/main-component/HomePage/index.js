@@ -7,13 +7,13 @@ import Scrollbar from '../../components/scroolbar';
 import { Navbar, Banner, About } from '@components';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const HomePage = () => (
+const HomePage = ({lenisState}) => (
   <>
     <Navbar />
     <Banner />
     <About />
     <Service />
-    <Portfolio />
+    <Portfolio lenisState={lenisState} />
     <Testimonial />
     <Contact />
   </>

@@ -3,11 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Homepage from '../HomePage';
 
-const AllRoute = () => (
+const AllRoute = ({lenisState}) => (
   <div className="App">
     <Router>
       <Routes>
-        <Route path="/" element={<Homepage />} />
+        <Route path="/" element={<Homepage lenisState={lenisState} />} />
       </Routes>
     </Router>
   </div>

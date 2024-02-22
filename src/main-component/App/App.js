@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef, useEffect} from 'react';
 import { ParallaxProvider } from 'react-scroll-parallax';
 
 import { LenisProvider } from '@contexts';
@@ -6,7 +6,12 @@ import AllRoute from '../router';
 import './App.css';
 import '../../assets/Css/Responsive.css';
 
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Lenis from '@studio-freight/lenis';
+
 const App = () => {
+  const lenisRef = useRef(null);
 
   // useEffect(() => {
   //   const lenis = new Lenis();
@@ -24,13 +29,37 @@ const App = () => {
   //   gsap.ticker.lagSmoothing(0);
   // }, []);
 
+  useEffect(() => {
+    // Ensure Lenis is only instantiated once
+    if (!lenisRef.current) {
+      const lenis = new Lenis({
+        lerp: 0.1,
+        wheelMultiplier: 0.9,
+        gestureOrientation: 'vertical',
+        normalizeWheel: false,
+        duration: 1.2,
+      });
+
+      lenis.on('scroll', (e) => {
+        console.log(e)
+      })
+      
+      function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+      }
+      
+      requestAnimationFrame(raf)
+
+      lenisRef.current = lenis;
+    }
+  }, []);
+
   return (
     <ParallaxProvider>
-      <LenisProvider>
-        <div className="App br-app">
-          <AllRoute />
-        </div>
-      </LenisProvider>
+      <div className="App br-app">
+        <AllRoute lenisState={lenisRef} />
+      </div>
     </ParallaxProvider>
   );
 }
