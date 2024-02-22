@@ -5,7 +5,7 @@
       "description": "A SaaS Project Management App Landing Website. The design is modern, beautiful and responsive. It displays your content nicely on Desktop, Laptop, iPad, iPhone, Android Mobile, and tablets.",
       "client": "Mike Van Eckendonk",
       "shots": {
-        "thumbnail": "./assets/projects/rene/rene-1.png",
+        "thumbnail": "./assets/projects/rene/rene-thumbnail.png",
         "landscape": [{
             "id": 1,
             "src": "./assets/projects/rene/rene-1.png"
@@ -42,9 +42,10 @@
     {
       "id": 2,
       "title": "serra",
-      "description": "A Prototype for a Signup Page and Login Page of The Awesome NFT Trading Card Game Synergy Of Serra. Implemented in React, Redux, Styled-Components, and Jest.",
+      "description": "The Authentication & Authorization Feature of The Awesome NFT Trading Card Game Synergy Of Serra. Implemented in React, Redux, Styled-Components, and Jest. (Only this feature is allowed to be Open Sourced).",
       "client": "Calystral Games",
       "shots": {
+        "thumbnail": "./assets/projects/serra/serra-thumbnail.png",
         "landscape": [{
             "id": 1,
             "src": "./assets/projects/serra/serra-1.png"
@@ -75,25 +76,26 @@
         "Redux Toolkit",
         "React-Router",
         "React Testing Library",
-        "Jest"
+        "Jest",
+        "Cypress"
       ]
     },
     {
       "id": 3,
       "title": "contacts",
-      "description": "A sample app for a contacts management system. react native application that allows the user to add, delete, update the contact they want.",
+      "description": "A contacts management system App (for IOS & Android). Built with react native. It allows the user to add, delete, update the contact they want. It can replace the contacts app on your phone (plus it has access to all already saved contacts). It also has a search feature to search for a specific contact. The app is built with a modern design and is responsive on all devices.",
       "client": "tempMe",
       "shots": {
-        "landscape": [{
+        "thumbnail": "./assets/projects/contacts/contacts-thumbnail.png",
+        "landscape": [],
+        "portrait": [{
             "id": 5,
             "src": "./assets/projects/contacts/contacts-1.png"
           },
           {
             "id": 6,
             "src": "./assets/projects/contacts/contacts-2.png"
-          }
-        ],
-        "portrait": [{
+          }, {
             "id": 3,
             "src": "./assets/projects/contacts/contacts-3.png"
           },
@@ -104,15 +106,16 @@
         ]
       },
       "source": "https://github.com/OmarRamoun/contacts",
-      "preview": "",
+      "preview": "https://www.loom.com/share/924c275f602142ea8c7ae24348bacf51",
       "technologies": ["React-Native", "React Hooks", "Redux Toolkit", "React-Navigation", "Formik", "Yup", "Styled Components", "styled-system", "React Native Animated", "Jest", "Typescript", "Eslint", "Prettier"]
     },
     {
       "id": 4,
       "title": "sweet yellow",
-      "description": "A Software Engineer Portfolio App Made with React, React Router, and Bootstrap. The Project Contains a Showcase with Information About Developer, All of My Works (Apps), and a Contact Form for Communication.",
-      "client": "Open Source",
+      "description": "A Software Engineer Portfolio App Made with React, React Router, and Bootstrap. The Project Contains a Showcase with Information About Developer, All of My Works (Apps), and a Contact Form for Communication. (the app is now open source based on permission of client).",
+      "client": "Freelance",
       "shots": {
+        "thumbnail": "./assets/projects/sweetyellow/sweet-yellow-thumbnail.png",
         "landscape": [{
             "id": 1,
             "src": "./assets/projects/sweetyellow/sweetyellow-1.png"
@@ -151,6 +154,7 @@
       "description": "An open-source e-commerce platform designed to provide a flexible and customizable solution for online retailers. Built on modern web technologies, it offers a range of features including product catalog management, shopping cart functionality, order processing, and payment gateway integration.",
       "client": "Freelance",
       "shots": {
+        "thumbnail": "./assets/projects/sellgo/sellgo-thumbnail.png",
         "landscape": [{
             "id": 1,
             "src": "./assets/projects/sellgo/sellgo-1.png"
@@ -180,6 +184,7 @@
       "description": "A Simple Software Engineer Portfolio Website Made with Vanilla HTML5, CSS3, ES6. The Project Contains a Showcase with Information About Me, All of My Works (Apps), and a Contact Form for Communication.",
       "client": "Open Source",
       "shots": {
+        "thumbnail": "./assets/projects/cleanblue/clean-blue-thumbnail.png",
         "landscape": [{
             "id": 1,
             "src": "./assets/projects/cleanblue/cleanblue-1.png"
@@ -206,9 +211,10 @@
     {
       "id": 7,
       "title": "swenson he: Event Building Inc.",
-      "description": "A sample screen from the Event Building Inc. web application that allows the user to select the task they want. All tasks are categorized under different categories like (Staff, Food, Catering ..etc). As such, the user selects a category and should be able to see all the items under this category.",
+      "description": "Event Building Inc. is a web application that allows the user to select the task they want. All tasks are categorized under different categories like (Staff, Food, Catering ..etc). As such, the user selects a category and should be able to see all the items under this category. (Only this feature is allowed to be Open Sourced).",
       "client": "swenson he",
       "shots": {
+        "thumbnail": "./assets/projects/event-builder/event-builder-thumbnail.png",
         "landscape": [{
           "id": 1,
           "src": "./assets/projects/event-builder/event-builder-1.png"
@@ -227,7 +233,7 @@
           },
           {
             "id": 5,
-            "src": "./assets/projects/event-builder/contacts-5.png"
+            "src": "./assets/projects/event-builder/event-builder-5.png"
           }
         ]
       },
@@ -238,9 +244,10 @@
     {
       "id": 8,
       "title": "wonka conference",
-      "description": "Wonka Converence 2021 Made with Vanilla HTML5, CSS3, & JS (ES6). The Website Contains A Homepage With Information About The Main Program Of The Conference Speakers And Partners And An About Page With Information About The Conference.",
-      "client": "Open Source",
+      "description": "Wonka Converence 2021 Made with Vanilla HTML5, CSS3, & JS (ES6). The Website Contains A Homepage With Information About The Main Program Of The Conference Speakers And Partners And An About Page With Information About The Conference. (only sample data is allowed to be Open Sourced).",
+      "client": "Wonka Conference",
       "shots": {
+        "thumbnail": "./assets/projects/wonka/wonka-thumbnail.png",
         "landscape": [{
             "id": 1,
             "src": "./assets/projects/wonka/wonka-1.png"
@@ -270,38 +277,53 @@
       "description": "A Software Engineer Portfolio App Made with React, React-Router, and Bootstrap. The Project Contains a Showcase, All of the Works (Apps), and a Contact Form for Communication.The app includes a range of customizable components such as project cards, skill tags, and contact forms, that create a unique and engaging portfolio.",
       "client": "side project",
       "shots": {
+        "thumbnail": "./assets/projects/ana-fayrouz/ana-fayrouz-thumbnail.png",
         "landscape": [{
-          "id": 1,
-          "src": "./assets/projects/ana-fayrouz/ana-fayrouz-1.png"
-        }],
-        "portrait": [{
-            "id": 2,
-            "src": "./assets/projects/ana-fayrouz/ana-fayrouz-2.png"
+            "id": 1,
+            "src": "./assets/projects/ana-fayrouz/ana-fayrouz-1.png"
           },
           {
             "id": 3,
             "src": "./assets/projects/ana-fayrouz/ana-fayrouz-3.png"
           },
           {
-            "id": 4,
-            "src": "./assets/projects/ana-fayrouz/ana-fayrouz-4.png"
-          },
-          {
             "id": 5,
             "src": "./assets/projects/ana-fayrouz/ana-fayrouz-5.png"
+          },
+          {
+            "id": 7,
+            "src": "./assets/projects/ana-fayrouz/ana-fayrouz-7.png"
+          }
+        ],
+        "portrait": [{
+            "id": 8,
+            "src": "./assets/projects/ana-fayrouz/ana-fayrouz-8.png"
+          },
+          {
+            "id": 9,
+            "src": "./assets/projects/ana-fayrouz/ana-fayrouz-9.png"
+          },
+          {
+            "id": 10,
+            "src": "./assets/projects/ana-fayrouz/ana-fayrouz-10.png"
+          },
+          {
+            "id": 11,
+            "src": "./assets/projects/ana-fayrouz/ana-fayrouz-11.png"
           }
         ]
       },
       "source": "https://github.com/OmarRamoun/ana-fayrouz",
       "preview": "https://anafayrouz.omarramoun.com/",
-      "technologies": ["React.js", "React Hooks", "Redux Toolkit", "css modules", "Gsap.js", "Jest", "Typescript", "Javascript", "Eslint", "Prettier"]
+      "technologies": ["React", "React Hooks", "Redux Toolkit", "css modules", "Gsap.js", "Jest", "Typescript", "Javascript", "Eslint", "Prettier"]
     },
     {
       "id": 10,
       "title": "nursery story",
-      "description": "a Cloud-based SaaS platform designed to provide a comprehensive solution for nursery schools. It offers a range of features to help schools manage their operations, including student registration and enrollment, class scheduling, attendance tracking, parent communication, and billing and payments. It's a Mono-Repo Project Built with React-Native and GraphQL. It consists of 3 Apps: Admin, Nursery App, and a Parent App.",
-      "client": "Nursery-Story (as a Freelancer)",
+      "description": "a Cloud-based SaaS platform designed to provide a comprehensive solution for nursery schools. It offers a range of features to help schools manage their operations, including student registration and enrollment, class scheduling, attendance tracking, parent communication, and billing and payments. It's a Mono-Repo Project Built with React-Native and GraphQL. It consists of 3 Apps: Admin, Nursery App, and a Parent App. (No source code is allowed to be Open Sourced).",
+      "client": "Nursery-Story",
       "shots": {
+        "thumbnail": "./assets/projects/nursery-story/nursery-story-thumbnail.png",
         "landscape": [{
             "id": 1,
             "src": "./assets/projects/nursery-story/ns-1.png"
@@ -353,6 +375,7 @@
       "description": "The Website of Swenson He (Software LLC.) Made with webflow, javascript, and Gsap.js. The Project Contains a Showcase, All of the Works (Produced by Swenson He), and a Blog.",
       "client": "Swenson He",
       "shots": {
+        "thumbnail": "./assets/projects/swenson-he/swenson-he-thumbnail.png",
         "landscape": [{
             "id": 1,
             "src": "./assets/projects/swenson-he/swenson-he-1.png"
@@ -368,28 +391,32 @@
           {
             "id": 4,
             "src": "./assets/projects/swenson-he/swenson-he-4.png"
-          }
-        ],
-        "portrait": [{
+          },
+          {
             "id": 5,
             "src": "./assets/projects/swenson-he/swenson-he-5.png"
           },
           {
             "id": 6,
             "src": "./assets/projects/swenson-he/swenson-he-6.png"
-          },
-          {
+          }
+        ],
+        "portrait": [{
             "id": 7,
             "src": "./assets/projects/swenson-he/swenson-he-7.png"
           },
           {
             "id": 8,
             "src": "./assets/projects/swenson-he/swenson-he-8.png"
+          },
+          {
+            "id": 9,
+            "src": "./assets/projects/swenson-he/swenson-he-9.png"
           }
         ]
       },
       "source": "https://preview.webflow.com/preview/swensonhe?utm_medium=preview_link&utm_source=designer&utm_content=swensonhe&preview=e7f23349cd6bb9f1e6eaafa9feffe08a&workflow=preview",
-      "preview": "https://sensonhe.com/",
+      "preview": "https://swensonhe.com/",
       "technologies": ["Webflow", "Gsap.js", "Javascript"]
     },
     {
@@ -398,6 +425,7 @@
       "description": "The Landing Page of Andrew Golf (Gold Game App.) Made with webflow, javascript, and Gsap.js.",
       "client": "Andrew Golf",
       "shots": {
+        "thumbnail": "./assets/projects/andrew-golf/andrew-golf-thumbnail.png",
         "landscape": [{
             "id": 1,
             "src": "./assets/projects/andrew-golf/andrew-golf-1.png"
@@ -405,15 +433,27 @@
           {
             "id": 2,
             "src": "./assets/projects/andrew-golf/andrew-golf-2.png"
+          },
+          {
+            "id": 3,
+            "src": "./assets/projects/andrew-golf/andrew-golf-3.png"
           }
         ],
         "portrait": [{
-            "id": 3,
-            "src": "./assets/projects/andrew-golf/andrew-golf-3.png"
-          },
-          {
             "id": 4,
             "src": "./assets/projects/andrew-golf/andrew-golf-4.png"
+          },
+          {
+            "id": 5,
+            "src": "./assets/projects/andrew-golf/andrew-golf-5.png"
+          },
+          {
+            "id": 6,
+            "src": "./assets/projects/andrew-golf/andrew-golf-6.png"
+          },
+          {
+            "id": 7,
+            "src": "./assets/projects/andrew-golf/andrew-golf-7.png"
           }
         ]
       },
