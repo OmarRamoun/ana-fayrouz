@@ -1,13 +1,10 @@
 import React, {useRef, useEffect} from 'react';
 import { ParallaxProvider } from 'react-scroll-parallax';
 
-import { LenisProvider } from '@contexts';
 import AllRoute from '../router';
 import './App.css';
-import '../../assets/Css/Responsive.css';
+import '@assets/Css/Responsive.css';
 
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Lenis from '@studio-freight/lenis';
 
 const App = () => {
