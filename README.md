@@ -12,15 +12,16 @@
 
 ## A Screenshot of the Homepage
 
-![screenshot](screenshots/anafayrouz-1.png)
+![screenshot-1](screenshots/anafayrouz-1.png)
+![screenshot-2](screenshots/anafayrouz-2.png)
 
 ## Collective Screenshots of the Mobile Version
 
 <p align="center" justify="center">
-  <img width="180px" height="320px" src="screenshots/anafayrouz-2.png" />
   <img width="180px" height="320px" src="screenshots/anafayrouz-3.png" />
   <img width="180px" height="320px" src="screenshots/anafayrouz-4.png" />
   <img width="180px" height="320px" src="screenshots/anafayrouz-5.png" />
+  <img width="180px" height="320px" src="screenshots/anafayrouz-6.png" />
 </p>
 
 ## A Demo for the App
