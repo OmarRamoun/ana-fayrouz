@@ -4,7 +4,7 @@ module.exports = function override(config) {
   alias({
     '@components': 'src/components',
     '@data': 'src/data',
-    '@assets': 'src/assets',
+    '@assets': 'src/Assets',
     '@styles': 'src/styles',
     '@lib': 'src/lib',
     '@contexts': 'src/contexts',
