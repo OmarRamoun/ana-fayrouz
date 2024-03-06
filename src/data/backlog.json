@@ -1,29 +1,26 @@
 {
-  "items": [
-    {
+  "items": [{
       "id": 8,
       "title": "corona tracker",
       "description": "This is a mobile web application that features 2 pages: The homepage and the details page. The homepage displays all today's statistics about confirmed cases, deaths, and recoveries caused by Covid-19 in the world, as a total and separated by countrie",
       "client": "Open Source",
       "shots": {
-        "landscape": [
-          {
+        "landscape": [{
             "id": 1,
-            "src": "./assets/projects/corona/corona-1.png"
+            "src": "@assets/projects/corona/corona-1.png"
           },
           {
             "id": 2,
-            "src": "./assets/projects/corona/corona-2.png"
+            "src": "@assets/projects/corona/corona-2.png"
           }
         ],
-        "portrait": [
-          {
+        "portrait": [{
             "id": 3,
-            "src": "./assets/projects/corona/corona-3.png"
+            "src": "@assets/projects/corona/corona-3.png"
           },
           {
             "id": 4,
-            "src": "./assets/projects/corona/corona-4.png"
+            "src": "@assets/projects/corona/corona-4.png"
           }
         ]
       },
@@ -47,24 +44,22 @@
       "description": "A Web Application that Helps You Save Your Favorite Books in a List Alongside Author's Name. Made using HTML5, CSS3, ES6, Bootstrap.",
       "client": "Open Source",
       "shots": {
-        "landscape": [
-          {
+        "landscape": [{
             "id": 1,
-            "src": "./assets/projects/awesome/awesome-1.png"
+            "src": "@assets/projects/awesome/awesome-1.png"
           },
           {
             "id": 2,
-            "src": "./assets/projects/awesome/awesome-2.png"
+            "src": "@assets/projects/awesome/awesome-2.png"
           }
         ],
-        "portrait": [
-          {
+        "portrait": [{
             "id": 3,
-            "src": "./assets/projects/awesome/awesome-3.png"
+            "src": "@assets/projects/awesome/awesome-3.png"
           },
           {
             "id": 4,
-            "src": "./assets/projects/awesome/awesome-4.png"
+            "src": "@assets/projects/awesome/awesome-4.png"
           }
         ]
       },
