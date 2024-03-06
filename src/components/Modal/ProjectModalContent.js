@@ -38,7 +38,7 @@ const ProjectModalContent = ({ projectInfo }) => {
               <span className="project-modal-content__item__value">Link</span>
               <img
                 width={20}
-                src="@assets/arrow.svg"
+                src="./Assets/arrow.svg"
                 alt=""
                 style={{ color: 'white', marginLeft: '9px' }}
               />
@@ -51,7 +51,7 @@ const ProjectModalContent = ({ projectInfo }) => {
               <span className="project-modal-content__item__value">Link</span>
               <img
                 width={20}
-                src="@assets/arrow.svg"
+                src="./Assets/arrow.svg"
                 alt=""
                 style={{ color: 'white', marginLeft: '9px' }}
               />
