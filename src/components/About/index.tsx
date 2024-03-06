@@ -23,7 +23,7 @@ const About = (): React.JSX.Element => (
           <div className="col-lg-6">
             <div
               className="about-content"
-              style={{ paddingInline: '30px' } && window.innerWidth < 700 ? { paddingTop: '150px' } : {}}
+              style={{marginTop: '100px', paddingInline: '30px' } && window.innerWidth < 700 ? { paddingTop: '150px' } : {}}
             >
               <h2>About Me</h2>
               <p className={styles['fs-p']}>
@@ -32,7 +32,7 @@ const About = (): React.JSX.Element => (
                 variety of industries, including finance, healthcare, educational SaaS, and
                 e-commerce.
               </p>
-              <p className="mt-20 fs-p">
+              <p className="code-block mt-20 fs-p">
                 My expertise includes a deep understanding of multiple technologies such as
                 {' '}
                 <code>javascript</code>

@@ -1738,6 +1738,7 @@ TABLE OF CONTENTS:
   height: 500px !important;
 }
 
-code {
-  color: teal !important;
+.code-block code {
+  color: white;
+  text-shadow: -1px 1px 0px white;
 }
