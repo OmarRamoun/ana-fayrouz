@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import sr1 from '../assets/images/service/7.png';
-import sr2 from '../assets/images/service/8.png';
-import sr3 from '../assets/images/service/9.png';
+import sr1 from '@assets/Images/service/7.png';
+import sr2 from '@assets/Images/service/8.png';
+import sr3 from '@assets/Images/service/9.png';
 
 class PricingPlan extends Component {
   render() {

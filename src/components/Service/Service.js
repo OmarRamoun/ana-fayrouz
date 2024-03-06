@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-import sr1 from '../../assets/images/service/1.png';
-import sr2 from '../../assets/images/service/2.png';
-import sr3 from '../../assets/images/service/3.png';
-import sr4 from '../../assets/images/service/4.png';
-import sr5 from '../../assets/images/service/5.png';
-import sr6 from '../../assets/images/service/6.png';
+import sr1 from '@assets/Images/service/1.png';
+import sr2 from '@assets/Images/service/2.png';
+import sr3 from '@assets/Images/service/3.png';
+import sr4 from '@assets/Images/service/4.png';
+import sr5 from '@assets/Images/service/5.png';
+import sr6 from '@assets/Images/service/6.png';
 
 import './Service.style.css';
 

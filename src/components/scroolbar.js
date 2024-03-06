@@ -1,6 +1,6 @@
 import React from 'react';
 
-import sr1 from '../assets/images/service/10.png';
+import sr1 from '@assets/Images/service/10.png';
 
 const Scrollbar = () => (
   <div className="col-lg-12" style={{ position: 'fixed', zIndex: '10000' }}>
