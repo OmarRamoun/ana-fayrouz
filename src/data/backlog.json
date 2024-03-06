@@ -7,20 +7,20 @@
       "shots": {
         "landscape": [{
             "id": 1,
-            "src": "@assets/projects/corona/corona-1.png"
+            "src": "./Assets/projects/corona/corona-1.png"
           },
           {
             "id": 2,
-            "src": "@assets/projects/corona/corona-2.png"
+            "src": "./Assets/projects/corona/corona-2.png"
           }
         ],
         "portrait": [{
             "id": 3,
-            "src": "@assets/projects/corona/corona-3.png"
+            "src": "./Assets/projects/corona/corona-3.png"
           },
           {
             "id": 4,
-            "src": "@assets/projects/corona/corona-4.png"
+            "src": "./Assets/projects/corona/corona-4.png"
           }
         ]
       },
@@ -46,20 +46,20 @@
       "shots": {
         "landscape": [{
             "id": 1,
-            "src": "@assets/projects/awesome/awesome-1.png"
+            "src": "./Assets/projects/awesome/awesome-1.png"
           },
           {
             "id": 2,
-            "src": "@assets/projects/awesome/awesome-2.png"
+            "src": "./Assets/projects/awesome/awesome-2.png"
           }
         ],
         "portrait": [{
             "id": 3,
-            "src": "@assets/projects/awesome/awesome-3.png"
+            "src": "./Assets/projects/awesome/awesome-3.png"
           },
           {
             "id": 4,
-            "src": "@assets/projects/awesome/awesome-4.png"
+            "src": "./Assets/projects/awesome/awesome-4.png"
           }
         ]
       },
