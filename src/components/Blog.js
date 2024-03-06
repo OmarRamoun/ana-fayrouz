@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import blogImg_1 from '../assets/images/blog/1.jpg';
-import blogImg_2 from '../assets/images/blog/2.jpg';
-import blogImg_3 from '../assets/images/blog/3.jpg';
-import blogAuthor from '../assets/images/blog/7.jpg';
+import blogImg_1 from '@assets/Images/blog/1.jpg';
+import blogImg_2 from '@assets/Images/blog/2.jpg';
+import blogImg_3 from '@assets/Images/blog/3.jpg';
+import blogAuthor from '@assets/Images/blog/7.jpg';
 
 class Blog extends Component {
   render() {

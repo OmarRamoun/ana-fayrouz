@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import testimonialImg_1 from '../assets/images/testimonial/1.jpg';
-import testimonialImg_2 from '../assets/images/testimonial/2.jpg';
-import testimonialImg_3 from '../assets/images/testimonial/3.jpg';
+import testimonialImg_1 from '@assets/Images/testimonial/1.jpg';
+import testimonialImg_2 from '@assets/Images/testimonial/2.jpg';
+import testimonialImg_3 from '@assets/Images/testimonial/3.jpg';
 
 class Testimonial extends Component {
   render() {
