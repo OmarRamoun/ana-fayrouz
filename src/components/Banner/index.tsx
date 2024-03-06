@@ -4,7 +4,7 @@ import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import { ParallaxBanner } from 'react-scroll-parallax';
 
-import Slides from '@assets/images/home/amoled.jpg';
+import Slides from '@assets/Images/home/amoled.jpg';
 import { cn } from '@lib';
 import { Button } from '../Button';
 

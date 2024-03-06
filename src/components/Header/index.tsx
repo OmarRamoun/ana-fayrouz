@@ -5,8 +5,8 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 
-import Logo from '@assets/images/darwin.jpg';
-import ramoun from '@assets/images/Ramoun.svg';
+import Logo from '@assets/Images/darwin.jpg';
+import ramoun from '@assets/Images/Ramoun.svg';
 import home from '@assets/sections_shots/home.png';
 import about from '@assets/sections_shots/about.png';
 import services from '@assets/sections_shots/services.png';

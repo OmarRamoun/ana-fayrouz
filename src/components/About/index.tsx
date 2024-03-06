@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutImg from '@assets/images/darwin_center.jpg';
+import aboutImg from '@assets/Images/darwin_center.jpg';
 import { cn } from '@lib/index';
 import { Button } from '../Button';
 
