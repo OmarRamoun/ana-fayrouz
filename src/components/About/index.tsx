@@ -64,7 +64,7 @@ const About = (): React.JSX.Element => (
                 possible.
               </p>
               <Button
-                href="./ramoun_resume_v2.pdf"
+                href="./Omar Ramoun - Software Engineer Resume.pdf"
                 target="_blank"
                 className={styles['hover-border-none']}
                 style={{

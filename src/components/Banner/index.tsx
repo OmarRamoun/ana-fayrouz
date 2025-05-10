@@ -67,7 +67,7 @@ const Banner: React.FC = () => (
                 <div className={styles.buttons_container}>
                   <Button href="#contact"> Contact Me </Button>
                   <Button
-                    href="./Omar Ramoun - Frontend Developer Resume.pdf"
+                    href="./Omar Ramoun - Software Engineer Resume.pdf"
                     target="_blank"
                     rel="noreferrer"
                     download
